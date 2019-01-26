@@ -17,13 +17,6 @@
   </url>
   
   <url>
-    <loc>https://henrybear327.github.io/blog/tags/</loc>
-    <lastmod>2019-01-26T15:03:31+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://henrybear327.github.io/blog/categories/</loc>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
@@ -52,6 +45,19 @@
   
   <url>
     <loc>https://henrybear327.github.io/blog/tags/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://henrybear327.github.io/blog/tags/greedy/</loc>
+    <lastmod>2019-01-26T15:03:31+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://henrybear327.github.io/blog/tags/implementation/</loc>
     <lastmod>2019-01-26T15:03:31+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>

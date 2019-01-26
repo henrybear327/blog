@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>implementation on Coding Blog</title>
+    <link>https://henrybear327.github.io/blog/tags/implementation/</link>
+    <description>Recent content in implementation on Coding Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 26 Jan 2019 15:03:31 +0800</lastBuildDate>
+    
+	<atom:link href="https://henrybear327.github.io/blog/tags/implementation/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>CF 1102B</title>
+      <link>https://henrybear327.github.io/blog/post/codeforces/1102b/</link>
+      <pubDate>Sat, 26 Jan 2019 15:03:31 +0800</pubDate>
+      
+      <guid>https://henrybear327.github.io/blog/post/codeforces/1102b/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://codeforces.com/contest/1102/problem/B&#34;&gt;CF 1102B. Array K-Coloring&lt;/a&gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;題目大綱&#34;&gt;題目大綱&lt;/h1&gt;
+
+&lt;p&gt;給定一個$n$個數字的數列，要你把每個數列中的數字都上色。其中，共有$k$個顏色，每種顏色都要被使用至少一次，且對於同一種顏色所圖到的數字都不能相同！&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
