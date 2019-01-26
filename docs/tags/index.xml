@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on Coding Blog</title>
+    <link>https://henrybear327.github.io/blog/tags/</link>
+    <description>Recent content in Tags on Coding Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    
+	<atom:link href="https://henrybear327.github.io/blog/tags/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>math</title>
+      <link>https://henrybear327.github.io/blog/tags/math/</link>
+      <pubDate>Sat, 26 Jan 2019 14:48:32 +0800</pubDate>
+      
+      <guid>https://henrybear327.github.io/blog/tags/math/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>討論題</title>
+      <link>https://henrybear327.github.io/blog/tags/%E8%A8%8E%E8%AB%96%E9%A1%8C/</link>
+      <pubDate>Sat, 26 Jan 2019 14:48:32 +0800</pubDate>
+      
+      <guid>https://henrybear327.github.io/blog/tags/%E8%A8%8E%E8%AB%96%E9%A1%8C/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
