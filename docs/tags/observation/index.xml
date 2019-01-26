@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>math on Coding Blog</title>
-    <link>https://henrybear327.github.io/blog/tags/math/</link>
-    <description>Recent content in math on Coding Blog</description>
+    <title>observation on Coding Blog</title>
+    <link>https://henrybear327.github.io/blog/tags/observation/</link>
+    <description>Recent content in observation on Coding Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Sat, 26 Jan 2019 18:10:21 +0800</lastBuildDate>
     
-	<atom:link href="https://henrybear327.github.io/blog/tags/math/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://henrybear327.github.io/blog/tags/observation/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -26,17 +26,6 @@
 &lt;li&gt;如果$a_i = a_j$，那$b_i = b_j$也要成立&lt;/li&gt;
 &lt;li&gt;對於 $i \in [1, n - 1]$，則$b_i = b_{i + 1}$ 或 $b_i + 1= b_{i + 1}$要成立&lt;/li&gt;
 &lt;/ol&gt;</description>
-    </item>
-    
-    <item>
-      <title>CF 1102A</title>
-      <link>https://henrybear327.github.io/blog/post/codeforces/1102a/</link>
-      <pubDate>Sat, 26 Jan 2019 14:48:32 +0800</pubDate>
-      
-      <guid>https://henrybear327.github.io/blog/post/codeforces/1102a/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;https://codeforces.com/contest/1102/problem/A&#34;&gt;Integer Sequence Dividing&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;將 $[1, n]$ 所有數分兩堆，使得兩堆之間的差最小&lt;/p&gt;</description>
     </item>
     
   </channel>
