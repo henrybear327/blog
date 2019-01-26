@@ -19,8 +19,6 @@
       <guid>https://henrybear327.github.io/blog/post/codeforces/1102b/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://codeforces.com/contest/1102/problem/B&#34;&gt;CF 1102B. Array K-Coloring&lt;/a&gt;&lt;/p&gt;
 
-&lt;h1 id=&#34;題目大綱&#34;&gt;題目大綱&lt;/h1&gt;
-
 &lt;p&gt;給定一個$n$個數字的數列，要你把每個數列中的數字都上色。其中，共有$k$個顏色，每種顏色都要被使用至少一次，且對於同一種顏色所圖到的數字都不能相同！&lt;/p&gt;</description>
     </item>
     

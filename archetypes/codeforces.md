@@ -7,9 +7,7 @@ tags: [""]
 categories: ["Codeforces"]
 ---
 
-[]()
-
-# 題目大綱
+[CF ]()
 
 <!--more-->
 
