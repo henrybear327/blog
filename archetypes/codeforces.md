@@ -7,7 +7,7 @@ tags: [""]
 categories: ["Codeforces"]
 ---
 
-[CF ]()
+[]()
 
 <!--more-->
 

@@ -17,7 +17,7 @@
       <pubDate>Sat, 26 Jan 2019 17:45:59 +0800</pubDate>
       
       <guid>https://henrybear327.github.io/blog/post/codeforces/1102d/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;https://codeforces.com/contest/1102/problem/D&#34;&gt;CF 1102D. Balanced Ternary String&lt;/a&gt;&lt;/p&gt;
+      <description>&lt;p&gt;&lt;a href=&#34;https://codeforces.com/contest/1102/problem/D&#34;&gt;Balanced Ternary String&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;給你一個長度為$n$，只有$0, 1, 2$三種字元的字串。請你把字串做調整，使得每個字符都只出現$\frac n 3$次的情況下，字典順序最小。&lt;/p&gt;</description>
     </item>
@@ -28,7 +28,7 @@
       <pubDate>Sat, 26 Jan 2019 15:03:31 +0800</pubDate>
       
       <guid>https://henrybear327.github.io/blog/post/codeforces/1102b/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;https://codeforces.com/contest/1102/problem/B&#34;&gt;CF 1102B. Array K-Coloring&lt;/a&gt;&lt;/p&gt;
+      <description>&lt;p&gt;&lt;a href=&#34;https://codeforces.com/contest/1102/problem/B&#34;&gt;Array K-Coloring&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;給定一個$n$個數字的數列，要你把每個數列中的數字都上色。其中，共有$k$個顏色，每種顏色都要被使用至少一次，且對於同一種顏色所圖到的數字都不能相同！&lt;/p&gt;</description>
     </item>
@@ -39,7 +39,7 @@
       <pubDate>Sat, 26 Jan 2019 14:48:32 +0800</pubDate>
       
       <guid>https://henrybear327.github.io/blog/post/codeforces/1102a/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;https://codeforces.com/contest/1102/problem/A&#34;&gt;CF 1102A. Integer Sequence Dividing&lt;/a&gt;&lt;/p&gt;
+      <description>&lt;p&gt;&lt;a href=&#34;https://codeforces.com/contest/1102/problem/A&#34;&gt;Integer Sequence Dividing&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;將 $[1, n]$ 所有數分兩堆，使得兩堆之間的差最小&lt;/p&gt;</description>
     </item>
