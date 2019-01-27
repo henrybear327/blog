@@ -3,6 +3,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://henrybear327.github.io/blog/post/codeforces/1099d/</loc>
+    <lastmod>2019-01-27T11:51:18+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://henrybear327.github.io/blog/post/codeforces/1102e/</loc>
     <lastmod>2019-01-26T18:10:21+08:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -38,27 +45,34 @@
   
   <url>
     <loc>https://henrybear327.github.io/blog/categories/codeforces/</loc>
-    <lastmod>2019-01-26T18:10:21+08:00</lastmod>
+    <lastmod>2019-01-27T11:51:18+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://henrybear327.github.io/blog/</loc>
-    <lastmod>2019-01-26T18:10:21+08:00</lastmod>
+    <lastmod>2019-01-27T11:51:18+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://henrybear327.github.io/blog/post/</loc>
-    <lastmod>2019-01-26T18:10:21+08:00</lastmod>
+    <lastmod>2019-01-27T11:51:18+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://henrybear327.github.io/blog/tags/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://henrybear327.github.io/blog/tags/tree-dp/</loc>
+    <lastmod>2019-01-27T11:51:18+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
