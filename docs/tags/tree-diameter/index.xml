@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tree DP on Coding Blog</title>
-    <link>https://henrybear327.github.io/blog/tags/tree-dp/</link>
-    <description>Recent content in Tree DP on Coding Blog</description>
+    <title>Tree diameter on Coding Blog</title>
+    <link>https://henrybear327.github.io/blog/tags/tree-diameter/</link>
+    <description>Recent content in Tree diameter on Coding Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Sun, 27 Jan 2019 13:49:25 +0800</lastBuildDate>
     
-	<atom:link href="https://henrybear327.github.io/blog/tags/tree-dp/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://henrybear327.github.io/blog/tags/tree-diameter/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -20,17 +20,6 @@
       <description>&lt;p&gt;&lt;a href=&#34;https://uva.onlinejudge.org/index.php?option=com_onlinejudge&amp;amp;Itemid=8&amp;amp;page=show_problem&amp;amp;category=&amp;amp;problem=1249&#34;&gt;Roads in the North&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;給你一棵樹，其中邊都帶有權重，請求出此樹上的最長鍊有多長。&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>CF 1099D</title>
-      <link>https://henrybear327.github.io/blog/post/codeforces/1099d/</link>
-      <pubDate>Sun, 27 Jan 2019 11:51:18 +0800</pubDate>
-      
-      <guid>https://henrybear327.github.io/blog/post/codeforces/1099d/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;https://codeforces.com/contest/1099/problem/D&#34;&gt;Sum in the tree&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;給你一棵樹，每個節點上都有一個數值$a_i$，但是input卻只給你奇數層節點到根節點的prefix sum，要你求出最小的$\sum\limits_{i=1}^n a_i$&lt;/p&gt;</description>
     </item>
     
   </channel>
