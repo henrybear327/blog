@@ -3,6 +3,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://henrybear327.github.io/blog/post/docker/hackmd_nginx/</loc>
+    <lastmod>2019-03-12T23:45:32+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://henrybear327.github.io/blog/post/uva/10308/</loc>
     <lastmod>2019-01-27T13:49:25+08:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -59,20 +66,27 @@
   
   <url>
     <loc>https://henrybear327.github.io/blog/</loc>
-    <lastmod>2019-01-27T13:49:25+08:00</lastmod>
+    <lastmod>2019-03-12T23:45:32+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://henrybear327.github.io/blog/post/</loc>
-    <lastmod>2019-01-27T13:49:25+08:00</lastmod>
+    <lastmod>2019-03-12T23:45:32+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://henrybear327.github.io/blog/tags/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://henrybear327.github.io/blog/categories/tech/</loc>
+    <lastmod>2019-03-12T23:45:32+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
@@ -99,8 +113,22 @@
   </url>
   
   <url>
+    <loc>https://henrybear327.github.io/blog/tags/docker/</loc>
+    <lastmod>2019-03-12T23:45:32+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://henrybear327.github.io/blog/tags/greedy/</loc>
     <lastmod>2019-01-26T17:45:59+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://henrybear327.github.io/blog/tags/hackmd/</loc>
+    <lastmod>2019-03-12T23:45:32+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
@@ -115,6 +143,13 @@
   <url>
     <loc>https://henrybear327.github.io/blog/tags/math/</loc>
     <lastmod>2019-01-26T18:10:21+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://henrybear327.github.io/blog/tags/nginx/</loc>
+    <lastmod>2019-03-12T23:45:32+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>

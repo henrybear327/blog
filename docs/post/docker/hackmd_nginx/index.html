@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Hosting Hackmd and Nginx inside Docker containers - Coding Blog</title>
+  <meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+
+<meta name="author" content="Chun-Hung Tseng" /><meta name="description" content="It&amp;rsquo;s my side project for learning networking and docker. :)
+The goal is to run both Nginx to Hackmd in Docker containers.
+" /><meta name="keywords" content="Competitive programming, Notes, Codeforces, UVa, Leetcode" />
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.54.0 with even 4.0.0" />
+
+
+<link rel="canonical" href="https://henrybear327.github.io/blog/post/docker/hackmd_nginx/" />
+<link rel="apple-touch-icon" sizes="180x180" href="/blog/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/blog/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/blog/favicon-16x16.png">
+<link rel="manifest" href="/blog/manifest.json">
+<link rel="mask-icon" href="/blog/safari-pinned-tab.svg" color="#5bbad5">
+
+
+<link href="/blog/dist/even.c2a46f00.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
+
+
+<meta property="og:title" content="Hosting Hackmd and Nginx inside Docker containers" />
+<meta property="og:description" content="It&rsquo;s my side project for learning networking and docker. :)
+
+The goal is to run both Nginx to Hackmd in Docker containers." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://henrybear327.github.io/blog/post/docker/hackmd_nginx/" />
+<meta property="article:published_time" content="2019-03-12T23:45:32&#43;08:00"/>
+<meta property="article:modified_time" content="2019-03-12T23:45:32&#43;08:00"/>
+
+<meta itemprop="name" content="Hosting Hackmd and Nginx inside Docker containers">
+<meta itemprop="description" content="It&rsquo;s my side project for learning networking and docker. :)
+
+The goal is to run both Nginx to Hackmd in Docker containers.">
+
+
+<meta itemprop="datePublished" content="2019-03-12T23:45:32&#43;08:00" />
+<meta itemprop="dateModified" content="2019-03-12T23:45:32&#43;08:00" />
+<meta itemprop="wordCount" content="1266">
+
+
+
+<meta itemprop="keywords" content="docker,hackmd,nginx," />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Hosting Hackmd and Nginx inside Docker containers"/>
+<meta name="twitter:description" content="It&rsquo;s my side project for learning networking and docker. :)
+
+The goal is to run both Nginx to Hackmd in Docker containers."/>
+
+<!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<![endif]-->
+
+</head>
+<body>
+  <div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/blog/" class="logo">Coding Blog</a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    <a href="/blog/">
+        <li class="mobile-menu-item">Home</li>
+      </a><a href="/blog/post/">
+        <li class="mobile-menu-item">Archives</li>
+      </a><a href="/blog/tags/">
+        <li class="mobile-menu-item">Tags</li>
+      </a><a href="/blog/categories/">
+        <li class="mobile-menu-item">Categories</li>
+      </a>
+  </ul>
+</nav>
+  <div class="container" id="mobile-panel">
+    <header id="header" class="header">
+        <div class="logo-wrapper">
+  <a href="/blog/" class="logo">Coding Blog</a>
+</div>
+
+<nav class="site-navbar">
+  <ul id="menu" class="menu">
+    <li class="menu-item">
+        <a class="menu-item-link" href="/blog/">Home</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/blog/post/">Archives</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/blog/tags/">Tags</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/blog/categories/">Categories</a>
+      </li>
+  </ul>
+</nav>
+    </header>
+
+    <main id="main" class="main">
+      <div class="content-wrapper">
+        <div id="content" class="content">
+          <article class="post">
+    
+    <header class="post-header">
+      <h1 class="post-title">Hosting Hackmd and Nginx inside Docker containers</h1>
+
+      <div class="post-meta">
+        <span class="post-time"> 2019-03-12 </span>
+        <div class="post-category">
+            <a href="/blog/categories/tech/"> Tech </a>
+            </div>
+          <span class="more-meta"> 1266 words </span>
+          <span class="more-meta"> 6 mins read </span>
+        
+      </div>
+    </header>
+
+    <div class="post-toc" id="post-toc">
+  <h2 class="post-toc-title">Contents</h2>
+  <div class="post-toc-content always-active">
+    <nav id="TableOfContents">
+<ul>
+<li><a href="#introduction">Introduction</a></li>
+<li><a href="#hackmd">Hackmd</a>
+<ul>
+<li><a href="#installation">Installation</a></li>
+<li><a href="#update">Update</a></li>
+<li><a href="#backup">Backup</a>
+<ul>
+<li><a href="#where-is-the-data">Where is the data?</a></li>
+<li><a href="#backup-1">Backup</a></li>
+<li><a href="#restore">Restore</a></li>
+</ul></li>
+</ul></li>
+<li><a href="#nginx">Nginx</a>
+<ul>
+<li><a href="#basic-auth-https-docs-nginx-com-nginx-admin-guide-security-controls-configuring-http-basic-authentication"><a href="https://docs.nginx.com/nginx/admin-guide/security-controls/configuring-http-basic-authentication/">Basic auth</a></a></li>
+<li><a href="#hosting-on-virtual-host">Hosting on Virtual Host</a></li>
+<li><a href="#starting-hackmd-and-nginx-containers">Starting HackMD and Nginx containers</a></li>
+<li><a href="#stopping-hackmd-and-nginx-containers">Stopping HackMD and Nginx containers</a></li>
+</ul></li>
+<li><a href="#sidenotes">Sidenotes</a>
+<ul>
+<li><a href="#nginx-with-cloudflare-ssl-https-support-cloudflare-com-hc-en-us-articles-115000479507"><a href="https://support.cloudflare.com/hc/en-us/articles/115000479507">Nginx with Cloudflare SSL</a></a>
+<ul>
+<li><a href="#setup">Setup</a></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav>
+  </div>
+</div>
+    <div class="post-content">
+      <p>It&rsquo;s my side project for learning networking and docker. :)</p>
+
+<p>The goal is to run both Nginx to Hackmd in Docker containers.</p>
+
+<h1 id="introduction">Introduction</h1>
+
+<p>Hackmd can be easily run in the container thanks to the developers from HackMD for dockerizing the entire project already. The part for setting up Nginx, interconnecting containers, and properly setting up the port and stuff to expose the containers, is what makes this project interesting.</p>
+
+<p>Let&rsquo;s begin our journey!</p>
+
+<p>Make sure that you have docker and docker-compose installed.</p>
+
+<h1 id="hackmd">Hackmd</h1>
+
+<h2 id="installation">Installation</h2>
+
+<p>Running self-hosted Hackmd is super easy</p>
+
+<ul>
+<li>Get the docker stuff that is already prepared for you by running <code>git clone https://github.com/hackmdio/codimd-container.git</code></li>
+<li><code>cd docker-hackmd</code>, and <code>run docker-compose up</code> (In future runs, <code>docker-compose up -d</code> to run the containers in the background)</li>
+</ul>
+
+<h2 id="update">Update</h2>
+
+<p>‌
+Taken from the official documentation.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></pre></td>
+<td class="lntd">
+<pre class="chroma">cd docker-hackmd ## enter the directory
+git pull ## pull new commits
+docker-compose pull ## pull new containers
+docker-compose up ## turn on</pre></td></tr></table>
+</div>
+</div>
+<h2 id="backup">Backup</h2>
+
+<h3 id="where-is-the-data">Where is the data?</h3>
+
+<ul>
+<li>If we trace the <code>docker-compose</code> file of HackMD, we can see that for the <code>database</code>, there is a volume associated with it.</li>
+<li>After running <code>docker-compose up</code>, we can run <code>docker volume ls</code>to inspect what volumes are mounted now.</li>
+<li>After knowing the volume&rsquo;s name, we can use <code>docker volume inspect [name]</code> to see more, including the location that the volume is actually storing its data!<br />
+
+<ul>
+<li><a href="https://askubuntu.com/questions/291666/why-doesnt-sudo-cd-var-named-work"><code>sudo cd</code> won&rsquo;t work</a>. Use <code>sudo -i</code> and then <code>cd</code></li>
+</ul></li>
+</ul>
+
+<h3 id="backup-1">Backup</h3>
+
+<p><code>docker-compose exec database pg_dump hackmd -U hackmd &gt; backup.sql</code></p>
+
+<h3 id="restore">Restore</h3>
+
+<p><code>cat backup.sql | docker exec -i $(docker-compose ps -q database) psql -U hackmd</code></p>
+
+<h1 id="nginx">Nginx</h1>
+
+<p>Resources <a href="https://hackprogramming.com/how-to-setup-subdomain-or-host-multiple-domains-using-nginx-in-linux-server/">1</a> <a href="https://www.digitalocean.com/community/tutorials/how-to-install-nginx-on-ubuntu-18-04">2</a></p>
+
+<p>We will build our own Nginx image for container, so we can get the bash shell, logs, and be able control lots of stuff easily. The tradeoff will be huge image size though&hellip;</p>
+
+<p>The <code>dockerfile</code> for Nginx. Build it with <code>docker build -t nginx .</code></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span></pre></td>
+<td class="lntd">
+<pre class="chroma">FROM ubuntu:bionic
+
+# silent debconf warnings
+ARG DEBIAN_FRONTEND=noninteractive
+
+# Update and install software packages
+RUN apt-get update
+RUN apt-get upgrade -y
+RUN apt-get install -y apt-utils man 
+RUN apt-get install -y locales sudo wget curl htop
+RUN apt-get install -y vim 
+RUN apt-get install -y nginx 
+RUN mkdir /var/run/sshd
+
+RUN locale-gen en_US.UTF-8
+RUN locale-gen zh_TW.UTF-8
+ENV LANG en_US.UTF-8
+ENV LANGUAGE en_US:en
+ENV LC_ALL en_US.UTF-8
+
+# Nginx config file for test.henrybear327.com
+# Notice that the symbolic link for linking must be absolute path!
+COPY test.henrybear327.com /etc/nginx/sites-available/test.henrybear327.com
+RUN sudo ln -s /etc/nginx/sites-available/test.henrybear327.com /etc/nginx/sites-enabled/test.henrybear327.com
+
+# basic auth file
+COPY .htpasswd /etc/nginx/conf.d
+
+# expose port 80 for HTTP (443 for HTTPS)
+EXPOSE 80
+
+# start nginx
+CMD [&#34;nginx&#34;, &#34;-g&#34;, &#34;daemon off;&#34;]‌</pre></td></tr></table>
+</div>
+</div>
+<p>Nginx config file and basic auth details is explained below.</p>
+
+<h2 id="basic-auth-https-docs-nginx-com-nginx-admin-guide-security-controls-configuring-http-basic-authentication"><a href="https://docs.nginx.com/nginx/admin-guide/security-controls/configuring-http-basic-authentication/">Basic auth</a></h2>
+
+<p>The basic auth works by creating a username-password file by using <code>htpassed</code> tool. After creating the file, we just need to add it to Nginx&rsquo;s configuration file.</p>
+
+<ul>
+<li>Install <code>apache2-utils</code></li>
+<li>Create users <code>sudo htpasswd -c .htpasswd Henry</code>
+
+<ul>
+<li><code>-c</code> means create file, so only use it on the first run!)</li>
+</ul></li>
+<li>Watch out for the location you put the file in the container. If you put it at <code>/root</code>, Nginx won&rsquo;t be able to read it, since its permission is <code>700</code>.
+
+<ul>
+<li>Internal server error of <code>500</code> will occur since the system can&rsquo;t open the file</li>
+<li>Digging from the log, which is usually kept at <code>/var/log/nginx</code>, is a good way good way to debug!</li>
+</ul></li>
+</ul>
+
+<h2 id="hosting-on-virtual-host">Hosting on Virtual Host</h2>
+
+<p>For every virtual host that you want to host your website, create a dedicated file for it! For example, if I want to have a website at <code>test.henrybear327.com</code>, we need to create a config file with name <code>test.henrybear327.com</code></p>
+
+<p>Sample config file:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span></pre></td>
+<td class="lntd">
+<pre class="chroma">server {
+    server_name test.henrybear327.com;
+
+    auth_basic           &#34;Test site&#34;;
+    auth_basic_user_file /etc/nginx/conf.d/.htpasswd; 
+
+    location / {
+        proxy_pass http://docker-hackmd_app_1:3000/;
+        proxy_http_version 1.1;
+        proxy_set_header Upgrade $http_upgrade;
+        proxy_set_header Connection &#39;upgrade&#39;;
+        proxy_set_header Host $host;
+    }
+}</pre></td></tr></table>
+</div>
+</div>
+<p>There are several things in this file that required attention.</p>
+
+<p>The first thing is the <code>proxy_pass</code>. Because when running <code>docker-compose</code>, it will automatically create a new network! So the Nginx must be on the same network as HackMD (will be discussed about later).</p>
+
+<p>Another thing is that the address of the container we will be connecting to. It&rsquo;s not <code>localhost:3000</code>, it&rsquo;s the container&rsquo;s name!</p>
+
+<h2 id="starting-hackmd-and-nginx-containers">Starting HackMD and Nginx containers</h2>
+
+<p>If you have done the previous HackMD and Nginx setup correctly, we can now start our containers! We will start the HackMD first, and then connect Nginx to HackMD&rsquo;s network, and exposing the 80 or 443 port to the outside world!</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><span class="lnt">1
+</span><span class="lnt">2
+</span></pre></td>
+<td class="lntd">
+<pre class="chroma">‌sudo docker-compose up -d # start the hackmd containers
+sudo docker run -d --rm --name nginx --net=docker-hackmd_backend -p 80:80 nginx # start the Nginx container</pre></td></tr></table>
+</div>
+</div>
+<p>The part for starting the Nginx container is a little bit complicated.</p>
+
+<p>As mentioned before, <code>docker-compose</code> will create its own network. So after starting it, we need to use <code>sudo docker network ls</code> to check the network name, and specify it in the <code>--net</code> argument.</p>
+
+<p><code>-p 80:80</code> or <code>-p 443:443</code> depends on your connection type.</p>
+
+<h2 id="stopping-hackmd-and-nginx-containers">Stopping HackMD and Nginx containers</h2>
+
+<p>‌
+Simply&hellip; stop it :)</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><span class="lnt">1
+</span><span class="lnt">2
+</span></pre></td>
+<td class="lntd">
+<pre class="chroma">sudo docker-compose down
+sudo docker stop nginx</pre></td></tr></table>
+</div>
+</div>
+<h1 id="sidenotes">Sidenotes</h1>
+
+<ul>
+<li>Use <code>docker container exec &lt;container&gt; nginx -s reload</code> to reload Nginx if you have changed some config file</li>
+<li>Whatever changes you do to the Nginx config files, run sudo nginx -t to perform a check before reloading it</li>
+</ul>
+
+<h2 id="nginx-with-cloudflare-ssl-https-support-cloudflare-com-hc-en-us-articles-115000479507"><a href="https://support.cloudflare.com/hc/en-us/articles/115000479507">Nginx with Cloudflare SSL</a></h2>
+
+<p>After messing with Let&rsquo;s encrypt for quite a while, I decided to simply use Cloudflare&rsquo;s origin certificate&hellip;</p>
+
+<p>The following passage is taken from this post&hellip; <a href="https://www.reddit.com/r/sysadmin/comments/awtpcr/differences_among_cloudflare_origin_certificates/">Great explanation about Cloudflare origin vs Let&rsquo;s encrypt Certificate</a></p>
+
+<blockquote>
+<p>If you use Cloudflare to front your website, there&rsquo;s no real point to continually renewing Let&rsquo;s Encrypt certs every few months. The end user never sees your server cert and doesn&rsquo;t have to trust it, so the long-lived origin cert is probably less work.</p>
+</blockquote>
+
+<h3 id="setup">Setup</h3>
+
+<ul>
+<li>Have your site hide behind cloudflare&rsquo;s.
+<img src="https://i.imgur.com/1MfWJV0.png" alt="Cloudflare Crypto page" />
+<img src="https://i.imgur.com/A7p75UL.png" alt="Cloudflare CA post" /></li>
+<li>Generate the origin certificate</li>
+<li>Update dockerfile and nginx config file‌</li>
+
+<li><p>Update <code>dockerfile</code> and <code>nginx config file</code></p>
+
+<ul>
+<li><p>‌New test.henrybear327.com config file</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span></pre></td>
+<td class="lntd">
+<pre class="chroma">server {
+    listen   443;
+
+    ssl    on;
+    ssl_certificate    /etc/ssl/certs/henrybear327.com.pem;
+    ssl_certificate_key    /etc/ssl/private/henrybear327.com.key;
+
+    server_name test.henrybear327.com;
+
+    auth_basic           &#34;Test&#34;;
+    auth_basic_user_file /etc/nginx/conf.d/.htpasswd; 
+
+    location / {
+        proxy_pass http://docker-hackmd_app_1:3000/;
+        proxy_http_version 1.1;
+        proxy_set_header Upgrade $http_upgrade;
+        proxy_set_header Connection &#39;upgrade&#39;;
+        proxy_set_header Host $host;
+    }
+}</pre></td></tr></table>
+</div>
+</div></li>
+
+<li><p>New <code>dockerfile</code></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-‌" data-lang="‌"><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span><span class="lnt">36
+</span><span class="lnt">37
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-‌" data-lang="‌">FROM ubuntu:bionic
+
+# silent debconf warnings
+ARG DEBIAN_FRONTEND=noninteractive
+
+# Update and install software packages
+RUN apt-get update
+RUN apt-get upgrade -y
+RUN apt-get install -y apt-utils man 
+RUN apt-get install -y locales sudo wget curl htop
+RUN apt-get install -y vim 
+RUN apt-get install -y nginx 
+RUN mkdir /var/run/sshd
+
+RUN locale-gen en_US.UTF-8
+RUN locale-gen zh_TW.UTF-8
+ENV LANG en_US.UTF-8
+ENV LANGUAGE en_US:en
+ENV LC_ALL en_US.UTF-8
+
+# Nginx config file for test.henrybear327.com
+# Notice that the symbolic link for linking must be absolute path!
+COPY test.henrybear327.com /etc/nginx/sites-available/test.henrybear327.com
+RUN sudo ln -s /etc/nginx/sites-available/test.henrybear327.com /etc/nginx/sites-enabled/test.henrybear327.com
+
+# basic auth file
+COPY .htpasswd /etc/nginx/conf.d
+
+# SSL stuff
+COPY henrybear327.com.key /etc/ssl/private
+COPY henrybear327.com.pem /etc/ssl/certs
+
+# expose port 80 for HTTP (443 for HTTPS)
+EXPOSE 443
+
+# start nginx
+CMD [&#34;nginx&#34;, &#34;-g&#34;, &#34;daemon off;&#34;]</code></pre></td></tr></table>
+</div>
+</div></li>
+</ul></li>
+</ul>
+
+<p>Turn your <code>SSL</code> to <code>full(strict)</code> and set <code>Always Use HTTPS</code> to <code>on</code>!</p>
+
+<p>Well done! Now the site is on HTTPS!</p>
+    </div>
+
+    <div class="post-copyright">
+  <p class="copyright-item">
+    <span class="item-title">Author</span>
+    <span class="item-content">Chun-Hung Tseng</span>
+  </p>
+  <p class="copyright-item">
+    <span class="item-title">LastMod</span>
+    <span class="item-content">2019-03-12</span>
+  </p>
+  
+  <p class="copyright-item">
+    <span class="item-title">License</span>
+    <span class="item-content"><a rel="license noopener" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank">CC BY-NC-ND 4.0</a></span>
+  </p>
+</div><footer class="post-footer">
+      <div class="post-tags">
+          <a href="/blog/tags/docker/">docker</a>
+          <a href="/blog/tags/hackmd/">hackmd</a>
+          <a href="/blog/tags/nginx/">nginx</a>
+          </div>
+      <nav class="post-nav">
+        
+        <a class="next" href="/blog/post/uva/10308/">
+            <span class="next-text nav-default">UVa 10308</span>
+            <span class="next-text nav-mobile">Next</span>
+            <i class="iconfont icon-right"></i>
+          </a>
+      </nav>
+    </footer>
+  </article>
+        </div>
+        
+
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="social-links">
+      <a href="https://www.linkedin.com/in/chun-hung-tseng/" class="iconfont icon-linkedin" title="linkedin"></a>
+      <a href="https://github.com/henrybear327?tab=repositories" class="iconfont icon-github" title="github"></a>
+  <a href="https://henrybear327.github.io/blog/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
+</div>
+
+<div class="copyright">
+  <span class="power-by">
+    Powered by <a class="hexo-link" href="https://gohugo.io">Hugo</a>
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    Theme - 
+    <a class="theme-link" href="https://github.com/olOwOlo/hugo-theme-even">Even</a>
+  </span>
+
+  
+
+  <span class="copyright-year">
+    &copy; 
+    2019
+    <span class="heart">
+      <i class="iconfont icon-heart"></i>
+    </span>
+    <span class="author">Chun-Hung Tseng</span>
+  </span>
+</div>
+    </footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont icon-up"></i>
+    </div>
+  </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slideout@1.0.1/dist/slideout.min.js" integrity="sha256-t+zJ/g8/KXIJMjSVQdnibt4dlaDxc9zXr/9oNPeWqdg=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.js" integrity="sha256-XVLffZaxoWfGUEbdzuLi7pwaUJv1cecsQJQqGLe7axY=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="/blog/dist/even.26188efa.min.js"></script>
+  <script type="text/javascript">
+    window.MathJax = {
+      tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]},
+      TeX: {equationNumbers: {autoNumber: "AMS"}},
+      showProcessingMessages: false,
+      messageStyle: 'none'
+    };
+  </script>
+  <script async src="https://cdn.jsdelivr.net/npm/mathjax@2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"  integrity="sha256-nvJJv9wWKEm88qvoQl9ekL2J+k/RWIsaSScxxlsrv8k=" crossorigin="anonymous"></script>
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-81902328-3', 'auto');
+	ga('set', 'anonymizeIp', true);
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+
+
+
+
+
+</body>
+</html>
