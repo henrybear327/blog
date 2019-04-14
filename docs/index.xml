@@ -6,10 +6,30 @@
     <description>Recent content on Coding Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 12 Mar 2019 23:45:32 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 14 Apr 2019 23:08:46 +0800</lastBuildDate>
     
 	<atom:link href="https://henrybear327.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Atcoder ABC124</title>
+      <link>https://henrybear327.github.io/blog/post/atcoder/abc124/</link>
+      <pubDate>Sun, 14 Apr 2019 23:08:46 +0800</pubDate>
+      
+      <guid>https://henrybear327.github.io/blog/post/atcoder/abc124/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://atcoder.jp/contests/abc124&#34;&gt;題目&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Atcoder ABC123</title>
+      <link>https://henrybear327.github.io/blog/post/atcoder/abc123/</link>
+      <pubDate>Sun, 14 Apr 2019 22:50:14 +0800</pubDate>
+      
+      <guid>https://henrybear327.github.io/blog/post/atcoder/abc123/</guid>
+      <description>&lt;p&gt;這一回超難啊！觀察題超棒，演算法題更是把臉打得腫腫的啊QQ&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://atcoder.jp/contests/abc123/tasks&#34;&gt;題目&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Hosting Hackmd and Nginx inside Docker containers</title>
