@@ -3,7 +3,50 @@
   
   <url>
     <loc>https://henrybear327.github.io/blog/categories/atcoder/</loc>
-    <lastmod>2019-04-14T23:08:46+08:00</lastmod>
+    <lastmod>2019-04-18T09:36:47+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://henrybear327.github.io/blog/post/atcoder/abc121/</loc>
+    <lastmod>2019-04-18T09:36:47+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://henrybear327.github.io/blog/categories/</loc>
+    <lastmod>2019-04-18T09:36:47+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://henrybear327.github.io/blog/</loc>
+    <lastmod>2019-04-18T09:36:47+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://henrybear327.github.io/blog/post/</loc>
+    <lastmod>2019-04-18T09:36:47+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://henrybear327.github.io/blog/tags/</loc>
+    <lastmod>2019-04-18T09:36:47+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://henrybear327.github.io/blog/tags/math/</loc>
+    <lastmod>2019-04-18T09:36:47+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://henrybear327.github.io/blog/tags/xor/</loc>
+    <lastmod>2019-04-18T09:36:47+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -15,31 +58,7 @@
   </url>
   
   <url>
-    <loc>https://henrybear327.github.io/blog/categories/</loc>
-    <lastmod>2019-04-14T23:08:46+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://henrybear327.github.io/blog/</loc>
-    <lastmod>2019-04-14T23:08:46+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://henrybear327.github.io/blog/tags/observation/</loc>
-    <lastmod>2019-04-14T23:08:46+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://henrybear327.github.io/blog/post/</loc>
-    <lastmod>2019-04-14T23:08:46+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://henrybear327.github.io/blog/tags/</loc>
     <lastmod>2019-04-14T23:08:46+08:00</lastmod>
     <priority>0</priority>
   </url>
@@ -137,12 +156,6 @@
     <lastmod>2019-01-26T18:10:21+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://henrybear327.github.io/blog/tags/math/</loc>
-    <lastmod>2019-01-26T18:10:21+08:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>

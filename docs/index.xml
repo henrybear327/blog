@@ -6,10 +6,19 @@
     <description>Recent content on Coding Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 14 Apr 2019 23:08:46 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 18 Apr 2019 09:36:47 +0800</lastBuildDate>
     
 	<atom:link href="https://henrybear327.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Atcoder ABC121</title>
+      <link>https://henrybear327.github.io/blog/post/atcoder/abc121/</link>
+      <pubDate>Thu, 18 Apr 2019 09:36:47 +0800</pubDate>
+      
+      <guid>https://henrybear327.github.io/blog/post/atcoder/abc121/</guid>
+      <description>&lt;p&gt;這回只有 D 比較難而已，但是 D 真的很漂亮。&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Atcoder ABC124</title>
