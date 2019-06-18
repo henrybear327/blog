@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title>CF 1102A - Coding Blog</title>
+  <title>2019 CCU 程式設計競賽 - Coding Blog</title>
   <meta name="renderer" content="webkit" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
 
@@ -16,9 +16,7 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
 
 
-<meta name="author" content="Chun-Hung Tseng" /><meta name="description" content="Integer Sequence Dividing
-將 $[1, n]$ 所有數分兩堆，使得兩堆之間的差最小
-" /><meta name="keywords" content="Competitive programming, Notes, Codeforces, UVa, Leetcode" />
+<meta name="author" content="Chun-Hung Tseng" /><meta name="description" content="" /><meta name="keywords" content="Competitive programming, Notes, Codeforces, UVa, Leetcode" />
 
 
 
@@ -28,7 +26,7 @@
 <meta name="generator" content="Hugo 0.55.6 with even 4.0.0" />
 
 
-<link rel="canonical" href="https://henrybear327.github.io/blog/post/codeforces/1102a/" />
+<link rel="canonical" href="https://henrybear327.github.io/blog/post/pineapple/judge/" />
 <link rel="apple-touch-icon" sizes="180x180" href="/blog/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/blog/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/blog/favicon-16x16.png">
@@ -40,33 +38,27 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
 
 
-<meta property="og:title" content="CF 1102A" />
-<meta property="og:description" content="Integer Sequence Dividing
-
-將 $[1, n]$ 所有數分兩堆，使得兩堆之間的差最小" />
+<meta property="og:title" content="2019 CCU 程式設計競賽" />
+<meta property="og:description" content="" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://henrybear327.github.io/blog/post/codeforces/1102a/" />
-<meta property="article:published_time" content="2019-01-26T14:48:32&#43;08:00"/>
-<meta property="article:modified_time" content="2019-01-26T14:48:32&#43;08:00"/>
+<meta property="og:url" content="https://henrybear327.github.io/blog/post/pineapple/judge/" />
+<meta property="article:published_time" content="2019-06-18T11:06:09&#43;02:00"/>
+<meta property="article:modified_time" content="2019-06-18T11:06:09&#43;02:00"/>
 
-<meta itemprop="name" content="CF 1102A">
-<meta itemprop="description" content="Integer Sequence Dividing
-
-將 $[1, n]$ 所有數分兩堆，使得兩堆之間的差最小">
+<meta itemprop="name" content="2019 CCU 程式設計競賽">
+<meta itemprop="description" content="">
 
 
-<meta itemprop="datePublished" content="2019-01-26T14:48:32&#43;08:00" />
-<meta itemprop="dateModified" content="2019-01-26T14:48:32&#43;08:00" />
-<meta itemprop="wordCount" content="406">
+<meta itemprop="datePublished" content="2019-06-18T11:06:09&#43;02:00" />
+<meta itemprop="dateModified" content="2019-06-18T11:06:09&#43;02:00" />
+<meta itemprop="wordCount" content="1085">
 
 
 
-<meta itemprop="keywords" content="math,討論題," />
+<meta itemprop="keywords" content="docker,domjudge," />
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="CF 1102A"/>
-<meta name="twitter:description" content="Integer Sequence Dividing
-
-將 $[1, n]$ 所有數分兩堆，使得兩堆之間的差最小"/>
+<meta name="twitter:title" content="2019 CCU 程式設計競賽"/>
+<meta name="twitter:description" content=""/>
 
 <!--[if lte IE 9]>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -129,15 +121,15 @@
           <article class="post">
     
     <header class="post-header">
-      <h1 class="post-title">CF 1102A</h1>
+      <h1 class="post-title">2019 CCU 程式設計競賽</h1>
 
       <div class="post-meta">
-        <span class="post-time"> 2019-01-26 </span>
+        <span class="post-time"> 2019-06-18 </span>
         <div class="post-category">
-            <a href="/blog/categories/codeforces/"> Codeforces </a>
+            <a href="/blog/categories/ccu-pineapple-contest/"> CCU Pineapple Contest </a>
             </div>
-          <span class="more-meta"> 406 words </span>
-          <span class="more-meta"> 1 min read </span>
+          <span class="more-meta"> 1085 words </span>
+          <span class="more-meta"> 3 mins read </span>
         
       </div>
     </header>
@@ -147,80 +139,112 @@
   <div class="post-toc-content always-active">
     <nav id="TableOfContents">
 <ul>
-<li><a href="#題解">題解</a>
+<li><a href="#judge-環境">Judge 環境</a>
 <ul>
-<li><a href="#ac-code">AC Code</a></li>
+<li><a href="#os">OS</a></li>
+<li><a href="#賽場狀況總評">賽場狀況總評</a></li>
+</ul></li>
+<li><a href="#domjudge">Domjudge</a>
+<ul>
+<li><a href="#docker-坑坑">Docker 坑坑</a>
+<ul>
+<li><a href="#docker-for-windows">Docker for windows</a></li>
+<li><a href="#multicore-issue">Multicore issue</a></li>
+</ul></li>
+<li><a href="#fork-bomb">Fork bomb</a>
+<ul>
+<li><a href="#安裝-python3-java">安裝 python3 + Java</a></li>
+<li><a href="#mle">MLE</a></li>
+</ul></li>
+<li><a href="#ansible-openshift">Ansible + Openshift</a></li>
 </ul></li>
 </ul>
 </nav>
   </div>
 </div>
     <div class="post-content">
-      <p><a href="https://codeforces.com/contest/1102/problem/A">Integer Sequence Dividing</a></p>
+      <h1 id="judge-環境">Judge 環境</h1>
 
-<p>將 $[1, n]$ 所有數分兩堆，使得兩堆之間的差最小</p>
+<blockquote>
+<p>作者: 陳鐸元 曾俊宏</p>
+</blockquote>
 
-<h1 id="題解">題解</h1>
+<p>感謝 吳邦一 高孟駿老師，還有林俊男先生，以及中正大學電子計算機中心工讀生們的幫忙，我們才得已如期地完成裁判室的系統架設與部屬。</p>
 
-<p>有一個觀察是: 四個四個一組來看的話，舉個例來說 $1, 2, 3, 4$ 可以分成 $1, 4$ 和 $2, 3$ 兩組，使得差值為$0$。</p>
+<h2 id="os">OS</h2>
 
-<p>所以對於 $[1, n]$ 區間，如果對於 $mod\ 4$ 來討論</p>
+<p>今年的 judge OS 跟 選手 OS 是不同的。</p>
 
-<ol>
-<li>餘數0 $\rightarrow$ 可以完美分堆，所以差為$0$</li>
-<li>餘數1 $\rightarrow$ 把$1$拿出來，其餘人可以四個四個一組，所以差為$1$</li>
-<li>餘數2 $\rightarrow$ 中間兩數字不參與分堆，其餘人可以四個四個一組，所以差為中間兩數字之差，也是$1$</li>
-<li>餘數3 $\rightarrow$ 舉例子看，以$1, 2, 3, 4, 5, 6, 7$來說, $1$先不參與分組，$[2, 7]$的中間兩數字也不參與分組($4, 5$)，其餘人可以四個四個一組，所以目前差為$0$。剩餘的三個數字($1, 4, 5$)，因為中間兩數字差為$\mid 5-4 \mid = 1$，可以把剛剛留下的$1$分給小的那堆(亦即$1+4$)，所以可以將差值從$1$再降為$0$。</li>
-</ol>
+<p>Domjudge 只有對 linux 有原生的支援，所以 judgehost 是跑在 linux 上面。</p>
 
-<h2 id="ac-code">AC Code</h2>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code class="language-c++" data-lang="c++"><span class="lnt"> 1
-</span><span class="lnt"> 2
-</span><span class="lnt"> 3
-</span><span class="lnt"> 4
-</span><span class="lnt"> 5
-</span><span class="lnt"> 6
-</span><span class="lnt"> 7
-</span><span class="lnt"> 8
-</span><span class="lnt"> 9
-</span><span class="lnt">10
-</span><span class="lnt">11
-</span><span class="lnt">12
-</span><span class="lnt">13
-</span><span class="lnt">14
-</span><span class="lnt">15
-</span><span class="lnt">16
-</span><span class="lnt">17
-</span><span class="lnt">18
-</span><span class="lnt">19
-</span><span class="lnt">20
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-c++" data-lang="c++"><span class="cp">#include</span> <span class="cpf">&lt;bits/stdc++.h&gt;</span><span class="cp">
-</span><span class="cp"></span>
-<span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
+<p>由於考慮到比賽屬於推廣性質，所以選手機台仍是使用 Windows 10。</p>
 
-<span class="k">typedef</span> <span class="kt">long</span> <span class="kt">long</span> <span class="n">ll</span><span class="p">;</span>
-<span class="k">typedef</span> <span class="n">pair</span><span class="o">&lt;</span><span class="kt">int</span><span class="p">,</span> <span class="kt">int</span><span class="o">&gt;</span> <span class="n">ii</span><span class="p">;</span>
+<h2 id="賽場狀況總評">賽場狀況總評</h2>
 
-<span class="kt">int</span> <span class="nf">main</span><span class="p">()</span>
-<span class="p">{</span>
-	<span class="kt">int</span> <span class="n">n</span><span class="p">;</span>
-	<span class="n">scanf</span><span class="p">(</span><span class="s">&#34;%d&#34;</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">n</span><span class="p">);</span>
+<p>TODO: fingers crossed</p>
 
-	<span class="n">n</span> <span class="o">%=</span> <span class="mi">4</span><span class="p">;</span>
-	<span class="k">if</span> <span class="p">(</span><span class="n">n</span> <span class="o">==</span> <span class="mi">1</span> <span class="o">||</span> <span class="n">n</span> <span class="o">==</span> <span class="mi">2</span><span class="p">)</span>
-		<span class="n">printf</span><span class="p">(</span><span class="s">&#34;1</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">);</span>
-	<span class="k">else</span>
-		<span class="n">printf</span><span class="p">(</span><span class="s">&#34;0</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">);</span>
+<h1 id="domjudge">Domjudge</h1>
 
-	<span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
-<span class="p">}</span>
-</code></pre></td></tr></table>
-</div>
-</div>
+<p>今年是第一次使用 DomJudge 當作校內賽的比賽平台，運行的平台則是採用 Fedora 30 + official docker image。比起原生的機器，使用 docker 在效能沒有顯著差距，但是部署上，讓我們得以簡單的 scale 整個系統到多台電腦上。不然安裝 domjudge 很曠日廢時啊！</p>
+
+<p>但是 Docker 版的 domjudge 有幾個坑&hellip; 我們來一一細數&hellip;</p>
+
+<h2 id="docker-坑坑">Docker 坑坑</h2>
+
+<h3 id="docker-for-windows">Docker for windows</h3>
+
+<p>畢竟 docker for windows 還是跑在 hyperV 上，經過觀察，綁 core 在虛擬機內部可行，但是在 出到 windows 後就沒效了。而且只跑一個 judgehost 大概就會吃掉 windows 40% 左右的 CPU resource。</p>
+
+<p>所以最後只好裝起了 Fedora 30 來當 judge 的 host OS，也就如預期了。</p>
+
+<h3 id="multicore-issue">Multicore issue</h3>
+
+<p>multiple judgehost per machine 其實也不太可行，原因不明。</p>
+
+<p>在指定一個 judgehost 綁定一個 core 的情況下 （利用daemonID指定），越多 judgehost 一起同時進行 judging 的話，cputime 是保持幾乎一樣，但是 wall time 是爆炸性成長（3 個 judgehost 一起 judge 的話有機會慢到一倍之多！）</p>
+
+<p>無解，最後只能一機器一個judge。</p>
+
+<h2 id="fork-bomb">Fork bomb</h2>
+
+<p>預設的 judgehost image 是會被 fork bomb 打死的，因為 container 裡面並沒有 init process。</p>
+
+<p>解決方法很簡單，docker run 時指定一下 pid 1 要是 init process 即可。</p>
+
+<h3 id="安裝-python3-java">安裝 python3 + Java</h3>
+
+<p>安裝新的程式語言，在 chroot 外安裝完後，要使用 <code>dj_run_chroot</code> 再裝一次，這樣這個新增的語言才能被拿來 judge。</p>
+
+<p>以下是測試賽前一天火燒屁股的一段故事。</p>
+
+<p>因為 <code>dj_run_chroot</code> 要 mount 東西，但是 docker build 的過程是不允許 mount 的，所以只好多階段的進行。先是把要安裝的東西寫在 shell script 中，之後再放入 dockerfile 的 CMD 裡</p>
+
+<p>原本想說，在 judge 起來後，<code>sudo docker exec -it docker_judgehost-0_1 /bin/bash</code>進去 judgehost container，跑了<code>./opt/domjudge/judgehost/bin/dj_run_chroot &quot;apt update &amp;&amp; apt -y install python3 default-jre default-jdk&quot;</code> 和 <code>apt update &amp;&amp; apt -y install python3  default-jre default-jdk</code>，commit 一下目前的 judgehost 狀態，之後推上dockerhub，就可以收工了。</p>
+
+<p>結果，judgehost 一換電腦，就&hellip;
+<img src="https://i.imgur.com/XlW4HD2.png" alt="cgroup error" /></p>
+
+<p>慘了，奮戰一番後發現，因為 judgehost container 啟動時，<code>start.sh</code> 有 call <code>create_cgroup</code>，所以 commit 的 image 已經有著不該帶著的 cgroup 資訊！也因此換電腦執行 judging 任務時，一動到 cgroup 就死了&hellip;</p>
+
+<p>所以只好分階段，build image啦QQ</p>
+
+<blockquote>
+<p>TODO: 補上 code</p>
+</blockquote>
+
+<h3 id="mle">MLE</h3>
+
+<p>無解。</p>
+
+<p>會直接被判成 RE。</p>
+
+<h2 id="ansible-openshift">Ansible + Openshift</h2>
+
+<p>這次最刺激的事情之一，請 SuperDanby 解說。</p>
+
+<p>故事大概是&hellip; 裁判室有20台左右的電腦，部署可以用 Ansible 解決，但是 SuperDanby 想要更懶的去開關 judgehost，所以 Openshift 就進場了。</p>
+
+<p>TODO: add stuff</p>
     </div>
 
     <div class="post-copyright">
@@ -231,7 +255,7 @@
   <p class="copyright-item">
     <span class="item-title">LastMod</span>
     <span class="item-content">
-        2019-01-26
+        2019-06-18
         
     </span>
   </p>
@@ -243,16 +267,16 @@
 </div>
 <footer class="post-footer">
       <div class="post-tags">
-          <a href="/blog/tags/math/">math</a>
-          <a href="/blog/tags/%E8%A8%8E%E8%AB%96%E9%A1%8C/">討論題</a>
+          <a href="/blog/tags/docker/">docker</a>
+          <a href="/blog/tags/domjudge/">domjudge</a>
           </div>
       <nav class="post-nav">
-        <a class="prev" href="/blog/post/codeforces/1102b/">
-            <i class="iconfont icon-left"></i>
-            <span class="prev-text nav-default">CF 1102B</span>
-            <span class="prev-text nav-mobile">Prev</span>
-          </a>
         
+        <a class="next" href="/blog/post/atcoder/abc120/">
+            <span class="next-text nav-default">Atcoder ABC120</span>
+            <span class="next-text nav-mobile">Next</span>
+            <i class="iconfont icon-right"></i>
+          </a>
       </nav>
     </footer>
   </article>
