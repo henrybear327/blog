@@ -23,10 +23,6 @@ Domjudge 只有對 linux 有原生的支援，所以 judgehost 是跑在 linux �
 
 由於考慮到比賽屬於推廣性質，所以選手機台仍是使用 Windows 10。
 
-## 賽場狀況總評
-
-TODO: fingers crossed
-
 # Domjudge 
 
 今年是第一次使用 DomJudge 當作校內賽的比賽平台，運行的平台則是採用 Fedora 30 + official docker image。比起原生的機器，使用 docker 在效能沒有顯著差距，但是部署上，讓我們得以簡單的 scale 整個系統到多台電腦上。不然安裝 domjudge 很曠日廢時啊！
@@ -82,8 +78,6 @@ multiple judgehost per machine 其實也不太可行，原因不明。
 
 ## Ansible + Openshift
 
-這次最刺激的事情之一，請 SuperDanby 解說。
+這次最刺激的事情之一，請 [SuperDanby 解說](https://superdanby.github.io/Blog/setup-a-multi-node-local-openshift-cluster.html#using-openshift)。
 
 故事大概是... 裁判室有20台左右的電腦，部署可以用 Ansible 解決，但是 SuperDanby 想要更懶的去開關 judgehost，所以 Openshift 就進場了。
-
-TODO: add stuff
