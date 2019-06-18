@@ -68,8 +68,6 @@ multiple judgehost per machine 其實也不太可行，原因不明。
 
 所以只好分階段，build image啦QQ 
 
-> TODO: 補上 code
-
 ### MLE 
 
 無解。
