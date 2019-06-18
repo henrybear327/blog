@@ -7,6 +7,10 @@ tags: ["docker", "domjudge"]
 categories: ["CCU Pineapple Contest"]
 ---
 
+2019 中正大學程式設計競賽總算落幕啦！今年跟 SuperDanby 一起架設了競賽環境，過程中踩過了許多的坑，值得我們一起細數與回味 XD
+
+請先看看 SuperDanby 大神的[競賽環境架設與回憶錄](https://superdanby.github.io/Blog/setup-a-multi-node-local-openshift-cluster.html#using-openshift)
+
 <!--more-->
 
 # Judge 環境
@@ -73,9 +77,3 @@ multiple judgehost per machine 其實也不太可行，原因不明。
 無解。
 
 會直接被判成 RE。
-
-## Ansible + Openshift
-
-這次最刺激的事情之一，請 [SuperDanby 解說](https://superdanby.github.io/Blog/setup-a-multi-node-local-openshift-cluster.html#using-openshift)。
-
-故事大概是... 裁判室有20台左右的電腦，部署可以用 Ansible 解決，但是 SuperDanby 想要更懶的去開關 judgehost，所以 Openshift 就進場了。
