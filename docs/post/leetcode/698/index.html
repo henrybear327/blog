@@ -51,7 +51,7 @@
 
 <meta itemprop="datePublished" content="2019-10-18T12:00:04&#43;02:00" />
 <meta itemprop="dateModified" content="2019-10-18T12:00:04&#43;02:00" />
-<meta itemprop="wordCount" content="306">
+<meta itemprop="wordCount" content="347">
 
 
 
@@ -128,7 +128,7 @@
         <div class="post-category">
             <a href="/blog/categories/leetcode/"> Leetcode </a>
             </div>
-          <span class="more-meta"> 306 words </span>
+          <span class="more-meta"> 347 words </span>
           <span class="more-meta"> 1 min read </span>
         
       </div>
@@ -162,6 +162,8 @@
 </div>
 </div>
 <p>想了半天，覺得太猛啦！他這個剪支，可以把所有的空缺處都放在後段，也保證會連續出現在後面。</p>
+
+<p>另外就是 sorting，由大到小。</p>
 
 <h1 id="ac-code">AC Code</h1>
 <div class="highlight"><div class="chroma">
@@ -219,6 +221,12 @@
 </span><span class="lnt">51
 </span><span class="lnt">52
 </span><span class="lnt">53
+</span><span class="lnt">54
+</span><span class="lnt">55
+</span><span class="lnt">56
+</span><span class="lnt">57
+</span><span class="lnt">58
+</span><span class="lnt">59
 </span></code></pre></td>
 <td class="lntd">
 <pre class="chroma"><code class="language-c++" data-lang="c++"><span class="k">class</span><span class="err"> </span><span class="nc">Solution</span>
@@ -228,27 +236,31 @@
     <span class="kt">bool</span> <span class="nf">dfs</span><span class="p">(</span><span class="kt">int</span> <span class="n">depth</span><span class="p">,</span> <span class="kt">int</span> <span class="n">arr</span><span class="p">[],</span> <span class="k">const</span> <span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span> <span class="o">&amp;</span><span class="n">nums</span><span class="p">,</span> <span class="kt">int</span> <span class="n">k</span><span class="p">,</span> <span class="kt">int</span> <span class="n">target</span><span class="p">)</span>
     <span class="p">{</span>
         <span class="k">if</span> <span class="p">(</span><span class="n">depth</span> <span class="o">==</span> <span class="p">(</span><span class="kt">int</span><span class="p">)</span><span class="n">nums</span><span class="p">.</span><span class="n">size</span><span class="p">())</span> <span class="p">{</span>
+            <span class="cm">/*
+</span><span class="cm">            for (int i = 0; i &lt; nums.size(); i++) {
+</span><span class="cm">                printf(&#34;%d %d\n&#34;, i, arr[i]);
+</span><span class="cm">            }
+</span><span class="cm">            */</span>
             <span class="k">return</span> <span class="nb">true</span><span class="p">;</span>
         <span class="p">}</span>
 
         <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">k</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
             <span class="n">arr</span><span class="p">[</span><span class="n">depth</span><span class="p">]</span> <span class="o">=</span> <span class="n">i</span><span class="p">;</span>
             <span class="n">sum</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">+=</span> <span class="n">nums</span><span class="p">[</span><span class="n">depth</span><span class="p">];</span>
-
-            <span class="k">if</span> <span class="p">(</span><span class="n">sum</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">&gt;</span> <span class="n">target</span><span class="p">)</span> <span class="p">{</span>
+            
+            <span class="k">if</span><span class="p">(</span><span class="n">sum</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">&gt;</span> <span class="n">target</span><span class="p">)</span> <span class="p">{</span>
                 <span class="c1">// skip
 </span><span class="c1"></span>            <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
                 <span class="k">if</span> <span class="p">(</span><span class="n">dfs</span><span class="p">(</span><span class="n">depth</span> <span class="o">+</span> <span class="mi">1</span><span class="p">,</span> <span class="n">arr</span><span class="p">,</span> <span class="n">nums</span><span class="p">,</span> <span class="n">k</span><span class="p">,</span> <span class="n">target</span><span class="p">))</span>
                     <span class="k">return</span> <span class="nb">true</span><span class="p">;</span>
             <span class="p">}</span>
-
+            
             <span class="n">sum</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">-=</span> <span class="n">nums</span><span class="p">[</span><span class="n">depth</span><span class="p">];</span>
             <span class="n">arr</span><span class="p">[</span><span class="n">depth</span><span class="p">]</span> <span class="o">=</span> <span class="o">-</span><span class="mi">1</span><span class="p">;</span>
-
-            <span class="c1">// we guarantee the sum[i] = 0 will be consecutive, and towards the end
-</span><span class="c1"></span>            <span class="c1">// only!
-</span><span class="c1"></span>            <span class="k">if</span> <span class="p">(</span><span class="n">sum</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">==</span> <span class="mi">0</span><span class="p">)</span>
-                <span class="k">break</span><span class="p">;</span>
+            
+            <span class="c1">// we guarantee the sum[i] = 0 will be consecutive, and towards the end only!
+</span><span class="c1"></span>            <span class="k">if</span><span class="p">(</span><span class="n">sum</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">==</span> <span class="mi">0</span><span class="p">)</span> <span class="c1">// WTF?
+</span><span class="c1"></span>                <span class="k">break</span><span class="p">;</span>
         <span class="p">}</span>
 
         <span class="k">return</span> <span class="nb">false</span><span class="p">;</span>
@@ -266,9 +278,11 @@
         <span class="kt">int</span> <span class="n">target</span> <span class="o">=</span> <span class="n">tot</span> <span class="o">/</span> <span class="n">k</span><span class="p">;</span>
         <span class="kt">int</span> <span class="n">arr</span><span class="p">[</span><span class="n">nums</span><span class="p">.</span><span class="n">size</span><span class="p">()];</span>
         <span class="n">sum</span> <span class="o">=</span> <span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span><span class="p">(</span><span class="n">k</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
-
-        <span class="k">for</span> <span class="p">(</span><span class="k">auto</span> <span class="nl">i</span> <span class="p">:</span> <span class="n">nums</span><span class="p">)</span>
-            <span class="k">if</span> <span class="p">(</span><span class="n">i</span> <span class="o">&gt;</span> <span class="n">target</span><span class="p">)</span>
+        
+        <span class="n">sort</span><span class="p">(</span><span class="n">nums</span><span class="p">.</span><span class="n">begin</span><span class="p">(),</span> <span class="n">nums</span><span class="p">.</span><span class="n">end</span><span class="p">());</span>
+        <span class="n">reverse</span><span class="p">(</span><span class="n">nums</span><span class="p">.</span><span class="n">begin</span><span class="p">(),</span> <span class="n">nums</span><span class="p">.</span><span class="n">end</span><span class="p">());</span>
+        <span class="k">for</span><span class="p">(</span><span class="k">auto</span> <span class="nl">i</span> <span class="p">:</span> <span class="n">nums</span><span class="p">)</span> 
+            <span class="k">if</span><span class="p">(</span><span class="n">i</span> <span class="o">&gt;</span> <span class="n">target</span><span class="p">)</span>
                 <span class="k">return</span> <span class="nb">false</span><span class="p">;</span>
 
         <span class="k">return</span> <span class="nf">dfs</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">arr</span><span class="p">,</span> <span class="n">nums</span><span class="p">,</span> <span class="n">k</span><span class="p">,</span> <span class="n">target</span><span class="p">);</span>
