@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Math on Coding Blog</title>
+    <title>math on Coding Blog</title>
     <link>https://henrybear327.github.io/blog/tags/math/</link>
-    <description>Recent content in Math on Coding Blog</description>
+    <description>Recent content in math on Coding Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Thu, 18 Apr 2019 09:36:47 +0800</lastBuildDate>

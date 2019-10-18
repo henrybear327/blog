@@ -3,7 +3,56 @@
   
   <url>
     <loc>https://henrybear327.github.io/blog/categories/</loc>
-    <lastmod>2019-08-25T23:12:26-07:00</lastmod>
+    <lastmod>2019-10-18T12:00:04+02:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://henrybear327.github.io/blog/</loc>
+    <lastmod>2019-10-18T12:00:04+02:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://henrybear327.github.io/blog/tags/dfs/</loc>
+    <lastmod>2019-10-18T12:00:04+02:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://henrybear327.github.io/blog/tags/enumeration/</loc>
+    <lastmod>2019-10-18T12:00:04+02:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://henrybear327.github.io/blog/categories/leetcode/</loc>
+    <lastmod>2019-10-18T12:00:04+02:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://henrybear327.github.io/blog/post/leetcode/698/</loc>
+    <lastmod>2019-10-18T12:00:04+02:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://henrybear327.github.io/blog/post/</loc>
+    <lastmod>2019-10-18T12:00:04+02:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://henrybear327.github.io/blog/tags/</loc>
+    <lastmod>2019-10-18T12:00:04+02:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -23,13 +72,6 @@
   </url>
   
   <url>
-    <loc>https://henrybear327.github.io/blog/</loc>
-    <lastmod>2019-08-25T23:12:26-07:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
     <loc>https://henrybear327.github.io/blog/tags/dp/</loc>
     <lastmod>2019-08-25T23:12:26-07:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -38,20 +80,6 @@
   
   <url>
     <loc>https://henrybear327.github.io/blog/tags/observation/</loc>
-    <lastmod>2019-08-25T23:12:26-07:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://henrybear327.github.io/blog/post/</loc>
-    <lastmod>2019-08-25T23:12:26-07:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://henrybear327.github.io/blog/tags/</loc>
     <lastmod>2019-08-25T23:12:26-07:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
