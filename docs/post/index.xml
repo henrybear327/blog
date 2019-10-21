@@ -6,10 +6,29 @@
     <description>Recent content in Posts on Coding Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 18 Oct 2019 12:00:04 +0200</lastBuildDate>
+    <lastBuildDate>Mon, 21 Oct 2019 18:04:47 +0200</lastBuildDate>
     
 	<atom:link href="https://henrybear327.github.io/blog/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Leetcode 1228</title>
+      <link>https://henrybear327.github.io/blog/post/leetcode/1228/</link>
+      <pubDate>Mon, 21 Oct 2019 18:04:47 +0200</pubDate>
+      
+      <guid>https://henrybear327.github.io/blog/post/leetcode/1228/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://leetcode.com/problems/missing-number-in-arithmetic-progression/&#34;&gt;1228. Missing Number In Arithmetic Progression&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Leetcode 1232</title>
+      <link>https://henrybear327.github.io/blog/post/leetcode/1232/</link>
+      <pubDate>Mon, 21 Oct 2019 18:02:19 +0200</pubDate>
+      
+      <guid>https://henrybear327.github.io/blog/post/leetcode/1232/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://leetcode.com/problems/check-if-it-is-a-straight-line/&#34;&gt;1232. Check If It Is a Straight Line
+&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Leetcode 698</title>
