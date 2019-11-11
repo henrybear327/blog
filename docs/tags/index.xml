@@ -6,17 +6,53 @@
     <description>Recent content in Tags on Coding Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 05 Nov 2019 10:48:17 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 11 Nov 2019 18:33:19 +0800</lastBuildDate>
     
 	<atom:link href="https://henrybear327.github.io/blog/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>enumeration</title>
+      <link>https://henrybear327.github.io/blog/tags/enumeration/</link>
+      <pubDate>Mon, 11 Nov 2019 18:33:19 +0800</pubDate>
+      
+      <guid>https://henrybear327.github.io/blog/tags/enumeration/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Math</title>
       <link>https://henrybear327.github.io/blog/tags/math/</link>
-      <pubDate>Mon, 21 Oct 2019 18:04:47 +0200</pubDate>
+      <pubDate>Mon, 11 Nov 2019 18:33:19 +0800</pubDate>
       
       <guid>https://henrybear327.github.io/blog/tags/math/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>combinatorics</title>
+      <link>https://henrybear327.github.io/blog/tags/combinatorics/</link>
+      <pubDate>Tue, 05 Nov 2019 10:48:17 +0800</pubDate>
+      
+      <guid>https://henrybear327.github.io/blog/tags/combinatorics/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>graph</title>
+      <link>https://henrybear327.github.io/blog/tags/graph/</link>
+      <pubDate>Tue, 05 Nov 2019 10:48:17 +0800</pubDate>
+      
+      <guid>https://henrybear327.github.io/blog/tags/graph/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>shortest path</title>
+      <link>https://henrybear327.github.io/blog/tags/shortest-path/</link>
+      <pubDate>Tue, 05 Nov 2019 10:48:17 +0800</pubDate>
+      
+      <guid>https://henrybear327.github.io/blog/tags/shortest-path/</guid>
       <description></description>
     </item>
     
@@ -35,15 +71,6 @@
       <pubDate>Fri, 18 Oct 2019 12:00:04 +0200</pubDate>
       
       <guid>https://henrybear327.github.io/blog/tags/dfs/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Enumeration</title>
-      <link>https://henrybear327.github.io/blog/tags/enumeration/</link>
-      <pubDate>Fri, 18 Oct 2019 12:00:04 +0200</pubDate>
-      
-      <guid>https://henrybear327.github.io/blog/tags/enumeration/</guid>
       <description></description>
     </item>
     

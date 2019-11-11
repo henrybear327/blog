@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>shortest path on Coding Blog</title>
+    <link>https://henrybear327.github.io/blog/tags/shortest-path/</link>
+    <description>Recent content in shortest path on Coding Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 05 Nov 2019 10:48:17 +0800</lastBuildDate>
+    
+	<atom:link href="https://henrybear327.github.io/blog/tags/shortest-path/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Atcoder ABC143</title>
+      <link>https://henrybear327.github.io/blog/post/atcoder/abc143/</link>
+      <pubDate>Tue, 05 Nov 2019 10:48:17 +0800</pubDate>
+      
+      <guid>https://henrybear327.github.io/blog/post/atcoder/abc143/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://atcoder.jp/contests/abc143/tasks&#34;&gt;題目&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;基本排列組合跟漂亮的最短路徑變形。&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
