@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>tree on Coding Blog</title>
+    <link>https://henrybear327.github.io/blog/tags/tree/</link>
+    <description>Recent content in tree on Coding Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 26 Nov 2019 16:54:08 +0800</lastBuildDate>
+    
+	<atom:link href="https://henrybear327.github.io/blog/tags/tree/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Atcoder ABC146</title>
+      <link>https://henrybear327.github.io/blog/post/atcoder/abc146/</link>
+      <pubDate>Tue, 26 Nov 2019 16:54:08 +0800</pubDate>
+      
+      <guid>https://henrybear327.github.io/blog/post/atcoder/abc146/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://atcoder.jp/contests/abc146&#34;&gt;題目&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

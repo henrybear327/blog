@@ -6,10 +6,19 @@
     <description>Recent content in Posts on Coding Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 11 Nov 2019 18:33:19 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 26 Nov 2019 16:54:08 +0800</lastBuildDate>
     
 	<atom:link href="https://henrybear327.github.io/blog/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Atcoder ABC146</title>
+      <link>https://henrybear327.github.io/blog/post/atcoder/abc146/</link>
+      <pubDate>Tue, 26 Nov 2019 16:54:08 +0800</pubDate>
+      
+      <guid>https://henrybear327.github.io/blog/post/atcoder/abc146/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://atcoder.jp/contests/abc146&#34;&gt;題目&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Atcoder ABC144</title>
