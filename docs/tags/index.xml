@@ -6,10 +6,28 @@
     <description>Recent content in Tags on Coding Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 26 Nov 2019 16:54:08 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 27 Nov 2019 12:48:25 +0800</lastBuildDate>
     
 	<atom:link href="https://henrybear327.github.io/blog/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>bitmask dp</title>
+      <link>https://henrybear327.github.io/blog/tags/bitmask-dp/</link>
+      <pubDate>Wed, 27 Nov 2019 12:48:25 +0800</pubDate>
+      
+      <guid>https://henrybear327.github.io/blog/tags/bitmask-dp/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>math</title>
+      <link>https://henrybear327.github.io/blog/tags/math/</link>
+      <pubDate>Wed, 27 Nov 2019 12:48:25 +0800</pubDate>
+      
+      <guid>https://henrybear327.github.io/blog/tags/math/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>dfs</title>
@@ -17,15 +35,6 @@
       <pubDate>Tue, 26 Nov 2019 16:54:08 +0800</pubDate>
       
       <guid>https://henrybear327.github.io/blog/tags/dfs/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Math</title>
-      <link>https://henrybear327.github.io/blog/tags/math/</link>
-      <pubDate>Tue, 26 Nov 2019 16:54:08 +0800</pubDate>
-      
-      <guid>https://henrybear327.github.io/blog/tags/math/</guid>
       <description></description>
     </item>
     
@@ -48,7 +57,7 @@
     </item>
     
     <item>
-      <title>Enumeration</title>
+      <title>enumeration</title>
       <link>https://henrybear327.github.io/blog/tags/enumeration/</link>
       <pubDate>Mon, 11 Nov 2019 18:33:19 +0800</pubDate>
       
@@ -102,7 +111,7 @@
     </item>
     
     <item>
-      <title>Observation</title>
+      <title>observation</title>
       <link>https://henrybear327.github.io/blog/tags/observation/</link>
       <pubDate>Sun, 25 Aug 2019 23:12:26 -0700</pubDate>
       

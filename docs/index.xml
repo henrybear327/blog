@@ -6,10 +6,21 @@
     <description>Recent content on Coding Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 26 Nov 2019 16:54:08 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 27 Nov 2019 12:48:25 +0800</lastBuildDate>
     
 	<atom:link href="https://henrybear327.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Atcoder ABC142</title>
+      <link>https://henrybear327.github.io/blog/post/atcoder/abc142/</link>
+      <pubDate>Wed, 27 Nov 2019 12:48:25 +0800</pubDate>
+      
+      <guid>https://henrybear327.github.io/blog/post/atcoder/abc142/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://atcoder.jp/contests/abc142/tasks&#34;&gt;題目&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;C 是個非常好的 c++ STL 練習題。&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Atcoder ABC146</title>
