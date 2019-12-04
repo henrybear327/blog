@@ -6,10 +6,19 @@
     <description>Recent content in Posts on Coding Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 27 Nov 2019 12:48:25 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 04 Dec 2019 17:14:56 +0800</lastBuildDate>
     
 	<atom:link href="https://henrybear327.github.io/blog/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Atcoder Sumitomo Mitsui Trust Bank Programming Contest 2019</title>
+      <link>https://henrybear327.github.io/blog/post/atcoder/sumitrust2019/</link>
+      <pubDate>Wed, 04 Dec 2019 17:14:56 +0800</pubDate>
+      
+      <guid>https://henrybear327.github.io/blog/post/atcoder/sumitrust2019/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://atcoder.jp/contests/sumitrust2019/tasks&#34;&gt;題目&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Atcoder ABC142</title>
@@ -18,7 +27,6 @@
       
       <guid>https://henrybear327.github.io/blog/post/atcoder/abc142/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://atcoder.jp/contests/abc142/tasks&#34;&gt;題目&lt;/a&gt;&lt;/p&gt;
-
 &lt;p&gt;C 是個非常好的 c++ STL 練習題。&lt;/p&gt;</description>
     </item>
     
@@ -38,7 +46,6 @@
       
       <guid>https://henrybear327.github.io/blog/post/atcoder/abc144/</guid>
       <description>&lt;p&gt;一題很騙人的暴力搜尋跟數學討論題。&lt;/p&gt;
-
 &lt;p&gt;&lt;a href=&#34;https://atcoder.jp/contests/abc144/tasks&#34;&gt;題目&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     
@@ -49,7 +56,6 @@
       
       <guid>https://henrybear327.github.io/blog/post/atcoder/abc143/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://atcoder.jp/contests/abc143/tasks&#34;&gt;題目&lt;/a&gt;&lt;/p&gt;
-
 &lt;p&gt;基本排列組合跟漂亮的最短路徑變形。&lt;/p&gt;</description>
     </item>
     
@@ -97,7 +103,6 @@
       
       <guid>https://henrybear327.github.io/blog/post/pineapple/judge/</guid>
       <description>&lt;p&gt;2019 中正大學程式設計競賽總算落幕啦！今年跟 SuperDanby 一起架設了競賽環境，過程中踩過了許多的坑，值得我們一起細數與回味 XD&lt;/p&gt;
-
 &lt;p&gt;請先看看 SuperDanby 大神的&lt;a href=&#34;https://superdanby.github.io/Blog/setup-a-multi-node-local-openshift-cluster.html#using-openshift&#34;&gt;競賽環境架設與回憶錄&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     
@@ -108,7 +113,6 @@
       
       <guid>https://henrybear327.github.io/blog/post/atcoder/abc120/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://atcoder.jp/contests/abc120/tasks&#34;&gt;題目&lt;/a&gt;&lt;/p&gt;
-
 &lt;p&gt;第四題是經典的併查集題型。&lt;/p&gt;</description>
     </item>
     
@@ -137,7 +141,6 @@
       
       <guid>https://henrybear327.github.io/blog/post/atcoder/abc123/</guid>
       <description>&lt;p&gt;這一回超難啊！觀察題超棒，演算法題更是把臉打得腫腫的啊QQ&lt;/p&gt;
-
 &lt;p&gt;&lt;a href=&#34;https://atcoder.jp/contests/abc123/tasks&#34;&gt;題目&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     
@@ -147,8 +150,7 @@
       <pubDate>Tue, 12 Mar 2019 23:45:32 +0800</pubDate>
       
       <guid>https://henrybear327.github.io/blog/post/docker/hackmd_nginx/</guid>
-      <description>&lt;p&gt;It&amp;rsquo;s my side project for learning networking and docker. :)&lt;/p&gt;
-
+      <description>&lt;p&gt;It&#39;s my side project for learning networking and docker. :)&lt;/p&gt;
 &lt;p&gt;The goal is to run both Nginx to Hackmd in Docker containers.&lt;/p&gt;</description>
     </item>
     
@@ -159,7 +161,6 @@
       
       <guid>https://henrybear327.github.io/blog/post/uva/10308/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://uva.onlinejudge.org/index.php?option=com_onlinejudge&amp;amp;Itemid=8&amp;amp;page=show_problem&amp;amp;category=&amp;amp;problem=1249&#34;&gt;Roads in the North&lt;/a&gt;&lt;/p&gt;
-
 &lt;p&gt;給你一棵樹，其中邊都帶有權重，請求出此樹上的最長鍊有多長。&lt;/p&gt;</description>
     </item>
     
@@ -170,7 +171,6 @@
       
       <guid>https://henrybear327.github.io/blog/post/codeforces/1099d/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://codeforces.com/contest/1099/problem/D&#34;&gt;Sum in the tree&lt;/a&gt;&lt;/p&gt;
-
 &lt;p&gt;給你一棵樹，每個節點上都有一個數值$a_i$，但是input卻只給你奇數層節點到根節點的prefix sum，要你求出最小的$\sum\limits_{i=1}^n a_i$&lt;/p&gt;</description>
     </item>
     
@@ -181,9 +181,7 @@
       
       <guid>https://henrybear327.github.io/blog/post/codeforces/1102e/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://codeforces.com/contest/1102/problem/E&#34;&gt;Monotonic Renumeration&lt;/a&gt;&lt;/p&gt;
-
 &lt;p&gt;給你一個給你一個數列$a$，要你把它轉化成數列$b$。其中，&lt;/p&gt;
-
 &lt;ol&gt;
 &lt;li&gt;$b_1 = 0$&lt;/li&gt;
 &lt;li&gt;如果$a_i = a_j$，那$b_i = b_j$也要成立&lt;/li&gt;
@@ -198,7 +196,6 @@
       
       <guid>https://henrybear327.github.io/blog/post/codeforces/1102d/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://codeforces.com/contest/1102/problem/D&#34;&gt;Balanced Ternary String&lt;/a&gt;&lt;/p&gt;
-
 &lt;p&gt;給你一個長度為$n$，只有$0, 1, 2$三種字元的字串。請你把字串做調整，使得每個字符都只出現$\frac n 3$次的情況下，字典順序最小。&lt;/p&gt;</description>
     </item>
     
@@ -209,7 +206,6 @@
       
       <guid>https://henrybear327.github.io/blog/post/codeforces/1102b/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://codeforces.com/contest/1102/problem/B&#34;&gt;Array K-Coloring&lt;/a&gt;&lt;/p&gt;
-
 &lt;p&gt;給定一個$n$個數字的數列，要你把每個數列中的數字都上色。其中，共有$k$個顏色，每種顏色都要被使用至少一次，且對於同一種顏色所圖到的數字都不能相同！&lt;/p&gt;</description>
     </item>
     
@@ -220,7 +216,6 @@
       
       <guid>https://henrybear327.github.io/blog/post/codeforces/1102a/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://codeforces.com/contest/1102/problem/A&#34;&gt;Integer Sequence Dividing&lt;/a&gt;&lt;/p&gt;
-
 &lt;p&gt;將 $[1, n]$ 所有數分兩堆，使得兩堆之間的差最小&lt;/p&gt;</description>
     </item>
     

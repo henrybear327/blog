@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>observation on Coding Blog</title>
+    <title>Observation on Coding Blog</title>
     <link>https://henrybear327.github.io/blog/tags/observation/</link>
-    <description>Recent content in observation on Coding Blog</description>
+    <description>Recent content in Observation on Coding Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Sun, 25 Aug 2019 23:12:26 -0700</lastBuildDate>
@@ -36,7 +36,6 @@
       
       <guid>https://henrybear327.github.io/blog/post/atcoder/abc123/</guid>
       <description>&lt;p&gt;這一回超難啊！觀察題超棒，演算法題更是把臉打得腫腫的啊QQ&lt;/p&gt;
-
 &lt;p&gt;&lt;a href=&#34;https://atcoder.jp/contests/abc123/tasks&#34;&gt;題目&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     
@@ -47,9 +46,7 @@
       
       <guid>https://henrybear327.github.io/blog/post/codeforces/1102e/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://codeforces.com/contest/1102/problem/E&#34;&gt;Monotonic Renumeration&lt;/a&gt;&lt;/p&gt;
-
 &lt;p&gt;給你一個給你一個數列$a$，要你把它轉化成數列$b$。其中，&lt;/p&gt;
-
 &lt;ol&gt;
 &lt;li&gt;$b_1 = 0$&lt;/li&gt;
 &lt;li&gt;如果$a_i = a_j$，那$b_i = b_j$也要成立&lt;/li&gt;

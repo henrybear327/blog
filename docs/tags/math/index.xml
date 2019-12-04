@@ -1,15 +1,24 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>math on Coding Blog</title>
+    <title>Math on Coding Blog</title>
     <link>https://henrybear327.github.io/blog/tags/math/</link>
-    <description>Recent content in math on Coding Blog</description>
+    <description>Recent content in Math on Coding Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 27 Nov 2019 12:48:25 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 04 Dec 2019 17:14:56 +0800</lastBuildDate>
     
 	<atom:link href="https://henrybear327.github.io/blog/tags/math/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Atcoder Sumitomo Mitsui Trust Bank Programming Contest 2019</title>
+      <link>https://henrybear327.github.io/blog/post/atcoder/sumitrust2019/</link>
+      <pubDate>Wed, 04 Dec 2019 17:14:56 +0800</pubDate>
+      
+      <guid>https://henrybear327.github.io/blog/post/atcoder/sumitrust2019/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://atcoder.jp/contests/sumitrust2019/tasks&#34;&gt;題目&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Atcoder ABC142</title>
@@ -18,7 +27,6 @@
       
       <guid>https://henrybear327.github.io/blog/post/atcoder/abc142/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://atcoder.jp/contests/abc142/tasks&#34;&gt;題目&lt;/a&gt;&lt;/p&gt;
-
 &lt;p&gt;C 是個非常好的 c++ STL 練習題。&lt;/p&gt;</description>
     </item>
     
@@ -38,7 +46,6 @@
       
       <guid>https://henrybear327.github.io/blog/post/atcoder/abc144/</guid>
       <description>&lt;p&gt;一題很騙人的暴力搜尋跟數學討論題。&lt;/p&gt;
-
 &lt;p&gt;&lt;a href=&#34;https://atcoder.jp/contests/abc144/tasks&#34;&gt;題目&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     
@@ -49,7 +56,6 @@
       
       <guid>https://henrybear327.github.io/blog/post/atcoder/abc143/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://atcoder.jp/contests/abc143/tasks&#34;&gt;題目&lt;/a&gt;&lt;/p&gt;
-
 &lt;p&gt;基本排列組合跟漂亮的最短路徑變形。&lt;/p&gt;</description>
     </item>
     
@@ -88,9 +94,7 @@
       
       <guid>https://henrybear327.github.io/blog/post/codeforces/1102e/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://codeforces.com/contest/1102/problem/E&#34;&gt;Monotonic Renumeration&lt;/a&gt;&lt;/p&gt;
-
 &lt;p&gt;給你一個給你一個數列$a$，要你把它轉化成數列$b$。其中，&lt;/p&gt;
-
 &lt;ol&gt;
 &lt;li&gt;$b_1 = 0$&lt;/li&gt;
 &lt;li&gt;如果$a_i = a_j$，那$b_i = b_j$也要成立&lt;/li&gt;
@@ -105,7 +109,6 @@
       
       <guid>https://henrybear327.github.io/blog/post/codeforces/1102a/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://codeforces.com/contest/1102/problem/A&#34;&gt;Integer Sequence Dividing&lt;/a&gt;&lt;/p&gt;
-
 &lt;p&gt;將 $[1, n]$ 所有數分兩堆，使得兩堆之間的差最小&lt;/p&gt;</description>
     </item>
     

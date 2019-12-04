@@ -25,7 +25,7 @@
 
 
 
-<meta name="generator" content="Hugo 0.59.1 with theme even" />
+<meta name="generator" content="Hugo 0.60.1 with theme even" />
 
 
 <link rel="canonical" href="https://henrybear327.github.io/blog/post/codeforces/1102b/" />
@@ -42,7 +42,6 @@
 
 <meta property="og:title" content="CF 1102B" />
 <meta property="og:description" content="Array K-Coloring
-
 給定一個$n$個數字的數列，要你把每個數列中的數字都上色。其中，共有$k$個顏色，每種顏色都要被使用至少一次，且對於同一種顏色所圖到的數字都不能相同！" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://henrybear327.github.io/blog/post/codeforces/1102b/" />
@@ -50,21 +49,16 @@
 <meta property="article:modified_time" content="2019-01-26T15:03:31+08:00" />
 <meta itemprop="name" content="CF 1102B">
 <meta itemprop="description" content="Array K-Coloring
-
 給定一個$n$個數字的數列，要你把每個數列中的數字都上色。其中，共有$k$個顏色，每種顏色都要被使用至少一次，且對於同一種顏色所圖到的數字都不能相同！">
-
-
 <meta itemprop="datePublished" content="2019-01-26T15:03:31&#43;08:00" />
 <meta itemprop="dateModified" content="2019-01-26T15:03:31&#43;08:00" />
-<meta itemprop="wordCount" content="376">
+<meta itemprop="wordCount" content="375">
 
 
 
-<meta itemprop="keywords" content="greedy,implementation," />
-<meta name="twitter:card" content="summary"/>
+<meta itemprop="keywords" content="greedy,implementation," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="CF 1102B"/>
 <meta name="twitter:description" content="Array K-Coloring
-
 給定一個$n$個數字的數列，要你把每個數列中的數字都上色。其中，共有$k$個顏色，每種顏色都要被使用至少一次，且對於同一種顏色所圖到的數字都不能相同！"/>
 
 <!--[if lte IE 9]>
@@ -135,7 +129,7 @@
         <div class="post-category">
             <a href="/blog/categories/codeforces/"> Codeforces </a>
             </div>
-          <span class="more-meta"> 376 words </span>
+          <span class="more-meta"> 375 words </span>
           <span class="more-meta"> 1 min read </span>
         
       </div>
@@ -145,39 +139,24 @@
   <h2 class="post-toc-title">Contents</h2>
   <div class="post-toc-content always-active">
     <nav id="TableOfContents">
-<ul>
-<li><a href="#題解">題解</a>
-<ul>
-<li><a href="#ac-code">AC Code</a></li>
-</ul></li>
-</ul>
+  <ul>
+    <li><a href="#ac-code">AC Code</a></li>
+  </ul>
 </nav>
   </div>
 </div>
     <div class="post-content">
       <p><a href="https://codeforces.com/contest/1102/problem/B">Array K-Coloring</a></p>
-
 <p>給定一個$n$個數字的數列，要你把每個數列中的數字都上色。其中，共有$k$個顏色，每種顏色都要被使用至少一次，且對於同一種顏色所圖到的數字都不能相同！</p>
-
-<h1 id="題解">題解</h1>
-
+<h1 id="heading">題解</h1>
 <p>把數列排序，依序塗上$1, 2, 3, &hellip;, k, 1, 2, 3, &hellip;, k, &hellip;$的顏色。</p>
-
 <p>注意，如果你是對於數列的數字分堆後，每堆的第一個數字給顏色1，每堆的第二個數字給顏色2, &hellip;，可以想想下面這筆測資，你有沒有辦法AC。</p>
+<pre><code>8 5
+1 2 3 3 3 3 4 5
+</code></pre><h2 id="ac-code">AC Code</h2>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><span class="lnt">1
-</span><span class="lnt">2
-</span></pre></td>
-<td class="lntd">
-<pre class="chroma">8 5
-1 2 3 3 3 3 4 5</pre></td></tr></table>
-</div>
-</div>
-<h2 id="ac-code">AC Code</h2>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code class="language-c++" data-lang="c++"><span class="lnt"> 1
+<pre class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -225,9 +204,10 @@
 </span><span class="lnt">46
 </span><span class="lnt">47
 </span><span class="lnt">48
+</span><span class="lnt">49
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-c++" data-lang="c++"><span class="cp">#include</span> <span class="cpf">&lt;bits/stdc++.h&gt;</span><span class="cp">
+<pre class="chroma"><code class="language-c++" data-lang="c++"><span class="cp">#</span><span class="cp">include</span> <span class="cpf">&lt;bits/stdc++.h&gt;</span><span class="cp">
 </span><span class="cp"></span>
 <span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
 
@@ -236,45 +216,46 @@
 
 <span class="k">struct</span> <span class="nc">Data</span> <span class="p">{</span>
     <span class="kt">int</span> <span class="n">idx</span><span class="p">,</span> <span class="n">val</span><span class="p">,</span> <span class="n">col</span><span class="p">;</span>
-<span class="p">};</span>
+<span class="p">}</span><span class="p">;</span>
 
-<span class="kt">int</span> <span class="nf">main</span><span class="p">()</span>
+<span class="kt">int</span> <span class="nf">main</span><span class="p">(</span><span class="p">)</span>
 <span class="p">{</span>
     <span class="kt">int</span> <span class="n">n</span><span class="p">,</span> <span class="n">k</span><span class="p">;</span>
-    <span class="n">scanf</span><span class="p">(</span><span class="s">&#34;%d %d&#34;</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">n</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">k</span><span class="p">);</span>
+    <span class="n">scanf</span><span class="p">(</span><span class="sa"></span><span class="s">&#34;</span><span class="s">%d %d</span><span class="s">&#34;</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">n</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">k</span><span class="p">)</span><span class="p">;</span>
 
-    <span class="n">Data</span> <span class="n">inp</span><span class="p">[</span><span class="n">n</span><span class="p">];</span>
-    <span class="kt">int</span> <span class="n">cnt</span><span class="p">[</span><span class="mi">5555</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span><span class="mi">0</span><span class="p">};</span>
-    <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">n</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
-        <span class="n">inp</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">idx</span> <span class="o">=</span> <span class="n">i</span><span class="p">;</span>
-        <span class="n">scanf</span><span class="p">(</span><span class="s">&#34;%d&#34;</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">inp</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">val</span><span class="p">);</span>
+    <span class="n">Data</span> <span class="n">inp</span><span class="p">[</span><span class="n">n</span><span class="p">]</span><span class="p">;</span>
+    <span class="kt">int</span> <span class="n">cnt</span><span class="p">[</span><span class="mi">5555</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span><span class="mi">0</span><span class="p">}</span><span class="p">;</span>
+    <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">n</span><span class="p">;</span> <span class="n">i</span><span class="o">+</span><span class="o">+</span><span class="p">)</span> <span class="p">{</span>
+        <span class="n">inp</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="p">.</span><span class="n">idx</span> <span class="o">=</span> <span class="n">i</span><span class="p">;</span>
+        <span class="n">scanf</span><span class="p">(</span><span class="sa"></span><span class="s">&#34;</span><span class="s">%d</span><span class="s">&#34;</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">inp</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="p">.</span><span class="n">val</span><span class="p">)</span><span class="p">;</span>
 
-        <span class="n">cnt</span><span class="p">[</span><span class="n">inp</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">val</span><span class="p">]</span><span class="o">++</span><span class="p">;</span>
-        <span class="k">if</span> <span class="p">(</span><span class="n">cnt</span><span class="p">[</span><span class="n">inp</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">val</span><span class="p">]</span> <span class="o">&gt;</span> <span class="n">k</span><span class="p">)</span> <span class="p">{</span>
-            <span class="n">printf</span><span class="p">(</span><span class="s">&#34;NO</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">);</span>
+        <span class="n">cnt</span><span class="p">[</span><span class="n">inp</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="p">.</span><span class="n">val</span><span class="p">]</span><span class="o">+</span><span class="o">+</span><span class="p">;</span>
+        <span class="k">if</span> <span class="p">(</span><span class="n">cnt</span><span class="p">[</span><span class="n">inp</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="p">.</span><span class="n">val</span><span class="p">]</span> <span class="o">&gt;</span> <span class="n">k</span><span class="p">)</span> <span class="p">{</span>
+            <span class="n">printf</span><span class="p">(</span><span class="sa"></span><span class="s">&#34;</span><span class="s">NO</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">)</span><span class="p">;</span>
             <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
         <span class="p">}</span>
     <span class="p">}</span>
 
     <span class="n">sort</span><span class="p">(</span><span class="n">inp</span><span class="p">,</span> <span class="n">inp</span> <span class="o">+</span> <span class="n">n</span><span class="p">,</span>
-    <span class="p">[](</span><span class="k">const</span> <span class="n">Data</span> <span class="o">&amp;</span><span class="n">a</span><span class="p">,</span> <span class="k">const</span> <span class="n">Data</span> <span class="o">&amp;</span><span class="n">b</span><span class="p">)</span> <span class="p">{</span>
+    <span class="p">[</span><span class="p">]</span><span class="p">(</span><span class="k">const</span> <span class="n">Data</span> <span class="o">&amp;</span><span class="n">a</span><span class="p">,</span> <span class="k">const</span> <span class="n">Data</span> <span class="o">&amp;</span><span class="n">b</span><span class="p">)</span> <span class="p">{</span>
         <span class="k">return</span> <span class="n">a</span><span class="p">.</span><span class="n">val</span> <span class="o">&lt;</span> <span class="n">b</span><span class="p">.</span><span class="n">val</span><span class="p">;</span>
-    <span class="p">});</span>
+    <span class="p">}</span><span class="p">)</span><span class="p">;</span>
 
-    <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">n</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span>
-        <span class="n">inp</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">col</span> <span class="o">=</span> <span class="p">(</span><span class="n">i</span> <span class="o">%</span> <span class="n">k</span><span class="p">)</span> <span class="o">+</span> <span class="mi">1</span><span class="p">;</span>
+    <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">n</span><span class="p">;</span> <span class="n">i</span><span class="o">+</span><span class="o">+</span><span class="p">)</span>
+        <span class="n">inp</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="p">.</span><span class="n">col</span> <span class="o">=</span> <span class="p">(</span><span class="n">i</span> <span class="o">%</span> <span class="n">k</span><span class="p">)</span> <span class="o">+</span> <span class="mi">1</span><span class="p">;</span>
 
     <span class="n">sort</span><span class="p">(</span><span class="n">inp</span><span class="p">,</span> <span class="n">inp</span> <span class="o">+</span> <span class="n">n</span><span class="p">,</span>
-    <span class="p">[](</span><span class="k">const</span> <span class="n">Data</span> <span class="o">&amp;</span><span class="n">a</span><span class="p">,</span> <span class="k">const</span> <span class="n">Data</span> <span class="o">&amp;</span><span class="n">b</span><span class="p">)</span> <span class="p">{</span>
+    <span class="p">[</span><span class="p">]</span><span class="p">(</span><span class="k">const</span> <span class="n">Data</span> <span class="o">&amp;</span><span class="n">a</span><span class="p">,</span> <span class="k">const</span> <span class="n">Data</span> <span class="o">&amp;</span><span class="n">b</span><span class="p">)</span> <span class="p">{</span>
         <span class="k">return</span> <span class="n">a</span><span class="p">.</span><span class="n">idx</span> <span class="o">&lt;</span> <span class="n">b</span><span class="p">.</span><span class="n">idx</span><span class="p">;</span>
-    <span class="p">});</span>
+    <span class="p">}</span><span class="p">)</span><span class="p">;</span>
 
-    <span class="n">printf</span><span class="p">(</span><span class="s">&#34;YES</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">);</span>
-    <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">n</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span>
-        <span class="n">printf</span><span class="p">(</span><span class="s">&#34;%d &#34;</span><span class="p">,</span> <span class="n">inp</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">col</span><span class="p">);</span>
+    <span class="n">printf</span><span class="p">(</span><span class="sa"></span><span class="s">&#34;</span><span class="s">YES</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">)</span><span class="p">;</span>
+    <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">n</span><span class="p">;</span> <span class="n">i</span><span class="o">+</span><span class="o">+</span><span class="p">)</span>
+        <span class="n">printf</span><span class="p">(</span><span class="sa"></span><span class="s">&#34;</span><span class="s">%d </span><span class="s">&#34;</span><span class="p">,</span> <span class="n">inp</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="p">.</span><span class="n">col</span><span class="p">)</span><span class="p">;</span>
 
     <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
 <span class="p">}</span>
+
 </code></pre></td></tr></table>
 </div>
 </div>
