@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>BFS on Coding Blog</title>
+    <link>https://henrybear327.github.io/blog/tags/bfs/</link>
+    <description>Recent content in BFS on Coding Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 29 Mar 2020 16:12:12 +0800</lastBuildDate>
+    
+	<atom:link href="https://henrybear327.github.io/blog/tags/bfs/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Atcoder ABC160</title>
+      <link>https://henrybear327.github.io/blog/post/atcoder/abc160/</link>
+      <pubDate>Sun, 29 Mar 2020 16:12:12 +0800</pubDate>
+      
+      <guid>https://henrybear327.github.io/blog/post/atcoder/abc160/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://atcoder.jp/contests/abc160&#34;&gt;題目&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

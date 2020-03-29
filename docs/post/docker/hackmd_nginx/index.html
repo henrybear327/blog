@@ -16,7 +16,7 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
 
 
-<meta name="author" content="Chun-Hung Tseng" /><meta name="description" content="It&#39;s my side project for learning networking and docker. :)
+<meta name="author" content="Chun-Hung Tseng" /><meta name="description" content="It&amp;rsquo;s my side project for learning networking and docker. :)
 The goal is to run both Nginx to Hackmd in Docker containers.
 " /><meta name="keywords" content="Competitive programming, Notes, Codeforces, UVa, Leetcode" />
 
@@ -25,7 +25,7 @@ The goal is to run both Nginx to Hackmd in Docker containers.
 
 
 
-<meta name="generator" content="Hugo 0.60.1 with theme even" />
+<meta name="generator" content="Hugo 0.68.3 with theme even" />
 
 
 <link rel="canonical" href="https://henrybear327.github.io/blog/post/docker/hackmd_nginx/" />
@@ -41,24 +41,24 @@ The goal is to run both Nginx to Hackmd in Docker containers.
 
 
 <meta property="og:title" content="Hosting Hackmd and Nginx inside Docker containers" />
-<meta property="og:description" content="It&#39;s my side project for learning networking and docker. :)
+<meta property="og:description" content="It&rsquo;s my side project for learning networking and docker. :)
 The goal is to run both Nginx to Hackmd in Docker containers." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://henrybear327.github.io/blog/post/docker/hackmd_nginx/" />
 <meta property="article:published_time" content="2019-03-12T23:45:32+08:00" />
 <meta property="article:modified_time" content="2019-03-12T23:45:32+08:00" />
 <meta itemprop="name" content="Hosting Hackmd and Nginx inside Docker containers">
-<meta itemprop="description" content="It&#39;s my side project for learning networking and docker. :)
+<meta itemprop="description" content="It&rsquo;s my side project for learning networking and docker. :)
 The goal is to run both Nginx to Hackmd in Docker containers.">
 <meta itemprop="datePublished" content="2019-03-12T23:45:32&#43;08:00" />
 <meta itemprop="dateModified" content="2019-03-12T23:45:32&#43;08:00" />
-<meta itemprop="wordCount" content="1154">
+<meta itemprop="wordCount" content="1266">
 
 
 
 <meta itemprop="keywords" content="docker,hackmd,nginx," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Hosting Hackmd and Nginx inside Docker containers"/>
-<meta name="twitter:description" content="It&#39;s my side project for learning networking and docker. :)
+<meta name="twitter:description" content="It&rsquo;s my side project for learning networking and docker. :)
 The goal is to run both Nginx to Hackmd in Docker containers."/>
 
 <!--[if lte IE 9]>
@@ -129,7 +129,7 @@ The goal is to run both Nginx to Hackmd in Docker containers."/>
         <div class="post-category">
             <a href="/blog/categories/tech/"> Tech </a>
             </div>
-          <span class="more-meta"> 1154 words </span>
+          <span class="more-meta"> 1266 words </span>
           <span class="more-meta"> 6 mins read </span>
         
       </div>
@@ -145,21 +145,21 @@ The goal is to run both Nginx to Hackmd in Docker containers."/>
     <li><a href="#backup">Backup</a>
       <ul>
         <li><a href="#where-is-the-data">Where is the data?</a></li>
-        <li><a href="#backup1">Backup</a></li>
+        <li><a href="#backup-1">Backup</a></li>
         <li><a href="#restore">Restore</a></li>
       </ul>
     </li>
   </ul>
 
   <ul>
-    <li><a href="#basic-authhttpsdocsnginxcomnginxadminguidesecuritycontrolsconfiguringhttpbasicauthentication">Basic auth</a></li>
+    <li><a href="#basic-authhttpsdocsnginxcomnginxadmin-guidesecurity-controlsconfiguring-http-basic-authentication"><a href="https://docs.nginx.com/nginx/admin-guide/security-controls/configuring-http-basic-authentication/">Basic auth</a></a></li>
     <li><a href="#hosting-on-virtual-host">Hosting on Virtual Host</a></li>
     <li><a href="#starting-hackmd-and-nginx-containers">Starting HackMD and Nginx containers</a></li>
     <li><a href="#stopping-hackmd-and-nginx-containers">Stopping HackMD and Nginx containers</a></li>
   </ul>
 
   <ul>
-    <li><a href="#nginx-with-cloudflare-sslhttpssupportcloudflarecomhcenusarticles115000479507">Nginx with Cloudflare SSL</a>
+    <li><a href="#nginx-with-cloudflare-sslhttpssupportcloudflarecomhcen-usarticles115000479507"><a href="https://support.cloudflare.com/hc/en-us/articles/115000479507">Nginx with Cloudflare SSL</a></a>
       <ul>
         <li><a href="#setup">Setup</a></li>
       </ul>
@@ -169,11 +169,11 @@ The goal is to run both Nginx to Hackmd in Docker containers."/>
   </div>
 </div>
     <div class="post-content">
-      <p>It's my side project for learning networking and docker. :)</p>
+      <p>It&rsquo;s my side project for learning networking and docker. :)</p>
 <p>The goal is to run both Nginx to Hackmd in Docker containers.</p>
 <h1 id="introduction">Introduction</h1>
 <p>Hackmd can be easily run in the container thanks to the developers from HackMD for dockerizing the entire project already. The part for setting up Nginx, interconnecting containers, and properly setting up the port and stuff to expose the containers, is what makes this project interesting.</p>
-<p>Let's begin our journey!</p>
+<p>Let&rsquo;s begin our journey!</p>
 <p>Make sure that you have docker and docker-compose installed.</p>
 <h1 id="hackmd">Hackmd</h1>
 <h2 id="installation">Installation</h2>
@@ -185,22 +185,32 @@ The goal is to run both Nginx to Hackmd in Docker containers."/>
 <h2 id="update">Update</h2>
 <p>‌
 Taken from the official documentation.</p>
-<pre><code>cd docker-hackmd ## enter the directory
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">cd docker-hackmd ## enter the directory
 git pull ## pull new commits
 docker-compose pull ## pull new containers
 docker-compose up ## turn on
-</code></pre><h2 id="backup">Backup</h2>
+</code></pre></td></tr></table>
+</div>
+</div><h2 id="backup">Backup</h2>
 <h3 id="where-is-the-data">Where is the data?</h3>
 <ul>
 <li>If we trace the <code>docker-compose</code> file of HackMD, we can see that for the <code>database</code>, there is a volume associated with it.</li>
 <li>After running <code>docker-compose up</code>, we can run <code>docker volume ls</code>to inspect what volumes are mounted now.</li>
-<li>After knowing the volume's name, we can use <code>docker volume inspect [name]</code> to see more, including the location that the volume is actually storing its data!
+<li>After knowing the volume&rsquo;s name, we can use <code>docker volume inspect [name]</code> to see more, including the location that the volume is actually storing its data!
 <ul>
-<li><a href="https://askubuntu.com/questions/291666/why-doesnt-sudo-cd-var-named-work"><code>sudo cd</code> won't work</a>. Use <code>sudo -i</code> and then <code>cd</code></li>
+<li><a href="https://askubuntu.com/questions/291666/why-doesnt-sudo-cd-var-named-work"><code>sudo cd</code> won&rsquo;t work</a>. Use <code>sudo -i</code> and then <code>cd</code></li>
 </ul>
 </li>
 </ul>
-<h3 id="backup1">Backup</h3>
+<h3 id="backup-1">Backup</h3>
 <p><code>docker-compose exec database pg_dump hackmd -U hackmd &gt; backup.sql</code></p>
 <h3 id="restore">Restore</h3>
 <p><code>cat backup.sql | docker exec -i $(docker-compose ps -q database) psql -U hackmd</code></p>
@@ -208,7 +218,44 @@ docker-compose up ## turn on
 <p>Resources <a href="https://hackprogramming.com/how-to-setup-subdomain-or-host-multiple-domains-using-nginx-in-linux-server/">1</a> <a href="https://www.digitalocean.com/community/tutorials/how-to-install-nginx-on-ubuntu-18-04">2</a></p>
 <p>We will build our own Nginx image for container, so we can get the bash shell, logs, and be able control lots of stuff easily. The tradeoff will be huge image size though&hellip;</p>
 <p>The <code>dockerfile</code> for Nginx. Build it with <code>docker build -t nginx .</code></p>
-<pre><code>FROM ubuntu:bionic
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">FROM ubuntu:bionic
 
 # silent debconf warnings
 ARG DEBIAN_FRONTEND=noninteractive
@@ -240,10 +287,12 @@ COPY .htpasswd /etc/nginx/conf.d
 EXPOSE 80
 
 # start nginx
-CMD [&quot;nginx&quot;, &quot;-g&quot;, &quot;daemon off;&quot;]‌
-</code></pre><p>Nginx config file and basic auth details is explained below.</p>
-<h2 id="basic-authhttpsdocsnginxcomnginxadminguidesecuritycontrolsconfiguringhttpbasicauthentication"><a href="https://docs.nginx.com/nginx/admin-guide/security-controls/configuring-http-basic-authentication/">Basic auth</a></h2>
-<p>The basic auth works by creating a username-password file by using <code>htpassed</code> tool. After creating the file, we just need to add it to Nginx's configuration file.</p>
+CMD [&#34;nginx&#34;, &#34;-g&#34;, &#34;daemon off;&#34;]‌
+</code></pre></td></tr></table>
+</div>
+</div><p>Nginx config file and basic auth details is explained below.</p>
+<h2 id="basic-authhttpsdocsnginxcomnginxadmin-guidesecurity-controlsconfiguring-http-basic-authentication"><a href="https://docs.nginx.com/nginx/admin-guide/security-controls/configuring-http-basic-authentication/">Basic auth</a></h2>
+<p>The basic auth works by creating a username-password file by using <code>htpassed</code> tool. After creating the file, we just need to add it to Nginx&rsquo;s configuration file.</p>
 <ul>
 <li>Install <code>apache2-utils</code></li>
 <li>Create users <code>sudo htpasswd -c .htpasswd Henry</code>
@@ -251,9 +300,9 @@ CMD [&quot;nginx&quot;, &quot;-g&quot;, &quot;daemon off;&quot;]‌
 <li><code>-c</code> means create file, so only use it on the first run!)</li>
 </ul>
 </li>
-<li>Watch out for the location you put the file in the container. If you put it at <code>/root</code>, Nginx won't be able to read it, since its permission is <code>700</code>.
+<li>Watch out for the location you put the file in the container. If you put it at <code>/root</code>, Nginx won&rsquo;t be able to read it, since its permission is <code>700</code>.
 <ul>
-<li>Internal server error of <code>500</code> will occur since the system can't open the file</li>
+<li>Internal server error of <code>500</code> will occur since the system can&rsquo;t open the file</li>
 <li>Digging from the log, which is usually kept at <code>/var/log/nginx</code>, is a good way good way to debug!</li>
 </ul>
 </li>
@@ -261,49 +310,85 @@ CMD [&quot;nginx&quot;, &quot;-g&quot;, &quot;daemon off;&quot;]‌
 <h2 id="hosting-on-virtual-host">Hosting on Virtual Host</h2>
 <p>For every virtual host that you want to host your website, create a dedicated file for it! For example, if I want to have a website at <code>test.henrybear327.com</code>, we need to create a config file with name <code>test.henrybear327.com</code></p>
 <p>Sample config file:</p>
-<pre><code>server {
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">server {
     server_name test.henrybear327.com;
 
-    auth_basic           &quot;Test site&quot;;
+    auth_basic           &#34;Test site&#34;;
     auth_basic_user_file /etc/nginx/conf.d/.htpasswd; 
 
     location / {
         proxy_pass http://docker-hackmd_app_1:3000/;
         proxy_http_version 1.1;
         proxy_set_header Upgrade $http_upgrade;
-        proxy_set_header Connection 'upgrade';
+        proxy_set_header Connection &#39;upgrade&#39;;
         proxy_set_header Host $host;
     }
 }
-</code></pre><p>There are several things in this file that required attention.</p>
+</code></pre></td></tr></table>
+</div>
+</div><p>There are several things in this file that required attention.</p>
 <p>The first thing is the <code>proxy_pass</code>. Because when running <code>docker-compose</code>, it will automatically create a new network! So the Nginx must be on the same network as HackMD (will be discussed about later).</p>
-<p>Another thing is that the address of the container we will be connecting to. It's not <code>localhost:3000</code>, it's the container's name!</p>
+<p>Another thing is that the address of the container we will be connecting to. It&rsquo;s not <code>localhost:3000</code>, it&rsquo;s the container&rsquo;s name!</p>
 <h2 id="starting-hackmd-and-nginx-containers">Starting HackMD and Nginx containers</h2>
-<p>If you have done the previous HackMD and Nginx setup correctly, we can now start our containers! We will start the HackMD first, and then connect Nginx to HackMD's network, and exposing the 80 or 443 port to the outside world!</p>
-<pre><code>‌sudo docker-compose up -d # start the hackmd containers
+<p>If you have done the previous HackMD and Nginx setup correctly, we can now start our containers! We will start the HackMD first, and then connect Nginx to HackMD&rsquo;s network, and exposing the 80 or 443 port to the outside world!</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">‌sudo docker-compose up -d # start the hackmd containers
 sudo docker run -d --rm --name nginx --net=docker-hackmd_backend -p 80:80 nginx # start the Nginx container
-</code></pre><p>The part for starting the Nginx container is a little bit complicated.</p>
+</code></pre></td></tr></table>
+</div>
+</div><p>The part for starting the Nginx container is a little bit complicated.</p>
 <p>As mentioned before, <code>docker-compose</code> will create its own network. So after starting it, we need to use <code>sudo docker network ls</code> to check the network name, and specify it in the <code>--net</code> argument.</p>
 <p><code>-p 80:80</code> or <code>-p 443:443</code> depends on your connection type.</p>
 <h2 id="stopping-hackmd-and-nginx-containers">Stopping HackMD and Nginx containers</h2>
 <p>‌
 Simply&hellip; stop it :)</p>
-<pre><code>sudo docker-compose down
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">sudo docker-compose down
 sudo docker stop nginx
-</code></pre><h1 id="sidenotes">Sidenotes</h1>
+</code></pre></td></tr></table>
+</div>
+</div><h1 id="sidenotes">Sidenotes</h1>
 <ul>
 <li>Use <code>docker container exec &lt;container&gt; nginx -s reload</code> to reload Nginx if you have changed some config file</li>
 <li>Whatever changes you do to the Nginx config files, run sudo nginx -t to perform a check before reloading it</li>
 </ul>
-<h2 id="nginx-with-cloudflare-sslhttpssupportcloudflarecomhcenusarticles115000479507"><a href="https://support.cloudflare.com/hc/en-us/articles/115000479507">Nginx with Cloudflare SSL</a></h2>
-<p>After messing with Let's encrypt for quite a while, I decided to simply use Cloudflare's origin certificate&hellip;</p>
-<p>The following passage is taken from this post&hellip; <a href="https://www.reddit.com/r/sysadmin/comments/awtpcr/differences_among_cloudflare_origin_certificates/">Great explanation about Cloudflare origin vs Let's encrypt Certificate</a></p>
+<h2 id="nginx-with-cloudflare-sslhttpssupportcloudflarecomhcen-usarticles115000479507"><a href="https://support.cloudflare.com/hc/en-us/articles/115000479507">Nginx with Cloudflare SSL</a></h2>
+<p>After messing with Let&rsquo;s encrypt for quite a while, I decided to simply use Cloudflare&rsquo;s origin certificate&hellip;</p>
+<p>The following passage is taken from this post&hellip; <a href="https://www.reddit.com/r/sysadmin/comments/awtpcr/differences_among_cloudflare_origin_certificates/">Great explanation about Cloudflare origin vs Let&rsquo;s encrypt Certificate</a></p>
 <blockquote>
-<p>If you use Cloudflare to front your website, there's no real point to continually renewing Let's Encrypt certs every few months. The end user never sees your server cert and doesn't have to trust it, so the long-lived origin cert is probably less work.</p>
+<p>If you use Cloudflare to front your website, there&rsquo;s no real point to continually renewing Let&rsquo;s Encrypt certs every few months. The end user never sees your server cert and doesn&rsquo;t have to trust it, so the long-lived origin cert is probably less work.</p>
 </blockquote>
 <h3 id="setup">Setup</h3>
 <ul>
-<li>Have your site hide behind cloudflare's.
+<li>Have your site hide behind cloudflare&rsquo;s.
 <img src="https://i.imgur.com/1MfWJV0.png" alt="Cloudflare Crypto page">
 <img src="https://i.imgur.com/A7p75UL.png" alt="Cloudflare CA post"></li>
 <li>Generate the origin certificate</li>
@@ -311,7 +396,31 @@ sudo docker stop nginx
 <li>Update <code>dockerfile</code> and <code>nginx config file</code>
 <ul>
 <li>‌New test.henrybear327.com config file
-<pre><code>server {
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">server {
     listen   443;
 
     ssl    on;
@@ -320,20 +429,63 @@ sudo docker stop nginx
 
     server_name test.henrybear327.com;
 
-    auth_basic           &quot;Test&quot;;
+    auth_basic           &#34;Test&#34;;
     auth_basic_user_file /etc/nginx/conf.d/.htpasswd; 
 
     location / {
         proxy_pass http://docker-hackmd_app_1:3000/;
         proxy_http_version 1.1;
         proxy_set_header Upgrade $http_upgrade;
-        proxy_set_header Connection 'upgrade';
+        proxy_set_header Connection &#39;upgrade&#39;;
         proxy_set_header Host $host;
     }
 }
-</code></pre></li>
+</code></pre></td></tr></table>
+</div>
+</div></li>
 <li>New <code>dockerfile</code>
-<pre><code class="language-‌" data-lang="‌">FROM ubuntu:bionic
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span><span class="lnt">36
+</span><span class="lnt">37
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">FROM ubuntu:bionic
 
 # silent debconf warnings
 ARG DEBIAN_FRONTEND=noninteractive
@@ -369,8 +521,10 @@ COPY henrybear327.com.pem /etc/ssl/certs
 EXPOSE 443
 
 # start nginx
-CMD [&quot;nginx&quot;, &quot;-g&quot;, &quot;daemon off;&quot;]
-</code></pre></li>
+CMD [&#34;nginx&#34;, &#34;-g&#34;, &#34;daemon off;&#34;]
+</code></pre></td></tr></table>
+</div>
+</div></li>
 </ul>
 </li>
 </ul>
@@ -447,7 +601,8 @@ CMD [&quot;nginx&quot;, &quot;-g&quot;, &quot;daemon off;&quot;]
 
   <span class="copyright-year">
     &copy; 
-    2019
+    2019 - 
+    2020
     <span class="heart">
       <i class="iconfont icon-heart"></i>
     </span>

@@ -25,7 +25,7 @@
 
 
 
-<meta name="generator" content="Hugo 0.60.1 with theme even" />
+<meta name="generator" content="Hugo 0.68.3 with theme even" />
 
 
 <link rel="canonical" href="https://henrybear327.github.io/blog/post/codeforces/1102e/" />
@@ -168,7 +168,7 @@ $b_1 = 0$
 <li>如果$a_i = a_j$，那$b_i = b_j$也要成立</li>
 <li>對於 $i \in [1, n - 1]$，則$b_i = b_{i + 1}$ 或 $b_i + 1= b_{i + 1}$要成立</li>
 </ol>
-<h1 id="heading">題解</h1>
+<h1 id="題解">題解</h1>
 <p>我們可以把問題看成我們要尋找一些不重疊區間，使得各個區間內所有數的集合是互不相同的。</p>
 <p>舉例來說，$[1, 2, 1, 2, 3]$，$[1, 2, 1, 2]$跟$[3]$就可以斷開成兩個區間。</p>
 <p>所以，我們可以預先記錄每一種數字最後一次出現的位子，搭配上一個set記錄區間內目前看過，且在此位子後面還有再出現的數字有哪些。由左而右，掃過去並且更新。當set為空，就帶表這個區間內所出現的所有數字，在此之後都不再出現了，也就是可以在此下斷點！</p>
@@ -223,7 +223,7 @@ $b_1 = 0$
 </span><span class="lnt">44
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-c++" data-lang="c++"><span class="cp">#</span><span class="cp">include</span> <span class="cpf">&lt;bits/stdc++.h&gt;</span><span class="cp">
+<pre class="chroma"><code class="language-c++" data-lang="c++"><span class="cp">#include</span> <span class="cpf">&lt;bits/stdc++.h&gt;</span><span class="cp">
 </span><span class="cp"></span>
 <span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
 
@@ -232,37 +232,37 @@ $b_1 = 0$
 
 <span class="k">const</span> <span class="n">ll</span> <span class="n">MOD</span> <span class="o">=</span> <span class="mi">998244353</span><span class="p">;</span>
 
-<span class="kt">int</span> <span class="nf">main</span><span class="p">(</span><span class="p">)</span>
+<span class="kt">int</span> <span class="nf">main</span><span class="p">()</span>
 <span class="p">{</span>
     <span class="kt">int</span> <span class="n">n</span><span class="p">;</span>
-    <span class="n">scanf</span><span class="p">(</span><span class="sa"></span><span class="s">&#34;</span><span class="s">%d</span><span class="s">&#34;</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">n</span><span class="p">)</span><span class="p">;</span>
+    <span class="n">scanf</span><span class="p">(</span><span class="s">&#34;%d&#34;</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">n</span><span class="p">);</span>
 
-    <span class="kt">int</span> <span class="n">inp</span><span class="p">[</span><span class="n">n</span><span class="p">]</span><span class="p">;</span>
+    <span class="kt">int</span> <span class="n">inp</span><span class="p">[</span><span class="n">n</span><span class="p">];</span>
     <span class="n">map</span><span class="o">&lt;</span><span class="kt">int</span><span class="p">,</span> <span class="kt">int</span><span class="o">&gt;</span> <span class="n">lastPos</span><span class="p">;</span>
-    <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">n</span><span class="p">;</span> <span class="n">i</span><span class="o">+</span><span class="o">+</span><span class="p">)</span> <span class="p">{</span>
-        <span class="n">scanf</span><span class="p">(</span><span class="sa"></span><span class="s">&#34;</span><span class="s">%d</span><span class="s">&#34;</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">inp</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="p">)</span><span class="p">;</span>
-        <span class="n">lastPos</span><span class="p">[</span><span class="n">inp</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="p">]</span> <span class="o">=</span> <span class="n">i</span><span class="p">;</span>
+    <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">n</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+        <span class="n">scanf</span><span class="p">(</span><span class="s">&#34;%d&#34;</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">inp</span><span class="p">[</span><span class="n">i</span><span class="p">]);</span>
+        <span class="n">lastPos</span><span class="p">[</span><span class="n">inp</span><span class="p">[</span><span class="n">i</span><span class="p">]]</span> <span class="o">=</span> <span class="n">i</span><span class="p">;</span>
     <span class="p">}</span>
 
     <span class="n">set</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span> <span class="n">workingWindow</span><span class="p">;</span>
     <span class="n">ll</span> <span class="n">ans</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
     <span class="kt">bool</span> <span class="n">ok</span> <span class="o">=</span> <span class="nb">false</span><span class="p">;</span>
-    <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">n</span><span class="p">;</span> <span class="n">i</span><span class="o">+</span><span class="o">+</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">n</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
         <span class="k">if</span> <span class="p">(</span><span class="n">ok</span><span class="p">)</span>
             <span class="n">ans</span> <span class="o">=</span> <span class="n">ans</span> <span class="o">*</span> <span class="mi">2</span> <span class="o">%</span> <span class="n">MOD</span><span class="p">;</span>
         <span class="n">ok</span> <span class="o">=</span> <span class="nb">false</span><span class="p">;</span>
-        <span class="k">if</span> <span class="p">(</span><span class="n">lastPos</span><span class="p">[</span><span class="n">inp</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="p">]</span> <span class="o">=</span><span class="o">=</span> <span class="n">i</span><span class="p">)</span> <span class="p">{</span>
-            <span class="n">workingWindow</span><span class="p">.</span><span class="n">erase</span><span class="p">(</span><span class="n">inp</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="p">)</span><span class="p">;</span>
+        <span class="k">if</span> <span class="p">(</span><span class="n">lastPos</span><span class="p">[</span><span class="n">inp</span><span class="p">[</span><span class="n">i</span><span class="p">]]</span> <span class="o">==</span> <span class="n">i</span><span class="p">)</span> <span class="p">{</span>
+            <span class="n">workingWindow</span><span class="p">.</span><span class="n">erase</span><span class="p">(</span><span class="n">inp</span><span class="p">[</span><span class="n">i</span><span class="p">]);</span>
 
-            <span class="k">if</span> <span class="p">(</span><span class="n">workingWindow</span><span class="p">.</span><span class="n">size</span><span class="p">(</span><span class="p">)</span> <span class="o">=</span><span class="o">=</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
+            <span class="k">if</span> <span class="p">(</span><span class="n">workingWindow</span><span class="p">.</span><span class="n">size</span><span class="p">()</span> <span class="o">==</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
                 <span class="n">ok</span> <span class="o">=</span> <span class="nb">true</span><span class="p">;</span>
             <span class="p">}</span>
         <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
-            <span class="n">workingWindow</span><span class="p">.</span><span class="n">insert</span><span class="p">(</span><span class="n">inp</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="p">)</span><span class="p">;</span>
+            <span class="n">workingWindow</span><span class="p">.</span><span class="n">insert</span><span class="p">(</span><span class="n">inp</span><span class="p">[</span><span class="n">i</span><span class="p">]);</span>
         <span class="p">}</span>
     <span class="p">}</span>
 
-    <span class="n">printf</span><span class="p">(</span><span class="sa"></span><span class="s">&#34;</span><span class="s">%lld</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span> <span class="n">ans</span><span class="p">)</span><span class="p">;</span>
+    <span class="n">printf</span><span class="p">(</span><span class="s">&#34;%lld</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span> <span class="n">ans</span><span class="p">);</span>
 
     <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
 <span class="p">}</span>
@@ -340,7 +340,8 @@ $b_1 = 0$
 
   <span class="copyright-year">
     &copy; 
-    2019
+    2019 - 
+    2020
     <span class="heart">
       <i class="iconfont icon-heart"></i>
     </span>

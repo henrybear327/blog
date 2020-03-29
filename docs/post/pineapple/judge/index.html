@@ -25,7 +25,7 @@
 
 
 
-<meta name="generator" content="Hugo 0.60.1 with theme even" />
+<meta name="generator" content="Hugo 0.68.3 with theme even" />
 
 
 <link rel="canonical" href="https://henrybear327.github.io/blog/post/pineapple/judge/" />
@@ -144,7 +144,7 @@
   </ul>
 
   <ul>
-    <li><a href="#docker-">Docker 坑坑</a>
+    <li><a href="#docker-坑坑">Docker 坑坑</a>
       <ul>
         <li><a href="#docker-for-windows">Docker for windows</a></li>
         <li><a href="#multicore-issue">Multicore issue</a></li>
@@ -152,7 +152,7 @@
     </li>
     <li><a href="#fork-bomb">Fork bomb</a>
       <ul>
-        <li><a href="#-python3--java">安裝 python3 + Java</a></li>
+        <li><a href="#安裝-python3--java">安裝 python3 + Java</a></li>
         <li><a href="#mle">MLE</a></li>
       </ul>
     </li>
@@ -163,7 +163,7 @@
     <div class="post-content">
       <p>2019 中正大學程式設計競賽總算落幕啦！今年跟 SuperDanby 一起架設了競賽環境，過程中踩過了許多的坑，值得我們一起細數與回味 XD</p>
 <p>請先看看 SuperDanby 大神的<a href="https://superdanby.github.io/Blog/setup-a-multi-node-local-openshift-cluster.html#using-openshift">競賽環境架設與回憶錄</a></p>
-<h1 id="judge-">Judge 環境</h1>
+<h1 id="judge-環境">Judge 環境</h1>
 <blockquote>
 <p>作者: 陳鐸元 曾俊宏</p>
 </blockquote>
@@ -175,7 +175,7 @@
 <h1 id="domjudge">Domjudge</h1>
 <p>今年是第一次使用 DomJudge 當作校內賽的比賽平台，運行的平台則是採用 Fedora 30 + official docker image。比起原生的機器，使用 docker 在效能沒有顯著差距，但是部署上，讓我們得以簡單的 scale 整個系統到多台電腦上。不然安裝 domjudge 很曠日廢時啊！</p>
 <p>但是 Docker 版的 domjudge 有幾個坑&hellip; 我們來一一細數&hellip;</p>
-<h2 id="docker-">Docker 坑坑</h2>
+<h2 id="docker-坑坑">Docker 坑坑</h2>
 <h3 id="docker-for-windows">Docker for windows</h3>
 <p>畢竟 docker for windows 還是跑在 hyperV 上，經過觀察，綁 core 在虛擬機內部可行，但是在 出到 windows 後就沒效了。而且只跑一個 judgehost 大概就會吃掉 windows 40% 左右的 CPU resource。</p>
 <p>所以最後只好裝起了 Fedora 30 來當 judge 的 host OS，也就如預期了。</p>
@@ -186,7 +186,7 @@
 <h2 id="fork-bomb">Fork bomb</h2>
 <p>預設的 judgehost image 是會被 fork bomb 打死的，因為 container 裡面並沒有 init process。</p>
 <p>解決方法很簡單，docker run 時指定一下 pid 1 要是 init process 即可。</p>
-<h3 id="-python3--java">安裝 python3 + Java</h3>
+<h3 id="安裝-python3--java">安裝 python3 + Java</h3>
 <p>安裝新的程式語言，在 chroot 外安裝完後，要使用 <code>dj_run_chroot</code> 再裝一次，這樣這個新增的語言才能被拿來 judge。</p>
 <p>以下是測試賽前一天火燒屁股的一段故事。</p>
 <p>因為 <code>dj_run_chroot</code> 要 mount 東西，但是 docker build 的過程是不允許 mount 的，所以只好多階段的進行。先是把要安裝的東西寫在 shell script 中，之後再放入 dockerfile 的 CMD 裡</p>
@@ -268,7 +268,8 @@
 
   <span class="copyright-year">
     &copy; 
-    2019
+    2019 - 
+    2020
     <span class="heart">
       <i class="iconfont icon-heart"></i>
     </span>

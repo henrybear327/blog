@@ -25,7 +25,7 @@
 
 
 
-<meta name="generator" content="Hugo 0.60.1 with theme even" />
+<meta name="generator" content="Hugo 0.68.3 with theme even" />
 
 
 <link rel="canonical" href="https://henrybear327.github.io/blog/post/atcoder/abc144/" />
@@ -144,7 +144,7 @@
   </ul>
 
   <ul>
-    <li><a href="#ac-code1">AC Code</a></li>
+    <li><a href="#ac-code-1">AC Code</a></li>
   </ul>
 </nav>
   </div>
@@ -152,7 +152,7 @@
     <div class="post-content">
       <p>一題很騙人的暴力搜尋跟數學討論題。</p>
 <p><a href="https://atcoder.jp/contests/abc144/tasks">題目</a></p>
-<h1 id="c--walk-on-multiplication-tablehttpsatcoderjpcontestsabc144tasksabc144c"><a href="https://atcoder.jp/contests/abc144/tasks/abc144_c">C - Walk on Multiplication Table</a></h1>
+<h1 id="c---walk-on-multiplication-tablehttpsatcoderjpcontestsabc144tasksabc144_c"><a href="https://atcoder.jp/contests/abc144/tasks/abc144_c">C - Walk on Multiplication Table</a></h1>
 <p>令 $d$ 為 $n$ 的因數，那這題就是找 $(1, 1)$ 到 $(n, \frac{n}{d})$ = $n + \frac{n}{d} - 2$ 的最小值。</p>
 <p>$n$ 最大是 $10^{12}$ 沒錯，可是我們只要暴力到 $10^6$ 就夠了！</p>
 <h2 id="ac-code">AC Code</h2>
@@ -185,36 +185,36 @@
 </span><span class="lnt">25
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-c++" data-lang="c++"><span class="cp">#</span><span class="cp">include</span> <span class="cpf">&lt;bits/stdc++.h&gt;</span><span class="cp">
+<pre class="chroma"><code class="language-c++" data-lang="c++"><span class="cp">#include</span> <span class="cpf">&lt;bits/stdc++.h&gt;</span><span class="cp">
 </span><span class="cp"></span><span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
 
 <span class="k">typedef</span> <span class="kt">long</span> <span class="kt">long</span> <span class="n">ll</span><span class="p">;</span>
 <span class="k">typedef</span> <span class="n">pair</span><span class="o">&lt;</span><span class="kt">int</span><span class="p">,</span> <span class="kt">int</span><span class="o">&gt;</span> <span class="n">ii</span><span class="p">;</span>
 
-<span class="kt">int</span> <span class="nf">main</span><span class="p">(</span><span class="p">)</span>
+<span class="kt">int</span> <span class="nf">main</span><span class="p">()</span>
 <span class="p">{</span>
     <span class="n">ll</span> <span class="n">n</span><span class="p">;</span>
-    <span class="n">scanf</span><span class="p">(</span><span class="sa"></span><span class="s">&#34;</span><span class="s">%lld</span><span class="s">&#34;</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">n</span><span class="p">)</span><span class="p">;</span>
+    <span class="n">scanf</span><span class="p">(</span><span class="s">&#34;%lld&#34;</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">n</span><span class="p">);</span>
 
     <span class="n">ll</span> <span class="n">ans</span> <span class="o">=</span> <span class="mi">1</span> <span class="o">+</span> <span class="n">n</span><span class="p">;</span>
-    <span class="k">for</span> <span class="p">(</span><span class="n">ll</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span> <span class="n">i</span> <span class="o">*</span> <span class="n">i</span> <span class="o">&lt;</span><span class="o">=</span> <span class="n">n</span><span class="p">;</span> <span class="n">i</span><span class="o">+</span><span class="o">+</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">for</span> <span class="p">(</span><span class="n">ll</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span> <span class="n">i</span> <span class="o">*</span> <span class="n">i</span> <span class="o">&lt;=</span> <span class="n">n</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
         <span class="n">ll</span> <span class="n">a</span> <span class="o">=</span> <span class="n">i</span><span class="p">;</span>
         <span class="n">ll</span> <span class="n">b</span> <span class="o">=</span> <span class="n">n</span> <span class="o">/</span> <span class="n">i</span><span class="p">;</span>
-        <span class="k">if</span> <span class="p">(</span><span class="n">a</span> <span class="o">*</span> <span class="n">b</span> <span class="o">=</span><span class="o">=</span> <span class="n">n</span><span class="p">)</span> <span class="p">{</span>
-            <span class="n">ans</span> <span class="o">=</span> <span class="n">min</span><span class="p">(</span><span class="n">ans</span><span class="p">,</span> <span class="n">a</span> <span class="o">+</span> <span class="n">b</span> <span class="o">-</span> <span class="mi">2</span><span class="p">)</span><span class="p">;</span>
+        <span class="k">if</span> <span class="p">(</span><span class="n">a</span> <span class="o">*</span> <span class="n">b</span> <span class="o">==</span> <span class="n">n</span><span class="p">)</span> <span class="p">{</span>
+            <span class="n">ans</span> <span class="o">=</span> <span class="n">min</span><span class="p">(</span><span class="n">ans</span><span class="p">,</span> <span class="n">a</span> <span class="o">+</span> <span class="n">b</span> <span class="o">-</span> <span class="mi">2</span><span class="p">);</span>
         <span class="p">}</span>
     <span class="p">}</span>
 
-    <span class="n">printf</span><span class="p">(</span><span class="sa"></span><span class="s">&#34;</span><span class="s">%lld</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span> <span class="n">ans</span><span class="p">)</span><span class="p">;</span>
+    <span class="n">printf</span><span class="p">(</span><span class="s">&#34;%lld</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span> <span class="n">ans</span><span class="p">);</span>
 
     <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
 <span class="p">}</span>
 
 </code></pre></td></tr></table>
 </div>
-</div><h1 id="d--water-bottlehttpsatcoderjpcontestsabc144tasksabc144d"><a href="https://atcoder.jp/contests/abc144/tasks/abc144_d">D - Water Bottle</a></h1>
+</div><h1 id="d---water-bottlehttpsatcoderjpcontestsabc144tasksabc144_d"><a href="https://atcoder.jp/contests/abc144/tasks/abc144_d">D - Water Bottle</a></h1>
 <p>這題只要分成兩個case，以 需不需要傾斜超過容器對角線為水平時的角度 討論即可。</p>
-<h2 id="ac-code1">AC Code</h2>
+<h2 id="ac-code-1">AC Code</h2>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt"> 1
@@ -252,7 +252,7 @@
 </span><span class="lnt">33
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-c++" data-lang="c++"><span class="cp">#</span><span class="cp">include</span> <span class="cpf">&lt;bits/stdc++.h&gt;</span><span class="cp">
+<pre class="chroma"><code class="language-c++" data-lang="c++"><span class="cp">#include</span> <span class="cpf">&lt;bits/stdc++.h&gt;</span><span class="cp">
 </span><span class="cp"></span><span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
 
 <span class="k">typedef</span> <span class="kt">long</span> <span class="kt">long</span> <span class="n">ll</span><span class="p">;</span>
@@ -260,27 +260,27 @@
 
 <span class="k">const</span> <span class="kt">double</span> <span class="n">PI</span> <span class="o">=</span> <span class="n">atan</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span> <span class="o">*</span> <span class="mf">4.0</span><span class="p">;</span>
 
-<span class="kt">int</span> <span class="nf">main</span><span class="p">(</span><span class="p">)</span>
+<span class="kt">int</span> <span class="nf">main</span><span class="p">()</span>
 <span class="p">{</span>
     <span class="kt">int</span> <span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">,</span> <span class="n">x</span><span class="p">;</span>
-    <span class="n">scanf</span><span class="p">(</span><span class="sa"></span><span class="s">&#34;</span><span class="s">%d %d %d</span><span class="s">&#34;</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">a</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">b</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">x</span><span class="p">)</span><span class="p">;</span>
+    <span class="n">scanf</span><span class="p">(</span><span class="s">&#34;%d %d %d&#34;</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">a</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">b</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">x</span><span class="p">);</span>
 
     <span class="kt">int</span> <span class="n">total</span> <span class="o">=</span> <span class="n">a</span> <span class="o">*</span> <span class="n">a</span> <span class="o">*</span> <span class="n">b</span><span class="p">;</span>
 
     <span class="kt">double</span> <span class="n">ans</span> <span class="o">=</span> <span class="mf">0.0</span><span class="p">;</span>
     <span class="c1">// case 1
-</span><span class="c1"></span>    <span class="kt">double</span> <span class="n">z</span> <span class="o">=</span> <span class="p">(</span><span class="mf">2.0</span> <span class="o">*</span> <span class="p">(</span><span class="n">total</span> <span class="o">-</span> <span class="n">x</span><span class="p">)</span><span class="p">)</span> <span class="o">/</span> <span class="p">(</span><span class="mf">1.0</span> <span class="o">*</span> <span class="n">a</span> <span class="o">*</span> <span class="n">a</span><span class="p">)</span><span class="p">;</span>
-    <span class="k">if</span> <span class="p">(</span><span class="n">z</span> <span class="o">&lt;</span><span class="o">=</span> <span class="n">b</span><span class="p">)</span> <span class="p">{</span>
+</span><span class="c1"></span>    <span class="kt">double</span> <span class="n">z</span> <span class="o">=</span> <span class="p">(</span><span class="mf">2.0</span> <span class="o">*</span> <span class="p">(</span><span class="n">total</span> <span class="o">-</span> <span class="n">x</span><span class="p">))</span> <span class="o">/</span> <span class="p">(</span><span class="mf">1.0</span> <span class="o">*</span> <span class="n">a</span> <span class="o">*</span> <span class="n">a</span><span class="p">);</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">z</span> <span class="o">&lt;=</span> <span class="n">b</span><span class="p">)</span> <span class="p">{</span>
         <span class="c1">// printf(&#34;z1 = %.15lf, ans = %.15lf\n&#34;, z, ans);
-</span><span class="c1"></span>        <span class="n">ans</span> <span class="o">=</span> <span class="n">atan</span><span class="p">(</span><span class="n">z</span> <span class="o">/</span> <span class="n">a</span><span class="p">)</span><span class="p">;</span>
+</span><span class="c1"></span>        <span class="n">ans</span> <span class="o">=</span> <span class="n">atan</span><span class="p">(</span><span class="n">z</span> <span class="o">/</span> <span class="n">a</span><span class="p">);</span>
     <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
         <span class="c1">// case 2
-</span><span class="c1"></span>        <span class="n">z</span> <span class="o">=</span> <span class="p">(</span><span class="mf">2.0</span> <span class="o">*</span> <span class="n">x</span><span class="p">)</span> <span class="o">/</span> <span class="p">(</span><span class="mf">1.0</span> <span class="o">*</span> <span class="n">b</span> <span class="o">*</span> <span class="n">a</span><span class="p">)</span><span class="p">;</span>
-        <span class="n">ans</span> <span class="o">=</span> <span class="n">PI</span> <span class="o">/</span> <span class="mi">2</span> <span class="o">-</span> <span class="n">atan</span><span class="p">(</span><span class="n">z</span> <span class="o">/</span> <span class="p">(</span><span class="mf">1.0</span> <span class="o">*</span> <span class="n">b</span><span class="p">)</span><span class="p">)</span><span class="p">;</span>
+</span><span class="c1"></span>        <span class="n">z</span> <span class="o">=</span> <span class="p">(</span><span class="mf">2.0</span> <span class="o">*</span> <span class="n">x</span><span class="p">)</span> <span class="o">/</span> <span class="p">(</span><span class="mf">1.0</span> <span class="o">*</span> <span class="n">b</span> <span class="o">*</span> <span class="n">a</span><span class="p">);</span>
+        <span class="n">ans</span> <span class="o">=</span> <span class="n">PI</span> <span class="o">/</span> <span class="mi">2</span> <span class="o">-</span> <span class="n">atan</span><span class="p">(</span><span class="n">z</span> <span class="o">/</span> <span class="p">(</span><span class="mf">1.0</span> <span class="o">*</span> <span class="n">b</span><span class="p">));</span>
         <span class="c1">// printf(&#34;z2 = %.15lf, ans = %.15lf\n&#34;, z, ans);
 </span><span class="c1"></span>    <span class="p">}</span>
 
-    <span class="n">printf</span><span class="p">(</span><span class="sa"></span><span class="s">&#34;</span><span class="s">%.15lf</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span> <span class="n">ans</span> <span class="o">*</span> <span class="mf">180.0</span> <span class="o">/</span> <span class="n">PI</span><span class="p">)</span><span class="p">;</span>
+    <span class="n">printf</span><span class="p">(</span><span class="s">&#34;%.15lf</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span> <span class="n">ans</span> <span class="o">*</span> <span class="mf">180.0</span> <span class="o">/</span> <span class="n">PI</span><span class="p">);</span>
 
     <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
 <span class="p">}</span>
@@ -358,7 +358,8 @@
 
   <span class="copyright-year">
     &copy; 
-    2019
+    2019 - 
+    2020
     <span class="heart">
       <i class="iconfont icon-heart"></i>
     </span>
