@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>vpn on Coding Blog</title>
+    <link>https://henrybear327.github.io/blog/tags/vpn/</link>
+    <description>Recent content in vpn on Coding Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 11 Jun 2020 17:56:48 +0800</lastBuildDate>
+    
+	<atom:link href="https://henrybear327.github.io/blog/tags/vpn/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Set up a vpn server that uses home ip as exit ip</title>
+      <link>https://henrybear327.github.io/blog/post/sideprojects/vpn-using-home-ip/</link>
+      <pubDate>Thu, 11 Jun 2020 17:56:48 +0800</pubDate>
+      
+      <guid>https://henrybear327.github.io/blog/post/sideprojects/vpn-using-home-ip/</guid>
+      <description>It all started with my previous bad experience when doing VPN hosting myself&amp;hellip;
+If we host VPN servers on GCP/AWS/DO/Linode, you now have all the devices on local network, but the common problems/downsides are e.g. streaming services like Netflix will block you (so you need to turn off VPN a lot of times&amp;hellip;); Google search will often challenge you with recaptcha, etc. So I would like to find a way to workaround it :)</description>
+    </item>
+    
+  </channel>
+</rss>
