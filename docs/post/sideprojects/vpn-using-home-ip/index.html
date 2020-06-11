@@ -17,7 +17,7 @@
 
 
 <meta name="author" content="Chun-Hung Tseng" /><meta name="description" content="It all started with my previous bad experience when doing VPN hosting myself&amp;hellip;
-If we host VPN servers on GCP/AWS/DO/Linode, you now have all the devices on local network, but the common problems/downsides are e.g. streaming services like Netflix will block you (so you need to turn off VPN a lot of times&amp;hellip;); Google search will often challenge you with recaptcha, etc. So I would like to find a way to workaround it :)" /><meta name="keywords" content="Competitive programming, Notes, Codeforces, UVa, Leetcode" />
+" /><meta name="keywords" content="Competitive programming, Notes, Codeforces, UVa, Leetcode" />
 
 
 
@@ -40,25 +40,22 @@ If we host VPN servers on GCP/AWS/DO/Linode, you now have all the devices on loc
 
 
 <meta property="og:title" content="Set up a vpn server that uses home ip as exit ip" />
-<meta property="og:description" content="It all started with my previous bad experience when doing VPN hosting myself&hellip;
-If we host VPN servers on GCP/AWS/DO/Linode, you now have all the devices on local network, but the common problems/downsides are e.g. streaming services like Netflix will block you (so you need to turn off VPN a lot of times&hellip;); Google search will often challenge you with recaptcha, etc. So I would like to find a way to workaround it :)" />
+<meta property="og:description" content="It all started with my previous bad experience when doing VPN hosting myself&hellip;" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://henrybear327.github.io/blog/post/sideprojects/vpn-using-home-ip/" />
 <meta property="article:published_time" content="2020-06-11T17:56:48+08:00" />
 <meta property="article:modified_time" content="2020-06-11T17:56:48+08:00" />
 <meta itemprop="name" content="Set up a vpn server that uses home ip as exit ip">
-<meta itemprop="description" content="It all started with my previous bad experience when doing VPN hosting myself&hellip;
-If we host VPN servers on GCP/AWS/DO/Linode, you now have all the devices on local network, but the common problems/downsides are e.g. streaming services like Netflix will block you (so you need to turn off VPN a lot of times&hellip;); Google search will often challenge you with recaptcha, etc. So I would like to find a way to workaround it :)">
+<meta itemprop="description" content="It all started with my previous bad experience when doing VPN hosting myself&hellip;">
 <meta itemprop="datePublished" content="2020-06-11T17:56:48&#43;08:00" />
 <meta itemprop="dateModified" content="2020-06-11T17:56:48&#43;08:00" />
-<meta itemprop="wordCount" content="1074">
+<meta itemprop="wordCount" content="1117">
 
 
 
 <meta itemprop="keywords" content="network,wireguard,vpn,shadowsocks,iptables," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Set up a vpn server that uses home ip as exit ip"/>
-<meta name="twitter:description" content="It all started with my previous bad experience when doing VPN hosting myself&hellip;
-If we host VPN servers on GCP/AWS/DO/Linode, you now have all the devices on local network, but the common problems/downsides are e.g. streaming services like Netflix will block you (so you need to turn off VPN a lot of times&hellip;); Google search will often challenge you with recaptcha, etc. So I would like to find a way to workaround it :)"/>
+<meta name="twitter:description" content="It all started with my previous bad experience when doing VPN hosting myself&hellip;"/>
 
 <!--[if lte IE 9]>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -128,7 +125,7 @@ If we host VPN servers on GCP/AWS/DO/Linode, you now have all the devices on loc
         <div class="post-category">
             <a href="/blog/categories/side-projects/"> side projects </a>
             </div>
-          <span class="more-meta"> 1074 words </span>
+          <span class="more-meta"> 1117 words </span>
           <span class="more-meta"> 6 mins read </span>
         
       </div>
@@ -138,9 +135,8 @@ If we host VPN servers on GCP/AWS/DO/Linode, you now have all the devices on loc
     <div class="post-content">
       <p>It all started with my previous bad experience when doing VPN hosting myself&hellip;</p>
 <p>If we host VPN servers on GCP/AWS/DO/Linode, you now have all the devices on local network, but the common problems/downsides are e.g. streaming services like Netflix will block you (so you need to turn off VPN a lot of times&hellip;); Google search will often challenge you with recaptcha, etc. So I would like to find a way to workaround it :)</p>
-<!-- raw HTML omitted -->
 <h2 id="expectation--solution">Expectation / Solution</h2>
-<p>The VPN servers in the cloud will have bad IPs, but the IP that we are using at home is usually good and not blocked! So if we can somehow redirect all external traffic going out of VPN servers hosted in the cloud to our home IP, we are all set.</p>
+<p>The VPN servers in the cloud usually have bad IPs, but the IP that we are using at home is usually good and not blocked! So if we can somehow redirect all external traffic going out of VPN servers hosted in the cloud to our home IP, we are all set.</p>
 <p>But hosting VPN server at home, which is usually a floating IP and behind NAT, is hard. So we need some workaround for it!</p>
 <h1 id="architecture">Architecture</h1>
 <p>This is my final setup.</p>
@@ -160,8 +156,8 @@ If we host VPN servers on GCP/AWS/DO/Linode, you now have all the devices on loc
   smartphone         rpi sitting at home 
 </code></pre></td></tr></table>
 </div>
-</div><p>The final solution is actually pretty simple. Traffic coming from VPN subnet to GCP are redirected through ss tunnel to rpi.</p>
-<h2 id="install-ss-on-vpn-server-and-rpi">Install SS on vpn server and rpi</h2>
+</div><p>The final solution is actually pretty simple. Client traffic coming from VPN subnet to GCP are redirected through ss tunnel to rpi, then exit to the world from there.</p>
+<h2 id="install-shadowsocks-on-vpn-server-and-rpi">Install shadowsocks on vpn server and rpi</h2>
 <ul>
 <li><code>go get -u -v github.com/shadowsocks/go-shadowsocks2</code>
 <ul>
@@ -180,7 +176,7 @@ If we host VPN servers on GCP/AWS/DO/Linode, you now have all the devices on loc
 </ul>
 </li>
 </ul>
-<h3 id="common-commands">Common commands</h3>
+<h3 id="common-commands-for-wireguard">Common commands for wireguard</h3>
 <ul>
 <li>generate wireguard keys by <code>wg genkey | tee wg-private.key | wg pubkey &gt; wg-public.key</code></li>
 <li>start the wireguard client/server using <code>sudo wg-quick up wg0</code></li>
@@ -231,8 +227,8 @@ ListenPort = 12345 # external port for incoming connection
 PrivateKey = [vpn server&#39;s private key]
 
 # if you use -A, it might get installed after the drop rule + log rule!!
-PostUp   = iptables -I FORWARD 1 -i %i -j ACCEPT; iptables -I FORWARD 1 -o %i -j ACCEPT; iptables -t nat -A POSTROUTING -o ens4 -j MASQUERADE
-PostDown = iptables -D FORWARD -i %i -j ACCEPT; iptables -D FORWARD -o %i -j ACCEPT; iptables -t nat -D POSTROUTING -o ens4 -j MASQUERADE
+PostUp   = iptables -I FORWARD 1 -i %i -j ACCEPT; iptables -I FORWARD 1 -o %i -j ACCEPT; iptables -t nat -A POSTROUTING -o [your outgoing interface name] -j MASQUERADE
+PostDown = iptables -D FORWARD -i %i -j ACCEPT; iptables -D FORWARD -o %i -j ACCEPT; iptables -t nat -D POSTROUTING -o [your outgoing interface name] -j MASQUERADE
 
 [Peer]
 # rpi server
@@ -287,9 +283,13 @@ PersistentKeepalive = 30 # good for peers behind NAT
 </code></pre></td></tr></table>
 </div>
 </div><ul>
-<li>run <code>sudo wg-quick up ./wg0.conf</code> in the directory where <code>wg0.conf</code> is present</li>
+<li>run <code>sudo wg-quick up ./wg0.conf</code> in the directory where <code>wg0.conf</code> is present
+<ul>
+<li>connection between vpn server and rpi should be made and observable through <code>wg show</code></li>
 </ul>
-<h2 id="setup-ss-server-on-rpi">Setup ss server on rpi</h2>
+</li>
+</ul>
+<h2 id="setup-shadowsocks-server-on-rpi">Setup shadowsocks server on rpi</h2>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
@@ -299,9 +299,9 @@ PersistentKeepalive = 30 # good for peers behind NAT
 </code></pre></td></tr></table>
 </div>
 </div><ul>
-<li>run <code>./go/bin/go-shadowsocks2 -s 'ss://AEAD_CHACHA20_POLY1305:[password]@:[port that server will listen on]' -verbose</code></li>
+<li>run <code>./go/bin/go-shadowsocks2 -s 'ss://AEAD_CHACHA20_POLY1305:[password]@:[port that server will listen on]' -verbose</code> to start shadowsocks server on rpi</li>
 </ul>
-<h2 id="setup-ss-client-on-vpn-server-and-connect-it-to-ss-server-on-rpi">Setup ss client on vpn server and connect it to ss server on rpi</h2>
+<h2 id="setup-shadowsocks-client-on-vpn-server-and-connect-it-to-shadowsocks-server-on-rpi">Setup shadowsocks client on vpn server and connect it to shadowsocks server on rpi</h2>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
@@ -311,9 +311,9 @@ PersistentKeepalive = 30 # good for peers behind NAT
 </code></pre></td></tr></table>
 </div>
 </div><ul>
-<li>run <code>./go/bin/go-shadowsocks2 -c 'ss://AEAD_CHACHA20_POLY1305:[password]@[ss server ip:ss server port]' -redir :[port that redirected traffic should go to] -verbose</code> to setup ss client for redirection</li>
+<li>run <code>./go/bin/go-shadowsocks2 -c 'ss://AEAD_CHACHA20_POLY1305:[password]@[ss server ip:ss server port]' -redir :[port that redirected traffic should go to] -verbose</code> to setup shadowsocks client on vpn server for traffic redirection</li>
 </ul>
-<h2 id="setup-iptables-on-vpn-server-to-do-port-forwarding-on-the-port-that-ss-client-is-listening-to-rightarrow-have-the-iphone-connect-to-it">Setup iptables on vpn server to do port forwarding on the port that ss client is listening to $\rightarrow$ have the iPhone connect to it</h2>
+<h2 id="setup-iptables-on-vpn-server-to-do-port-forwarding-on-the-port-that-shadowsocks-client-is-listening-to">Setup iptables on vpn server to do port forwarding on the port that shadowsocks client is listening to</h2>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
@@ -323,7 +323,7 @@ PersistentKeepalive = 30 # good for peers behind NAT
 </code></pre></td></tr></table>
 </div>
 </div><ul>
-<li>iptables for connecting via ss-client to vpn server</li>
+<li>iptables script</li>
 </ul>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -361,28 +361,13 @@ PersistentKeepalive = 30 # good for peers behind NAT
 </span><span class="lnt">32
 </span><span class="lnt">33
 </span><span class="lnt">34
-</span><span class="lnt">35
-</span><span class="lnt">36
-</span><span class="lnt">37
-</span><span class="lnt">38
-</span><span class="lnt">39
-</span><span class="lnt">40
-</span><span class="lnt">41
-</span><span class="lnt">42
-</span><span class="lnt">43
-</span><span class="lnt">44
-</span><span class="lnt">45
-</span><span class="lnt">46
 </span></code></pre></td>
 <td class="lntd">
 <pre class="chroma"><code class="language-fallback" data-lang="fallback"># list all rules
 sudo iptables -L -v &amp;&amp; sudo iptables -t nat -L -v
 
 # Create new chain
-# iptables -t nat -N SHADOWSOCKS
-# iptables -t mangle -N SHADOWSOCKS
-
-iptables -t nat -F SHADOWSOCKS
+iptables -t nat -N SHADOWSOCKS
 
 # Ignore your shadowsocks server&#39;s addresses
 # It&#39;s very IMPORTANT, just be careful.
@@ -403,17 +388,8 @@ iptables -t nat -A SHADOWSOCKS -d 240.0.0.0/4 -j RETURN
 # Anything else should be redirected to shadowsocks&#39;s local port
 iptables -t nat -A SHADOWSOCKS -p tcp -j REDIRECT --to-ports 8488
 
-# Add any UDP rules
-# ip rule add fwmark 0x01/0x01 table 100
-# ip route add local 0.0.0.0/0 dev lo table 100
-# iptables -t mangle -A SHADOWSOCKS -p udp --dport 53 -j TPROXY --on-port 8488 --tproxy-mark 0x01/0x01
-
 # Apply the rules
 iptables -t nat -A PREROUTING -p tcp -j SHADOWSOCKS
-# iptables -t mangle -A PREROUTING -j SHADOWSOCKS
-
-# Start the shadowsocks-redir
-# ss-redir -u -c /etc/config/shadowsocks.json -f /var/run/shadowsocks.pid
 
 # allow wg0 traffic
 sudo iptables -I INPUT 1 -i wg0 -p tcp --dport 8488 -j ACCEPT
@@ -424,13 +400,48 @@ sudo iptables -L -v &amp;&amp; sudo iptables -t nat -L -v
 </code></pre></td></tr></table>
 </div>
 </div><ul>
-<li>notes for <a href="https://manpages.debian.org/testing/shadowsocks-libev/shadowsocks-libev.8.en.html">iptables for connecting via wireguard to vpn server</a></li>
+<li>reference for <a href="https://manpages.debian.org/testing/shadowsocks-libev/shadowsocks-libev.8.en.html">the iptables setup</a></li>
+</ul>
+<h2 id="setup-clients-eg-iphones">Setup clients e.g. iPhones</h2>
+<ul>
+<li>gen keys by <code>wg genkey | tee wg-private.key |  wg pubkey &gt; wg-public.key</code></li>
+<li>create a client config</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span><span class="lnt">9
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">[Interface]
+Address = [client ip]/24
+PrivateKey = [client&#39;s private key]
+DNS = 1.1.1.1
+        
+[Peer]
+PublicKey = [vpn server&#39;s public key]
+AllowedIPs = 0.0.0.0/0 # for passing all traffic through wireguard
+Endpoint = [server ip]:[server port]
+</code></pre></td></tr></table>
+</div>
+</div><ul>
+<li>add a peer in server config, and <code>down</code> then <code>up</code> the interface</li>
+<li>use <code>qrencode</code> to generate qrcode for clients to scan on their wireguard app on phones :)
+<ul>
+<li>generate qrcode by <code>qrencode -t ansiutf8 &lt; [filename]</code></li>
+<li>install qrcode by <code>sudo apt install qrencode resolvconf</code></li>
+</ul>
+</li>
 </ul>
 <h1 id="tried-but-failed-solutions">Tried but failed solutions</h1>
-<p>Actually the main problem here is how to preserve the destination IP while re-routing the packet to other places. That&rsquo;s why I settled with the ss solution.</p>
-<h2 id="iptables-packet-forwarding">iptables packet forwarding</h2>
-<p>Destination IP retaintion issue</p>
-
+<p>Actually the main problem is how to preserve the destination IP while re-routing the packet to other places. That&rsquo;s why I settled with the wireguard + shadowsocks solution.</p>
     </div>
 
     <div class="post-copyright">
