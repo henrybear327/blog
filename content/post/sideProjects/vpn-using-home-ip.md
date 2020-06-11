@@ -33,6 +33,12 @@ This is my final setup.
 
 The final solution is actually pretty simple. Client traffic coming from VPN subnet to GCP are redirected through ss tunnel to rpi, then exit to the world from there.
 
+So basically
+* Install wireguard and shadowsocks on vpn server and rpi
+* Connect vpn server and rpi with wireguard
+* Setup shadowsocks server on rpi 
+* Setup shadowsocks client on vpn server, connect to shadowsocks server on rpi, and forward traffic to shadowsocks server  
+
 ## Install shadowsocks on vpn server and rpi
 
 * `go get -u -v github.com/shadowsocks/go-shadowsocks2`
