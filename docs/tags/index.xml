@@ -6,10 +6,37 @@
     <description>Recent content in Tags on Coding Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 11 Jun 2020 17:56:48 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 26 Jul 2020 10:48:37 +0800</lastBuildDate>
     
 	<atom:link href="https://henrybear327.github.io/blog/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>enumeration</title>
+      <link>https://henrybear327.github.io/blog/tags/enumeration/</link>
+      <pubDate>Sun, 26 Jul 2020 10:48:37 +0800</pubDate>
+      
+      <guid>https://henrybear327.github.io/blog/tags/enumeration/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>implementation</title>
+      <link>https://henrybear327.github.io/blog/tags/implementation/</link>
+      <pubDate>Sun, 26 Jul 2020 10:48:37 +0800</pubDate>
+      
+      <guid>https://henrybear327.github.io/blog/tags/implementation/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Math</title>
+      <link>https://henrybear327.github.io/blog/tags/math/</link>
+      <pubDate>Sun, 26 Jul 2020 10:48:37 +0800</pubDate>
+      
+      <guid>https://henrybear327.github.io/blog/tags/math/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>iptables</title>
@@ -75,29 +102,11 @@
     </item>
     
     <item>
-      <title>enumeration</title>
-      <link>https://henrybear327.github.io/blog/tags/enumeration/</link>
-      <pubDate>Wed, 04 Dec 2019 17:14:56 +0800</pubDate>
-      
-      <guid>https://henrybear327.github.io/blog/tags/enumeration/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>knapsack</title>
       <link>https://henrybear327.github.io/blog/tags/knapsack/</link>
       <pubDate>Wed, 04 Dec 2019 17:14:56 +0800</pubDate>
       
       <guid>https://henrybear327.github.io/blog/tags/knapsack/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Math</title>
-      <link>https://henrybear327.github.io/blog/tags/math/</link>
-      <pubDate>Wed, 04 Dec 2019 17:14:56 +0800</pubDate>
-      
-      <guid>https://henrybear327.github.io/blog/tags/math/</guid>
       <description></description>
     </item>
     
@@ -296,15 +305,6 @@
       <pubDate>Sat, 26 Jan 2019 17:45:59 +0800</pubDate>
       
       <guid>https://henrybear327.github.io/blog/tags/string/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>implementation</title>
-      <link>https://henrybear327.github.io/blog/tags/implementation/</link>
-      <pubDate>Sat, 26 Jan 2019 15:03:31 +0800</pubDate>
-      
-      <guid>https://henrybear327.github.io/blog/tags/implementation/</guid>
       <description></description>
     </item>
     

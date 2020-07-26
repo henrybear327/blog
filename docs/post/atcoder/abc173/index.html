@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title>Atcoder ABC144 - Coding Blog</title>
+  <title>Atcoder ABC173 - Coding Blog</title>
   <meta name="renderer" content="webkit" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
 
@@ -16,8 +16,7 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
 
 
-<meta name="author" content="Chun-Hung Tseng" /><meta name="description" content="一題很騙人的暴力搜尋跟數學討論題。
-題目
+<meta name="author" content="Chun-Hung Tseng" /><meta name="description" content="題目
 " /><meta name="keywords" content="Competitive programming, Notes, Codeforces, UVa, Leetcode" />
 
 
@@ -28,7 +27,7 @@
 <meta name="generator" content="Hugo 0.74.3 with theme even" />
 
 
-<link rel="canonical" href="https://henrybear327.github.io/blog/post/atcoder/abc144/" />
+<link rel="canonical" href="https://henrybear327.github.io/blog/post/atcoder/abc173/" />
 <link rel="apple-touch-icon" sizes="180x180" href="/blog/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/blog/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/blog/favicon-16x16.png">
@@ -40,27 +39,24 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
 
 
-<meta property="og:title" content="Atcoder ABC144" />
-<meta property="og:description" content="一題很騙人的暴力搜尋跟數學討論題。
-題目" />
+<meta property="og:title" content="Atcoder ABC173" />
+<meta property="og:description" content="題目" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://henrybear327.github.io/blog/post/atcoder/abc144/" />
-<meta property="article:published_time" content="2019-11-11T18:33:19+08:00" />
-<meta property="article:modified_time" content="2019-11-11T18:33:19+08:00" />
-<meta itemprop="name" content="Atcoder ABC144">
-<meta itemprop="description" content="一題很騙人的暴力搜尋跟數學討論題。
-題目">
-<meta itemprop="datePublished" content="2019-11-11T18:33:19+08:00" />
-<meta itemprop="dateModified" content="2019-11-11T18:33:19+08:00" />
-<meta itemprop="wordCount" content="378">
+<meta property="og:url" content="https://henrybear327.github.io/blog/post/atcoder/abc173/" />
+<meta property="article:published_time" content="2020-07-26T10:48:37+08:00" />
+<meta property="article:modified_time" content="2020-07-26T10:48:37+08:00" />
+<meta itemprop="name" content="Atcoder ABC173">
+<meta itemprop="description" content="題目">
+<meta itemprop="datePublished" content="2020-07-26T10:48:37+08:00" />
+<meta itemprop="dateModified" content="2020-07-26T10:48:37+08:00" />
+<meta itemprop="wordCount" content="391">
 
 
 
-<meta itemprop="keywords" content="enumeration,math," />
+<meta itemprop="keywords" content="enumeration,math,implementation," />
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Atcoder ABC144"/>
-<meta name="twitter:description" content="一題很騙人的暴力搜尋跟數學討論題。
-題目"/>
+<meta name="twitter:title" content="Atcoder ABC173"/>
+<meta name="twitter:description" content="題目"/>
 
 <!--[if lte IE 9]>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -123,14 +119,14 @@
           <article class="post">
     
     <header class="post-header">
-      <h1 class="post-title">Atcoder ABC144</h1>
+      <h1 class="post-title">Atcoder ABC173</h1>
 
       <div class="post-meta">
-        <span class="post-time"> 2019-11-11 </span>
+        <span class="post-time"> 2020-07-26 </span>
         <div class="post-category">
             <a href="/blog/categories/atcoder/"> Atcoder </a>
             </div>
-          <span class="more-meta"> 378 words </span>
+          <span class="more-meta"> 391 words </span>
           <span class="more-meta"> 1 min read </span>
         
       </div>
@@ -138,71 +134,11 @@
 
     
     <div class="post-content">
-      <p>一題很騙人的暴力搜尋跟數學討論題。</p>
-<p><a href="https://atcoder.jp/contests/abc144/tasks">題目</a></p>
-<h1 id="c---walk-on-multiplication-tablehttpsatcoderjpcontestsabc144tasksabc144_c"><a href="https://atcoder.jp/contests/abc144/tasks/abc144_c">C - Walk on Multiplication Table</a></h1>
-<p>令 $d$ 為 $n$ 的因數，那這題就是找 $(1, 1)$ 到 $(n, \frac{n}{d})$ = $n + \frac{n}{d} - 2$ 的最小值。</p>
-<p>$n$ 最大是 $10^{12}$ 沒錯，可是我們只要暴力到 $10^6$ 就夠了！</p>
+      <p><a href="https://atcoder.jp/contests/abc173/tasks">題目</a></p>
+<h1 id="c-h-and-vhttpsatcoderjpcontestsabc173tasksabc173_c"><a href="https://atcoder.jp/contests/abc173/tasks/abc173_c">C. H and V</a></h1>
+<p>這題看大家的實現才發現可以這麼短。</p>
+<p>窮舉即可。</p>
 <h2 id="ac-code">AC Code</h2>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
-</span><span class="lnt"> 2
-</span><span class="lnt"> 3
-</span><span class="lnt"> 4
-</span><span class="lnt"> 5
-</span><span class="lnt"> 6
-</span><span class="lnt"> 7
-</span><span class="lnt"> 8
-</span><span class="lnt"> 9
-</span><span class="lnt">10
-</span><span class="lnt">11
-</span><span class="lnt">12
-</span><span class="lnt">13
-</span><span class="lnt">14
-</span><span class="lnt">15
-</span><span class="lnt">16
-</span><span class="lnt">17
-</span><span class="lnt">18
-</span><span class="lnt">19
-</span><span class="lnt">20
-</span><span class="lnt">21
-</span><span class="lnt">22
-</span><span class="lnt">23
-</span><span class="lnt">24
-</span><span class="lnt">25
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-c++" data-lang="c++"><span class="cp">#include</span> <span class="cpf">&lt;bits/stdc++.h&gt;</span><span class="cp">
-</span><span class="cp"></span><span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
-
-<span class="k">typedef</span> <span class="kt">long</span> <span class="kt">long</span> <span class="n">ll</span><span class="p">;</span>
-<span class="k">typedef</span> <span class="n">pair</span><span class="o">&lt;</span><span class="kt">int</span><span class="p">,</span> <span class="kt">int</span><span class="o">&gt;</span> <span class="n">ii</span><span class="p">;</span>
-
-<span class="kt">int</span> <span class="nf">main</span><span class="p">()</span>
-<span class="p">{</span>
-    <span class="n">ll</span> <span class="n">n</span><span class="p">;</span>
-    <span class="n">scanf</span><span class="p">(</span><span class="s">&#34;%lld&#34;</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">n</span><span class="p">);</span>
-
-    <span class="n">ll</span> <span class="n">ans</span> <span class="o">=</span> <span class="mi">1</span> <span class="o">+</span> <span class="n">n</span><span class="p">;</span>
-    <span class="k">for</span> <span class="p">(</span><span class="n">ll</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span> <span class="n">i</span> <span class="o">*</span> <span class="n">i</span> <span class="o">&lt;=</span> <span class="n">n</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
-        <span class="n">ll</span> <span class="n">a</span> <span class="o">=</span> <span class="n">i</span><span class="p">;</span>
-        <span class="n">ll</span> <span class="n">b</span> <span class="o">=</span> <span class="n">n</span> <span class="o">/</span> <span class="n">i</span><span class="p">;</span>
-        <span class="k">if</span> <span class="p">(</span><span class="n">a</span> <span class="o">*</span> <span class="n">b</span> <span class="o">==</span> <span class="n">n</span><span class="p">)</span> <span class="p">{</span>
-            <span class="n">ans</span> <span class="o">=</span> <span class="n">min</span><span class="p">(</span><span class="n">ans</span><span class="p">,</span> <span class="n">a</span> <span class="o">+</span> <span class="n">b</span> <span class="o">-</span> <span class="mi">2</span><span class="p">);</span>
-        <span class="p">}</span>
-    <span class="p">}</span>
-
-    <span class="n">printf</span><span class="p">(</span><span class="s">&#34;%lld</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span> <span class="n">ans</span><span class="p">);</span>
-
-    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
-<span class="p">}</span>
-
-</code></pre></td></tr></table>
-</div>
-</div><h1 id="d---water-bottlehttpsatcoderjpcontestsabc144tasksabc144_d"><a href="https://atcoder.jp/contests/abc144/tasks/abc144_d">D - Water Bottle</a></h1>
-<p>這題只要分成兩個case，以 需不需要傾斜超過容器對角線為水平時的角度 討論即可。</p>
-<h2 id="ac-code-1">AC Code</h2>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt"> 1
@@ -238,6 +174,10 @@
 </span><span class="lnt">31
 </span><span class="lnt">32
 </span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span><span class="lnt">36
+</span><span class="lnt">37
 </span></code></pre></td>
 <td class="lntd">
 <pre class="chroma"><code class="language-c++" data-lang="c++"><span class="cp">#include</span> <span class="cpf">&lt;bits/stdc++.h&gt;</span><span class="cp">
@@ -246,29 +186,96 @@
 <span class="k">typedef</span> <span class="kt">long</span> <span class="kt">long</span> <span class="n">ll</span><span class="p">;</span>
 <span class="k">typedef</span> <span class="n">pair</span><span class="o">&lt;</span><span class="kt">int</span><span class="p">,</span> <span class="kt">int</span><span class="o">&gt;</span> <span class="n">ii</span><span class="p">;</span>
 
-<span class="k">const</span> <span class="kt">double</span> <span class="n">PI</span> <span class="o">=</span> <span class="n">atan</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span> <span class="o">*</span> <span class="mf">4.0</span><span class="p">;</span>
+<span class="kt">int</span> <span class="nf">main</span><span class="p">()</span>
+<span class="p">{</span>
+    <span class="kt">int</span> <span class="n">h</span><span class="p">,</span> <span class="n">w</span><span class="p">,</span> <span class="n">k</span><span class="p">;</span>
+    <span class="n">scanf</span><span class="p">(</span><span class="s">&#34;%d %d %d&#34;</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">h</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">w</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">k</span><span class="p">);</span>
+
+    <span class="kt">char</span> <span class="n">inp</span><span class="p">[</span><span class="n">h</span><span class="p">][</span><span class="n">w</span> <span class="o">+</span> <span class="mi">2</span><span class="p">];</span>
+    <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">h</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+        <span class="n">scanf</span><span class="p">(</span><span class="s">&#34;%s&#34;</span><span class="p">,</span> <span class="n">inp</span><span class="p">[</span><span class="n">i</span><span class="p">]);</span>
+    <span class="p">}</span>
+
+    <span class="kt">int</span> <span class="n">ans</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+    <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="p">(</span><span class="mi">1</span> <span class="o">&lt;&lt;</span> <span class="n">h</span><span class="p">);</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">j</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">j</span> <span class="o">&lt;</span> <span class="p">(</span><span class="mi">1</span> <span class="o">&lt;&lt;</span> <span class="n">w</span><span class="p">);</span> <span class="n">j</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+            <span class="kt">int</span> <span class="n">cnt</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+
+            <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">x</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">x</span> <span class="o">&lt;</span> <span class="n">h</span><span class="p">;</span> <span class="n">x</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+                <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">y</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">y</span> <span class="o">&lt;</span> <span class="n">w</span><span class="p">;</span> <span class="n">y</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+                    <span class="k">if</span> <span class="p">(</span><span class="n">inp</span><span class="p">[</span><span class="n">x</span><span class="p">][</span><span class="n">y</span><span class="p">]</span> <span class="o">==</span> <span class="sc">&#39;#&#39;</span> <span class="o">&amp;&amp;</span> <span class="p">((</span><span class="n">i</span> <span class="o">&gt;&gt;</span> <span class="n">x</span><span class="p">)</span> <span class="o">&amp;</span> <span class="mi">1</span><span class="p">)</span> <span class="o">&amp;&amp;</span> <span class="p">((</span><span class="n">j</span> <span class="o">&gt;&gt;</span> <span class="n">y</span><span class="p">)</span> <span class="o">&amp;</span> <span class="mi">1</span><span class="p">))</span> <span class="c1">// wow
+</span><span class="c1"></span>                        <span class="n">cnt</span><span class="o">++</span><span class="p">;</span>
+                <span class="p">}</span>
+            <span class="p">}</span>
+
+            <span class="n">ans</span> <span class="o">+=</span> <span class="p">(</span><span class="n">cnt</span> <span class="o">==</span> <span class="n">k</span><span class="p">);</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+
+    <span class="n">printf</span><span class="p">(</span><span class="s">&#34;%d</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span> <span class="n">ans</span><span class="p">);</span>
+
+    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+
+</code></pre></td></tr></table>
+</div>
+</div><h1 id="d-chat-in-a-circlehttpsatcoderjpcontestsabc173tasksabc173_d"><a href="https://atcoder.jp/contests/abc173/tasks/abc173_d">D. Chat in a Circle</a></h1>
+<p>思考簡單，實作炸開 ＱＱ</p>
+<p>除了第一個數字之外，基本上就是每一個人可以貢獻兩次自己的數值給隔壁的人。</p>
+<p>把數字從大到小排列，新進來的數字都放在可以獲得最高數值的兩人中間，這樣就可以得到一人貢獻兩次的狀態了。</p>
+<h2 id="ac-code-1">AC Code</h2>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-c++" data-lang="c++"><span class="cp">#include</span> <span class="cpf">&lt;bits/stdc++.h&gt;</span><span class="cp">
+</span><span class="cp"></span><span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
+
+<span class="k">typedef</span> <span class="kt">long</span> <span class="kt">long</span> <span class="n">ll</span><span class="p">;</span>
+<span class="k">typedef</span> <span class="n">pair</span><span class="o">&lt;</span><span class="kt">int</span><span class="p">,</span> <span class="kt">int</span><span class="o">&gt;</span> <span class="n">ii</span><span class="p">;</span>
 
 <span class="kt">int</span> <span class="nf">main</span><span class="p">()</span>
 <span class="p">{</span>
-    <span class="kt">int</span> <span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">,</span> <span class="n">x</span><span class="p">;</span>
-    <span class="n">scanf</span><span class="p">(</span><span class="s">&#34;%d %d %d&#34;</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">a</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">b</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">x</span><span class="p">);</span>
+    <span class="n">ll</span> <span class="n">n</span><span class="p">;</span>
+    <span class="n">scanf</span><span class="p">(</span><span class="s">&#34;%lld&#34;</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">n</span><span class="p">);</span>
 
-    <span class="kt">int</span> <span class="n">total</span> <span class="o">=</span> <span class="n">a</span> <span class="o">*</span> <span class="n">a</span> <span class="o">*</span> <span class="n">b</span><span class="p">;</span>
+    <span class="kt">int</span> <span class="n">inp</span><span class="p">[</span><span class="n">n</span><span class="p">];</span>
+    <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">n</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span>
+        <span class="n">scanf</span><span class="p">(</span><span class="s">&#34;%d&#34;</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">inp</span><span class="p">[</span><span class="n">i</span><span class="p">]);</span>
+    <span class="n">sort</span><span class="p">(</span><span class="n">inp</span><span class="p">,</span> <span class="n">inp</span> <span class="o">+</span> <span class="n">n</span><span class="p">,</span> <span class="n">greater</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span><span class="p">());</span>
 
-    <span class="kt">double</span> <span class="n">ans</span> <span class="o">=</span> <span class="mf">0.0</span><span class="p">;</span>
-    <span class="c1">// case 1
-</span><span class="c1"></span>    <span class="kt">double</span> <span class="n">z</span> <span class="o">=</span> <span class="p">(</span><span class="mf">2.0</span> <span class="o">*</span> <span class="p">(</span><span class="n">total</span> <span class="o">-</span> <span class="n">x</span><span class="p">))</span> <span class="o">/</span> <span class="p">(</span><span class="mf">1.0</span> <span class="o">*</span> <span class="n">a</span> <span class="o">*</span> <span class="n">a</span><span class="p">);</span>
-    <span class="k">if</span> <span class="p">(</span><span class="n">z</span> <span class="o">&lt;=</span> <span class="n">b</span><span class="p">)</span> <span class="p">{</span>
-        <span class="c1">// printf(&#34;z1 = %.15lf, ans = %.15lf\n&#34;, z, ans);
-</span><span class="c1"></span>        <span class="n">ans</span> <span class="o">=</span> <span class="n">atan</span><span class="p">(</span><span class="n">z</span> <span class="o">/</span> <span class="n">a</span><span class="p">);</span>
-    <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
-        <span class="c1">// case 2
-</span><span class="c1"></span>        <span class="n">z</span> <span class="o">=</span> <span class="p">(</span><span class="mf">2.0</span> <span class="o">*</span> <span class="n">x</span><span class="p">)</span> <span class="o">/</span> <span class="p">(</span><span class="mf">1.0</span> <span class="o">*</span> <span class="n">b</span> <span class="o">*</span> <span class="n">a</span><span class="p">);</span>
-        <span class="n">ans</span> <span class="o">=</span> <span class="n">PI</span> <span class="o">/</span> <span class="mi">2</span> <span class="o">-</span> <span class="n">atan</span><span class="p">(</span><span class="n">z</span> <span class="o">/</span> <span class="p">(</span><span class="mf">1.0</span> <span class="o">*</span> <span class="n">b</span><span class="p">));</span>
-        <span class="c1">// printf(&#34;z2 = %.15lf, ans = %.15lf\n&#34;, z, ans);
+    <span class="n">ll</span> <span class="n">ans</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+    <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">n</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+        <span class="n">ans</span> <span class="o">+=</span> <span class="n">inp</span><span class="p">[</span><span class="n">i</span> <span class="o">/</span> <span class="mi">2</span><span class="p">];</span> <span class="c1">// what a trick
 </span><span class="c1"></span>    <span class="p">}</span>
 
-    <span class="n">printf</span><span class="p">(</span><span class="s">&#34;%.15lf</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span> <span class="n">ans</span> <span class="o">*</span> <span class="mf">180.0</span> <span class="o">/</span> <span class="n">PI</span><span class="p">);</span>
+    <span class="n">printf</span><span class="p">(</span><span class="s">&#34;%lld</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span> <span class="n">ans</span><span class="p">);</span>
 
     <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
 <span class="p">}</span>
@@ -286,7 +293,7 @@
   <p class="copyright-item">
     <span class="item-title">LastMod</span>
     <span class="item-content">
-        2019-11-11
+        2020-07-26
         
     </span>
   </p>
@@ -300,15 +307,12 @@
       <div class="post-tags">
           <a href="/blog/tags/enumeration/">enumeration</a>
           <a href="/blog/tags/math/">math</a>
+          <a href="/blog/tags/implementation/">implementation</a>
           </div>
       <nav class="post-nav">
-        <a class="prev" href="/blog/post/atcoder/abc146/">
-            <i class="iconfont icon-left"></i>
-            <span class="prev-text nav-default">Atcoder ABC146</span>
-            <span class="prev-text nav-mobile">Prev</span>
-          </a>
-        <a class="next" href="/blog/post/atcoder/abc143/">
-            <span class="next-text nav-default">Atcoder ABC143</span>
+        
+        <a class="next" href="/blog/post/sideprojects/vpn-using-home-ip/">
+            <span class="next-text nav-default">Set up a vpn server that uses home ip as exit ip</span>
             <span class="next-text nav-mobile">Next</span>
             <i class="iconfont icon-right"></i>
           </a>

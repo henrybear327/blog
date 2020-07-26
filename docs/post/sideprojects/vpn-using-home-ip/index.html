@@ -24,7 +24,7 @@
 
 
 
-<meta name="generator" content="Hugo 0.72.0 with theme even" />
+<meta name="generator" content="Hugo 0.74.3 with theme even" />
 
 
 <link rel="canonical" href="https://henrybear327.github.io/blog/post/sideprojects/vpn-using-home-ip/" />
@@ -47,13 +47,14 @@
 <meta property="article:modified_time" content="2020-06-11T17:56:48+08:00" />
 <meta itemprop="name" content="Set up a vpn server that uses home ip as exit ip">
 <meta itemprop="description" content="It all started with my previous bad experience when doing VPN hosting myself&hellip;">
-<meta itemprop="datePublished" content="2020-06-11T17:56:48&#43;08:00" />
-<meta itemprop="dateModified" content="2020-06-11T17:56:48&#43;08:00" />
-<meta itemprop="wordCount" content="1117">
+<meta itemprop="datePublished" content="2020-06-11T17:56:48+08:00" />
+<meta itemprop="dateModified" content="2020-06-11T17:56:48+08:00" />
+<meta itemprop="wordCount" content="1157">
 
 
 
-<meta itemprop="keywords" content="network,wireguard,vpn,shadowsocks,iptables," /><meta name="twitter:card" content="summary"/>
+<meta itemprop="keywords" content="network,wireguard,vpn,shadowsocks,iptables," />
+<meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Set up a vpn server that uses home ip as exit ip"/>
 <meta name="twitter:description" content="It all started with my previous bad experience when doing VPN hosting myself&hellip;"/>
 
@@ -125,7 +126,7 @@
         <div class="post-category">
             <a href="/blog/categories/side-projects/"> side projects </a>
             </div>
-          <span class="more-meta"> 1117 words </span>
+          <span class="more-meta"> 1157 words </span>
           <span class="more-meta"> 6 mins read </span>
         
       </div>
@@ -157,6 +158,13 @@
 </code></pre></td></tr></table>
 </div>
 </div><p>The final solution is actually pretty simple. Client traffic coming from VPN subnet to GCP are redirected through ss tunnel to rpi, then exit to the world from there.</p>
+<p>So basically</p>
+<ul>
+<li>Install wireguard and shadowsocks on vpn server and rpi</li>
+<li>Connect vpn server and rpi with wireguard</li>
+<li>Setup shadowsocks server on rpi</li>
+<li>Setup shadowsocks client on vpn server, connect to shadowsocks server on rpi, and forward traffic to shadowsocks server</li>
+</ul>
 <h2 id="install-shadowsocks-on-vpn-server-and-rpi">Install shadowsocks on vpn server and rpi</h2>
 <ul>
 <li><code>go get -u -v github.com/shadowsocks/go-shadowsocks2</code>
@@ -436,7 +444,7 @@ Endpoint = [server ip]:[server port]
 <li>use <code>qrencode</code> to generate qrcode for clients to scan on their wireguard app on phones :)
 <ul>
 <li>generate qrcode by <code>qrencode -t ansiutf8 &lt; [filename]</code></li>
-<li>install qrcode by <code>sudo apt install qrencode resolvconf</code></li>
+<li>install qrcode by <code>sudo apt install qrencode</code></li>
 </ul>
 </li>
 </ul>
@@ -471,7 +479,11 @@ Endpoint = [server ip]:[server port]
           <a href="/blog/tags/iptables/">iptables</a>
           </div>
       <nav class="post-nav">
-        
+        <a class="prev" href="/blog/post/atcoder/abc173/">
+            <i class="iconfont icon-left"></i>
+            <span class="prev-text nav-default">Atcoder ABC173</span>
+            <span class="prev-text nav-mobile">Prev</span>
+          </a>
         <a class="next" href="/blog/post/atcoder/abc160/">
             <span class="next-text nav-default">Atcoder ABC160</span>
             <span class="next-text nav-mobile">Next</span>

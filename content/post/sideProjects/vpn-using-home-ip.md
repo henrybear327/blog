@@ -190,7 +190,7 @@ Endpoint = [server ip]:[server port]
 * add a peer in server config, and `down` then `up` the interface
 * use `qrencode` to generate qrcode for clients to scan on their wireguard app on phones :) 
     * generate qrcode by `qrencode -t ansiutf8 < [filename]`
-    * install qrcode by `sudo apt install qrencode resolvconf`
+    * install qrcode by `sudo apt install qrencode`
 
 # Tried but failed solutions
 
