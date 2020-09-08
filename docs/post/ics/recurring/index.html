@@ -51,7 +51,7 @@ Just an experiment" />
 Just an experiment">
 <meta itemprop="datePublished" content="2020-09-08T17:25:59+08:00" />
 <meta itemprop="dateModified" content="2020-09-08T17:25:59+08:00" />
-<meta itemprop="wordCount" content="928">
+<meta itemprop="wordCount" content="1254">
 
 
 
@@ -129,8 +129,8 @@ Just an experiment"/>
         <div class="post-category">
             <a href="/blog/categories/calendar/"> Calendar </a>
             </div>
-          <span class="more-meta"> 928 words </span>
-          <span class="more-meta"> 5 mins read </span>
+          <span class="more-meta"> 1254 words </span>
+          <span class="more-meta"> 6 mins read </span>
         
       </div>
     </header>
@@ -192,6 +192,11 @@ Just an experiment"/>
 <li>6 - delete #3</li>
 <li>7 - delete #5</li>
 <li>8 - delete #7</li>
+</ul>
+</li>
+<li>G - Miscelleneous
+<ul>
+<li>Originally an all-day event, recurring daily. Single edit #3. Change starting time to 10AM.</li>
 </ul>
 </li>
 </ul>
@@ -595,71 +600,359 @@ END:VEVENT
 </code></pre></td></tr></table>
 </div>
 </div><h2 id="a2">A2</h2>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-fallback" data-lang="fallback">
-</code></pre></td></tr></table>
-</div>
-</div><h3 id="this-1">This</h3>
+<h3 id="this-1">This</h3>
 <h4 id="change-summary-to-11-1">Change summary to 11</h4>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-fallback" data-lang="fallback">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">BEGIN:VEVENT
+DTSTART;TZID=Asia/Taipei:20200908T100000
+DTEND;TZID=Asia/Taipei:20200908T110000
+RRULE:FREQ=DAILY
+DTSTAMP:20200908T105034Z
+UID:6jkam97d1c48mfs62bp0gufag7@google.com
+CREATED:20200908T105016Z
+DESCRIPTION:
+LAST-MODIFIED:20200908T105016Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:1
+TRANSP:OPAQUE
+END:VEVENT
+
+BEGIN:VEVENT
+DTSTART;TZID=Asia/Taipei:20200910T100000
+DTEND;TZID=Asia/Taipei:20200910T110000
+DTSTAMP:20200908T105034Z
+UID:6jkam97d1c48mfs62bp0gufag7@google.com
+RECURRENCE-ID;TZID=Asia/Taipei:20200910T100000
+CREATED:20200908T105016Z
+DESCRIPTION:
+LAST-MODIFIED:20200908T105026Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:11
+TRANSP:OPAQUE
+END:VEVENT
 </code></pre></td></tr></table>
 </div>
 </div><h4 id="change-time-3">Change time</h4>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-fallback" data-lang="fallback">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">BEGIN:VEVENT
+DTSTART;TZID=Asia/Taipei:20200908T100000
+DTEND;TZID=Asia/Taipei:20200908T110000
+RRULE:FREQ=DAILY
+DTSTAMP:20200908T105118Z
+UID:4piluvrq0g306a5gh6vp0r0m9u@google.com
+CREATED:20200908T105110Z
+DESCRIPTION:
+LAST-MODIFIED:20200908T105110Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:1
+TRANSP:OPAQUE
+END:VEVENT
+
+BEGIN:VEVENT
+DTSTART;TZID=Asia/Taipei:20200910T110000
+DTEND;TZID=Asia/Taipei:20200910T120000
+DTSTAMP:20200908T105118Z
+UID:4piluvrq0g306a5gh6vp0r0m9u@google.com
+RECURRENCE-ID;TZID=Asia/Taipei:20200910T100000
+CREATED:20200908T105110Z
+DESCRIPTION:
+LAST-MODIFIED:20200908T105113Z
+LOCATION:
+SEQUENCE:1
+STATUS:CONFIRMED
+SUMMARY:1
+TRANSP:OPAQUE
+END:VEVENT
 </code></pre></td></tr></table>
 </div>
 </div><h3 id="this-and-future-1">This and future</h3>
 <h4 id="change-summary-to-111-1">Change summary to 111</h4>
-<p>Delete all will delete <code>47f2valst6du690d43riojoa7o@google.com</code> and <code>47f2valst6du690d43riojoa7o_R20200910T023000@google.com</code></p>
+<p>Delete all will delete events with both UID and UID+RecurrenceTime.</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-fallback" data-lang="fallback">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">BEGIN:VEVENT
+DTSTART;TZID=Asia/Taipei:20200908T100000
+DTEND;TZID=Asia/Taipei:20200908T110000
+RRULE:FREQ=DAILY;UNTIL=20200909T155959Z
+DTSTAMP:20200908T105347Z
+UID:6ds0loul03jicmco278fpasm1k@google.com
+CREATED:20200908T105204Z
+DESCRIPTION:
+LAST-MODIFIED:20200908T105340Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:1
+TRANSP:OPAQUE
+END:VEVENT
+
+BEGIN:VEVENT
+DTSTART;TZID=Asia/Taipei:20200910T100000
+DTEND;TZID=Asia/Taipei:20200910T110000
+RRULE:FREQ=DAILY
+DTSTAMP:20200908T105347Z
+UID:6ds0loul03jicmco278fpasm1k_R20200910T020000@google.com
+CREATED:20200908T105204Z
+DESCRIPTION:
+LAST-MODIFIED:20200908T105340Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:111
+TRANSP:OPAQUE
+END:VEVENT
 </code></pre></td></tr></table>
 </div>
 </div><h4 id="change-time-4">Change time</h4>
+<p>It&rsquo;s now in 2 chains! Deleta all on original #1 won&rsquo;t delete original #3 and after.</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-fallback" data-lang="fallback">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">BEGIN:VEVENT
+DTSTART;TZID=Asia/Taipei:20200908T100000
+DTEND;TZID=Asia/Taipei:20200908T110000
+RRULE:FREQ=DAILY;UNTIL=20200909T155959Z
+DTSTAMP:20200908T105431Z
+UID:1vtooh9eicce6irok0l9rit0bk@google.com
+CREATED:20200908T105423Z
+DESCRIPTION:
+LAST-MODIFIED:20200908T105426Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:1
+TRANSP:OPAQUE
+END:VEVENT
+
+BEGIN:VEVENT
+DTSTART;TZID=Asia/Taipei:20200910T110000
+DTEND;TZID=Asia/Taipei:20200910T120000
+RRULE:FREQ=DAILY
+DTSTAMP:20200908T105431Z
+UID:6pr992safig4jef9hkirinka4q@google.com
+CREATED:20200908T105423Z
+DESCRIPTION:
+LAST-MODIFIED:20200908T105426Z
+LOCATION:
+SEQUENCE:1
+STATUS:CONFIRMED
+SUMMARY:1
+TRANSP:OPAQUE
+END:VEVENT
 </code></pre></td></tr></table>
 </div>
 </div><h3 id="all-1">All</h3>
 <h4 id="change-summary-to-1111-1">Change summary to 1111</h4>
-<p>Delete all will delete <code>47f2valst6du690d43riojoa7o@google.com</code> and <code>47f2valst6du690d43riojoa7o_R20200910T023000@google.com</code></p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-fallback" data-lang="fallback">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">BEGIN:VEVENT
+DTSTART;TZID=Asia/Taipei:20200908T100000
+DTEND;TZID=Asia/Taipei:20200908T110000
+RRULE:FREQ=DAILY
+DTSTAMP:20200908T105657Z
+UID:0a46qfitmt27366ou7ejtd13uf@google.com
+CREATED:20200908T105645Z
+DESCRIPTION:
+LAST-MODIFIED:20200908T105651Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:1111
+TRANSP:OPAQUE
+END:VEVENT
 </code></pre></td></tr></table>
 </div>
 </div><h4 id="change-time-5">Change time</h4>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-fallback" data-lang="fallback">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">BEGIN:VEVENT
+DTSTART;TZID=Asia/Taipei:20200908T110000
+DTEND;TZID=Asia/Taipei:20200908T120000
+RRULE:FREQ=DAILY
+DTSTAMP:20200908T105751Z
+UID:02815lt6go86527tqosa5dvoup@google.com
+CREATED:20200908T105730Z
+DESCRIPTION:
+LAST-MODIFIED:20200908T105740Z
+LOCATION:
+SEQUENCE:1
+STATUS:CONFIRMED
+SUMMARY:1
+TRANSP:OPAQUE
+END:VEVENT
 </code></pre></td></tr></table>
 </div>
 </div><h2 id="a3">A3</h2>
