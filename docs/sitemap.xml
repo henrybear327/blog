@@ -2,6 +2,69 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://henrybear327.github.io/blog/categories/calendar/</loc>
+    <lastmod>2020-09-08T17:25:59+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://henrybear327.github.io/blog/tags/calendar/</loc>
+    <lastmod>2020-09-08T17:25:59+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://henrybear327.github.io/blog/categories/</loc>
+    <lastmod>2020-09-08T17:25:59+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://henrybear327.github.io/blog/</loc>
+    <lastmod>2020-09-08T17:25:59+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://henrybear327.github.io/blog/tags/ics/</loc>
+    <lastmod>2020-09-08T17:25:59+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://henrybear327.github.io/blog/post/ics/recurring/</loc>
+    <lastmod>2020-09-08T17:25:59+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://henrybear327.github.io/blog/post/</loc>
+    <lastmod>2020-09-08T17:25:59+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://henrybear327.github.io/blog/tags/recurring/</loc>
+    <lastmod>2020-09-08T17:25:59+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://henrybear327.github.io/blog/tags/</loc>
+    <lastmod>2020-09-08T17:25:59+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://henrybear327.github.io/blog/categories/atcoder/</loc>
     <lastmod>2020-07-26T10:48:37+08:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -10,20 +73,6 @@
   
   <url>
     <loc>https://henrybear327.github.io/blog/post/atcoder/abc173/</loc>
-    <lastmod>2020-07-26T10:48:37+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://henrybear327.github.io/blog/categories/</loc>
-    <lastmod>2020-07-26T10:48:37+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://henrybear327.github.io/blog/</loc>
     <lastmod>2020-07-26T10:48:37+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -45,20 +94,6 @@
   
   <url>
     <loc>https://henrybear327.github.io/blog/tags/math/</loc>
-    <lastmod>2020-07-26T10:48:37+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://henrybear327.github.io/blog/post/</loc>
-    <lastmod>2020-07-26T10:48:37+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://henrybear327.github.io/blog/tags/</loc>
     <lastmod>2020-07-26T10:48:37+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
