@@ -6,11 +6,7 @@
     <description>Recent content in UVa on Coding Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 27 Jan 2019 13:49:25 +0800</lastBuildDate>
-    
-	<atom:link href="https://henrybear327.github.io/blog/categories/uva/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Sun, 27 Jan 2019 13:49:25 +0800</lastBuildDate><atom:link href="https://henrybear327.github.io/blog/categories/uva/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>UVa 10308</title>
       <link>https://henrybear327.github.io/blog/post/uva/10308/</link>

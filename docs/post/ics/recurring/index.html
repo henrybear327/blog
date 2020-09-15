@@ -24,7 +24,7 @@
 
 
 
-<meta name="generator" content="Hugo 0.74.3 with theme even" />
+<meta name="generator" content="Hugo 0.75.0 with theme even" />
 
 
 <link rel="canonical" href="https://henrybear327.github.io/blog/post/ics/recurring/" />
@@ -51,7 +51,7 @@ Just an experiment" />
 Just an experiment">
 <meta itemprop="datePublished" content="2020-09-08T17:25:59+08:00" />
 <meta itemprop="dateModified" content="2020-09-08T17:25:59+08:00" />
-<meta itemprop="wordCount" content="1501">
+<meta itemprop="wordCount" content="2790">
 
 
 
@@ -129,8 +129,8 @@ Just an experiment"/>
         <div class="post-category">
             <a href="/blog/categories/calendar/"> Calendar </a>
             </div>
-          <span class="more-meta"> 1501 words </span>
-          <span class="more-meta"> 8 mins read </span>
+          <span class="more-meta"> 2790 words </span>
+          <span class="more-meta"> 14 mins read </span>
         
       </div>
     </header>
@@ -195,7 +195,8 @@ Just an experiment"/>
 </li>
 <li>G - Miscelleneous
 <ul>
-<li>Originally an all-day event, recurring daily. Single edit #3. Change starting time to 10AM.</li>
+<li>1 - Originally an all-day event, recurring daily. Single edit #3. Change starting time to 10AM.</li>
+<li>2 - C5 + delete #1</li>
 </ul>
 </li>
 </ul>
@@ -995,7 +996,7 @@ TRANSP:OPAQUE
 END:VEVENT
 </code></pre></td></tr></table>
 </div>
-</div><p>No <code>this and future</code> and <code>all</code> available.</p>
+</div><p>No event exists after <code>This and future</code> and <code>All</code> operations.</p>
 <h2 id="a4">A4</h2>
 <h3 id="this-3">This</h3>
 <div class="highlight"><div class="chroma">
@@ -1073,7 +1074,7 @@ TRANSP:OPAQUE
 END:VEVENT
 </code></pre></td></tr></table>
 </div>
-</div><p>No <code>all</code> available.</p>
+</div><p>No event exists after <code>All</code> operation.</p>
 <h2 id="b1">B1</h2>
 <h3 id="this-4">This</h3>
 <div class="highlight"><div class="chroma">
@@ -1351,200 +1352,1325 @@ END:VEVENT
 <h3 id="this-5">This</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-fallback" data-lang="fallback">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">BEGIN:VEVENT
+DTSTART;TZID=Asia/Taipei:20200908T100000
+DTEND;TZID=Asia/Taipei:20200908T110000
+RRULE:FREQ=DAILY
+EXDATE;TZID=Asia/Taipei:20200908T100000
+DTSTAMP:20200915T023803Z
+UID:3pgdii5q2095tunem9qm267ngu@google.com
+CREATED:20200915T023649Z
+DESCRIPTION:
+LAST-MODIFIED:20200915T023649Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:1
+TRANSP:OPAQUE
+END:VEVENT
+</code></pre></td></tr></table>
+</div>
+</div><p>No event exists after <code>This and future</code> and <code>All</code> operations.</p>
+<h2 id="b3">B3</h2>
+<h3 id="this-6">This</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">BEGIN:VEVENT
+DTSTART;TZID=Asia/Taipei:20200908T100000
+DTEND;TZID=Asia/Taipei:20200908T110000
+RRULE:FREQ=DAILY
+EXDATE;TZID=Asia/Taipei:20200910T100000
+DTSTAMP:20200915T024410Z
+UID:57h78gtuutfbfuv1v7a97jiv1h@google.com
+CREATED:20200915T024347Z
+DESCRIPTION:
+LAST-MODIFIED:20200915T024347Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:1
+TRANSP:OPAQUE
+END:VEVENT
+
+BEGIN:VEVENT
+DTSTART;TZID=Asia/Taipei:20200908T100000
+DTEND;TZID=Asia/Taipei:20200908T110000
+DTSTAMP:20200915T024410Z
+UID:57h78gtuutfbfuv1v7a97jiv1h@google.com
+RECURRENCE-ID;TZID=Asia/Taipei:20200908T100000
+CREATED:20200915T024347Z
+DESCRIPTION:
+LAST-MODIFIED:20200915T024356Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:11
+TRANSP:OPAQUE
+END:VEVENT
 </code></pre></td></tr></table>
 </div>
 </div><h3 id="this-and-future-4">This and future</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-fallback" data-lang="fallback">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">BEGIN:VEVENT
+DTSTART;TZID=Asia/Taipei:20200908T100000
+DTEND;TZID=Asia/Taipei:20200908T110000
+RRULE:FREQ=DAILY;UNTIL=20200909T155959Z
+DTSTAMP:20200915T024630Z
+UID:5uile6djjhup28hi5i2q6afs98@google.com
+CREATED:20200915T024601Z
+DESCRIPTION:
+LAST-MODIFIED:20200915T024617Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:1
+TRANSP:OPAQUE
+END:VEVENT
+
+BEGIN:VEVENT
+DTSTART;TZID=Asia/Taipei:20200908T100000
+DTEND;TZID=Asia/Taipei:20200908T110000
+DTSTAMP:20200915T024630Z
+UID:5uile6djjhup28hi5i2q6afs98@google.com
+RECURRENCE-ID;TZID=Asia/Taipei:20200908T100000
+CREATED:20200915T024601Z
+DESCRIPTION:
+LAST-MODIFIED:20200915T024617Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:11
+TRANSP:OPAQUE
+END:VEVENT
 </code></pre></td></tr></table>
 </div>
-</div><h3 id="all-3">All</h3>
+</div><p>No event exists after and <code>All</code> operation.</p>
+<h2 id="heading"></h2>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-fallback" data-lang="fallback">
-</code></pre></td></tr></table>
-</div>
-</div><h2 id="b3">B3</h2>
-<h3 id="this-6">This</h3>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-fallback" data-lang="fallback">
-</code></pre></td></tr></table>
-</div>
-</div><h3 id="this-and-future-5">This and future</h3>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-fallback" data-lang="fallback">
-</code></pre></td></tr></table>
-</div>
-</div><h3 id="all-4">All</h3>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-fallback" data-lang="fallback">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">BEGIN:VEVENT
+DTSTART;TZID=Asia/Taipei:20200908T100000
+DTEND;TZID=Asia/Taipei:20200908T110000
+RRULE:FREQ=DAILY
+DTSTAMP:20200915T024936Z
+UID:0ni09j2thf8oc93te5vfi2clel@google.com
+CREATED:20200915T024913Z
+DESCRIPTION:
+LAST-MODIFIED:20200915T024913Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:1
+TRANSP:OPAQUE
+END:VEVENT
+
+BEGIN:VEVENT
+DTSTART;TZID=Asia/Taipei:20200910T100000
+DTEND;TZID=Asia/Taipei:20200910T110000
+DTSTAMP:20200915T024936Z
+UID:0ni09j2thf8oc93te5vfi2clel@google.com
+RECURRENCE-ID;TZID=Asia/Taipei:20200910T100000
+CREATED:20200915T024913Z
+DESCRIPTION:
+LAST-MODIFIED:20200915T024918Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:11
+TRANSP:OPAQUE
+END:VEVENT
 </code></pre></td></tr></table>
 </div>
 </div><h2 id="c1">C1</h2>
 <h3 id="this-7">This</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span><span class="lnt">36
+</span><span class="lnt">37
+</span><span class="lnt">38
+</span><span class="lnt">39
+</span><span class="lnt">40
+</span><span class="lnt">41
+</span><span class="lnt">42
+</span><span class="lnt">43
+</span><span class="lnt">44
+</span><span class="lnt">45
+</span><span class="lnt">46
+</span><span class="lnt">47
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-fallback" data-lang="fallback">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">BEGIN:VEVENT
+DTSTART;TZID=Asia/Taipei:20200908T100000
+DTEND;TZID=Asia/Taipei:20200908T110000
+RRULE:FREQ=DAILY
+DTSTAMP:20200915T025136Z
+UID:0ni09j2thf8oc93te5vfi2clel@google.com
+CREATED:20200915T024913Z
+DESCRIPTION:
+LAST-MODIFIED:20200915T024913Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:1
+TRANSP:OPAQUE
+END:VEVENT
+
+BEGIN:VEVENT
+DTSTART;TZID=Asia/Taipei:20200910T100000
+DTEND;TZID=Asia/Taipei:20200910T110000
+DTSTAMP:20200915T025136Z
+UID:0ni09j2thf8oc93te5vfi2clel@google.com
+RECURRENCE-ID;TZID=Asia/Taipei:20200910T100000
+CREATED:20200915T024913Z
+DESCRIPTION:
+LAST-MODIFIED:20200915T024918Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:11
+TRANSP:OPAQUE
+END:VEVENT
+
+BEGIN:VEVENT
+DTSTART;TZID=Asia/Taipei:20200908T100000
+DTEND;TZID=Asia/Taipei:20200908T110000
+DTSTAMP:20200915T025136Z
+UID:0ni09j2thf8oc93te5vfi2clel@google.com
+RECURRENCE-ID;TZID=Asia/Taipei:20200908T100000
+CREATED:20200915T024913Z
+DESCRIPTION:
+LAST-MODIFIED:20200915T025127Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:111
+TRANSP:OPAQUE
+END:VEVENT
 </code></pre></td></tr></table>
 </div>
-</div><h3 id="this-and-future-6">This and future</h3>
+</div><h3 id="this-and-future-5">This and future</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-fallback" data-lang="fallback">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">BEGIN:VEVENT
+DTSTART;TZID=Asia/Taipei:20200908T100000
+DTEND;TZID=Asia/Taipei:20200908T110000
+RRULE:FREQ=DAILY
+DTSTAMP:20200915T025234Z
+UID:11fevus04v4vjgh5t0sktkq68s@google.com
+CREATED:20200915T025215Z
+DESCRIPTION:
+LAST-MODIFIED:20200915T025225Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:111
+TRANSP:OPAQUE
+END:VEVENT
+
+BEGIN:VEVENT
+DTSTART;TZID=Asia/Taipei:20200910T100000
+DTEND;TZID=Asia/Taipei:20200910T110000
+DTSTAMP:20200915T025234Z
+UID:11fevus04v4vjgh5t0sktkq68s@google.com
+RECURRENCE-ID;TZID=Asia/Taipei:20200910T100000
+CREATED:20200915T025215Z
+DESCRIPTION:
+LAST-MODIFIED:20200915T025225Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:111
+TRANSP:OPAQUE
+END:VEVENT
 </code></pre></td></tr></table>
 </div>
-</div><h3 id="all-5">All</h3>
+</div><h3 id="all-3">All</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-fallback" data-lang="fallback">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">BEGIN:VEVENT
+DTSTART;TZID=Asia/Taipei:20200908T100000
+DTEND;TZID=Asia/Taipei:20200908T110000
+RRULE:FREQ=DAILY
+DTSTAMP:20200915T025408Z
+UID:4k8q8gc1qgmpiokkohu4ag6ivt@google.com
+CREATED:20200915T025351Z
+DESCRIPTION:
+LAST-MODIFIED:20200915T025402Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:111
+TRANSP:OPAQUE
+END:VEVENT
+
+BEGIN:VEVENT
+DTSTART;TZID=Asia/Taipei:20200910T100000
+DTEND;TZID=Asia/Taipei:20200910T110000
+DTSTAMP:20200915T025408Z
+UID:4k8q8gc1qgmpiokkohu4ag6ivt@google.com
+RECURRENCE-ID;TZID=Asia/Taipei:20200910T100000
+CREATED:20200915T025351Z
+DESCRIPTION:
+LAST-MODIFIED:20200915T025402Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:111
+TRANSP:OPAQUE
+END:VEVENT
+
 </code></pre></td></tr></table>
 </div>
 </div><h2 id="c2">C2</h2>
 <h3 id="this-8">This</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span><span class="lnt">36
+</span><span class="lnt">37
+</span><span class="lnt">38
+</span><span class="lnt">39
+</span><span class="lnt">40
+</span><span class="lnt">41
+</span><span class="lnt">42
+</span><span class="lnt">43
+</span><span class="lnt">44
+</span><span class="lnt">45
+</span><span class="lnt">46
+</span><span class="lnt">47
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-fallback" data-lang="fallback">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">BEGIN:VEVENT
+DTSTART;TZID=Asia/Taipei:20200908T100000
+DTEND;TZID=Asia/Taipei:20200908T110000
+RRULE:FREQ=DAILY
+DTSTAMP:20200915T025515Z
+UID:63h8pbo9rr0okumrahbjc7igev@google.com
+CREATED:20200915T025454Z
+DESCRIPTION:
+LAST-MODIFIED:20200915T025454Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:1
+TRANSP:OPAQUE
+END:VEVENT
+
+BEGIN:VEVENT
+DTSTART;TZID=Asia/Taipei:20200910T100000
+DTEND;TZID=Asia/Taipei:20200910T110000
+DTSTAMP:20200915T025515Z
+UID:63h8pbo9rr0okumrahbjc7igev@google.com
+RECURRENCE-ID;TZID=Asia/Taipei:20200910T100000
+CREATED:20200915T025454Z
+DESCRIPTION:
+LAST-MODIFIED:20200915T025459Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:11
+TRANSP:OPAQUE
+END:VEVENT
+
+BEGIN:VEVENT
+DTSTART;TZID=Asia/Taipei:20200912T100000
+DTEND;TZID=Asia/Taipei:20200912T110000
+DTSTAMP:20200915T025515Z
+UID:63h8pbo9rr0okumrahbjc7igev@google.com
+RECURRENCE-ID;TZID=Asia/Taipei:20200912T100000
+CREATED:20200915T025454Z
+DESCRIPTION:
+LAST-MODIFIED:20200915T025509Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:111
+TRANSP:OPAQUE
+END:VEVENT
 </code></pre></td></tr></table>
 </div>
-</div><h3 id="this-and-future-7">This and future</h3>
+</div><h3 id="this-and-future-6">This and future</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span><span class="lnt">36
+</span><span class="lnt">37
+</span><span class="lnt">38
+</span><span class="lnt">39
+</span><span class="lnt">40
+</span><span class="lnt">41
+</span><span class="lnt">42
+</span><span class="lnt">43
+</span><span class="lnt">44
+</span><span class="lnt">45
+</span><span class="lnt">46
+</span><span class="lnt">47
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-fallback" data-lang="fallback">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">BEGIN:VEVENT
+DTSTART;TZID=Asia/Taipei:20200910T100000
+DTEND;TZID=Asia/Taipei:20200910T110000
+DTSTAMP:20200915T025614Z
+UID:4dd4ugmbc6g1vgpbccf4cru1g1@google.com
+RECURRENCE-ID;TZID=Asia/Taipei:20200910T100000
+CREATED:20200915T025555Z
+DESCRIPTION:
+LAST-MODIFIED:20200915T025601Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:11
+TRANSP:OPAQUE
+END:VEVENT
+
+BEGIN:VEVENT
+DTSTART;TZID=Asia/Taipei:20200908T100000
+DTEND;TZID=Asia/Taipei:20200908T110000
+RRULE:FREQ=DAILY;UNTIL=20200911T155959Z
+DTSTAMP:20200915T025614Z
+UID:4dd4ugmbc6g1vgpbccf4cru1g1@google.com
+CREATED:20200915T025555Z
+DESCRIPTION:
+LAST-MODIFIED:20200915T025607Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:1
+TRANSP:OPAQUE
+END:VEVENT
+
+BEGIN:VEVENT
+DTSTART;TZID=Asia/Taipei:20200912T100000
+DTEND;TZID=Asia/Taipei:20200912T110000
+RRULE:FREQ=DAILY
+DTSTAMP:20200915T025614Z
+UID:4dd4ugmbc6g1vgpbccf4cru1g1_R20200912T020000@google.com
+CREATED:20200915T025555Z
+DESCRIPTION:
+LAST-MODIFIED:20200915T025607Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:111
+TRANSP:OPAQUE
+END:VEVENT
 </code></pre></td></tr></table>
 </div>
-</div><h3 id="all-6">All</h3>
+</div><h3 id="all-4">All</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-fallback" data-lang="fallback">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">BEGIN:VEVENT
+DTSTART;TZID=Asia/Taipei:20200908T100000
+DTEND;TZID=Asia/Taipei:20200908T110000
+RRULE:FREQ=DAILY
+DTSTAMP:20200915T025845Z
+UID:3geh3eqjp7r8lqgbve1ci0b0ok@google.com
+CREATED:20200915T025827Z
+DESCRIPTION:
+LAST-MODIFIED:20200915T025839Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:111
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=Asia/Taipei:20200910T100000
+DTEND;TZID=Asia/Taipei:20200910T110000
+DTSTAMP:20200915T025845Z
+UID:3geh3eqjp7r8lqgbve1ci0b0ok@google.com
+RECURRENCE-ID;TZID=Asia/Taipei:20200910T100000
+CREATED:20200915T025827Z
+DESCRIPTION:
+LAST-MODIFIED:20200915T025839Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:111
+TRANSP:OPAQUE
+END:VEVENT
 </code></pre></td></tr></table>
 </div>
 </div><h2 id="c3">C3</h2>
 <h3 id="this-9">This</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-fallback" data-lang="fallback">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">BEGIN:VEVENT
+DTSTART;TZID=Asia/Taipei:20200908T100000
+DTEND;TZID=Asia/Taipei:20200908T110000
+RRULE:FREQ=DAILY
+EXDATE;TZID=Asia/Taipei:20200908T100000
+DTSTAMP:20200915T025957Z
+UID:1s81466l8n3tegsifoaj413sl7@google.com
+CREATED:20200915T025936Z
+DESCRIPTION:
+LAST-MODIFIED:20200915T025936Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:1
+TRANSP:OPAQUE
+END:VEVENT
+
+BEGIN:VEVENT
+DTSTART;TZID=Asia/Taipei:20200910T100000
+DTEND;TZID=Asia/Taipei:20200910T110000
+DTSTAMP:20200915T025957Z
+UID:1s81466l8n3tegsifoaj413sl7@google.com
+RECURRENCE-ID;TZID=Asia/Taipei:20200910T100000
+CREATED:20200915T025936Z
+DESCRIPTION:
+LAST-MODIFIED:20200915T025946Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:11
+TRANSP:OPAQUE
+END:VEVENT
+</code></pre></td></tr></table>
+</div>
+</div><p>No event exists after <code>This and future</code> and <code>All</code> operations.</p>
+<h2 id="c4">C4</h2>
+<h3 id="this-10">This</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">BEGIN:VEVENT
+DTSTART;TZID=Asia/Taipei:20200908T100000
+DTEND;TZID=Asia/Taipei:20200908T110000
+RRULE:FREQ=DAILY
+EXDATE;TZID=Asia/Taipei:20200910T100000
+DTSTAMP:20200915T030140Z
+UID:3b23fkkqef6gprl46kt44f15gk@google.com
+CREATED:20200915T030124Z
+DESCRIPTION:
+LAST-MODIFIED:20200915T030124Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:1
+TRANSP:OPAQUE
+END:VEVENT
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="this-and-future-7">This and future</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">BEGIN:VEVENT
+DTSTART;TZID=Asia/Taipei:20200908T100000
+DTEND;TZID=Asia/Taipei:20200908T110000
+RRULE:FREQ=DAILY;UNTIL=20200909T155959Z
+DTSTAMP:20200915T030237Z
+UID:7ol6s0j1qvps16lv5qnhsoij5j@google.com
+CREATED:20200915T030220Z
+DESCRIPTION:
+LAST-MODIFIED:20200915T030229Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:1
+TRANSP:OPAQUE
+END:VEVENT
+</code></pre></td></tr></table>
+</div>
+</div><p>No event exists and <code>All</code> operation.</p>
+<h2 id="c5">C5</h2>
+<h3 id="this-11">This</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">BEGIN:VEVENT
+DTSTART;TZID=Asia/Taipei:20200908T100000
+DTEND;TZID=Asia/Taipei:20200908T110000
+RRULE:FREQ=DAILY
+EXDATE;TZID=Asia/Taipei:20200912T100000
+DTSTAMP:20200915T030440Z
+UID:4g07a926bpscpfb7ujm0asn3no@google.com
+CREATED:20200915T030405Z
+DESCRIPTION:
+LAST-MODIFIED:20200915T030405Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:1
+TRANSP:OPAQUE
+END:VEVENT
+
+BEGIN:VEVENT
+DTSTART;TZID=Asia/Taipei:20200910T100000
+DTEND;TZID=Asia/Taipei:20200910T110000
+DTSTAMP:20200915T030440Z
+UID:4g07a926bpscpfb7ujm0asn3no@google.com
+RECURRENCE-ID;TZID=Asia/Taipei:20200910T100000
+CREATED:20200915T030405Z
+DESCRIPTION:
+LAST-MODIFIED:20200915T030414Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:11
+TRANSP:OPAQUE
+END:VEVENT
 </code></pre></td></tr></table>
 </div>
 </div><h3 id="this-and-future-8">This and future</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-fallback" data-lang="fallback">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">BEGIN:VEVENT
+DTSTART;TZID=Asia/Taipei:20200908T100000
+DTEND;TZID=Asia/Taipei:20200908T110000
+RRULE:FREQ=DAILY;UNTIL=20200911T155959Z
+DTSTAMP:20200915T030542Z
+UID:2fagn24j9tdtp69pmrj5p3tjk6@google.com
+CREATED:20200915T030525Z
+DESCRIPTION:
+LAST-MODIFIED:20200915T030537Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:1
+TRANSP:OPAQUE
+END:VEVENT
+
+BEGIN:VEVENT
+DTSTART;TZID=Asia/Taipei:20200910T100000
+DTEND;TZID=Asia/Taipei:20200910T110000
+DTSTAMP:20200915T030542Z
+UID:2fagn24j9tdtp69pmrj5p3tjk6@google.com
+RECURRENCE-ID;TZID=Asia/Taipei:20200910T100000
+CREATED:20200915T030525Z
+DESCRIPTION:
+LAST-MODIFIED:20200915T030537Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:11
+TRANSP:OPAQUE
+END:VEVENT
 </code></pre></td></tr></table>
 </div>
-</div><h3 id="all-7">All</h3>
+</div><p>No event exists and <code>All</code> operation.</p>
+<h2 id="d1">D1</h2>
+<h3 id="this-12">This</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-fallback" data-lang="fallback">
-</code></pre></td></tr></table>
-</div>
-</div><h2 id="c4">C4</h2>
-<h3 id="this-10">This</h3>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-fallback" data-lang="fallback">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">BEGIN:VEVENT
+DTSTART;TZID=Asia/Taipei:20200908T100000
+DTEND;TZID=Asia/Taipei:20200908T110000
+RRULE:FREQ=DAILY
+EXDATE;TZID=Asia/Taipei:20200908T100000
+DTSTAMP:20200915T031348Z
+UID:6618h6l9496nvl6ssci89bmebq@google.com
+CREATED:20200915T031309Z
+DESCRIPTION:
+LAST-MODIFIED:20200915T031309Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:1
+TRANSP:OPAQUE
+END:VEVENT
+
+BEGIN:VEVENT
+DTSTART;TZID=Asia/Taipei:20200910T100000
+DTEND;TZID=Asia/Taipei:20200910T110000
+DTSTAMP:20200915T031348Z
+UID:6618h6l9496nvl6ssci89bmebq@google.com
+RECURRENCE-ID;TZID=Asia/Taipei:20200910T100000
+CREATED:20200915T031309Z
+DESCRIPTION:
+LAST-MODIFIED:20200915T031342Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:11
+TRANSP:OPAQUE
+END:VEVENT
 </code></pre></td></tr></table>
 </div>
 </div><h3 id="this-and-future-9">This and future</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-fallback" data-lang="fallback">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">BEGIN:VEVENT
+DTSTART;TZID=Asia/Taipei:20200908T100000
+DTEND;TZID=Asia/Taipei:20200908T110000
+RRULE:FREQ=DAILY;UNTIL=20200909T155959Z
+EXDATE;TZID=Asia/Taipei:20200908T100000
+DTSTAMP:20200915T031438Z
+UID:2a86a864vkra0m2ula8o8st53g@google.com
+CREATED:20200915T031425Z
+DESCRIPTION:
+LAST-MODIFIED:20200915T031433Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:1
+TRANSP:OPAQUE
+END:VEVENT
+
+BEGIN:VEVENT
+DTSTART;TZID=Asia/Taipei:20200910T100000
+DTEND;TZID=Asia/Taipei:20200910T110000
+RRULE:FREQ=DAILY
+DTSTAMP:20200915T031438Z
+UID:2a86a864vkra0m2ula8o8st53g_R20200910T020000@google.com
+CREATED:20200915T031425Z
+DESCRIPTION:
+LAST-MODIFIED:20200915T031433Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:11
+TRANSP:OPAQUE
+END:VEVENT
 </code></pre></td></tr></table>
 </div>
-</div><h3 id="all-8">All</h3>
+</div><h3 id="all-5">All</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-fallback" data-lang="fallback">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">BEGIN:VEVENT
+DTSTART;TZID=Asia/Taipei:20200908T100000
+DTEND;TZID=Asia/Taipei:20200908T110000
+RRULE:FREQ=DAILY
+EXDATE;TZID=Asia/Taipei:20200908T100000
+DTSTAMP:20200915T031620Z
+UID:1lfe0uihc581go78ovt9v53pv7@google.com
+CREATED:20200915T031557Z
+DESCRIPTION:
+LAST-MODIFIED:20200915T031609Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:11
+TRANSP:OPAQUE
+END:VEVENT
 </code></pre></td></tr></table>
 </div>
-</div><h2 id="c5">C5</h2>
-<h3 id="this-11">This</h3>
+</div><h2 id="d2">D2</h2>
+<h3 id="this-13">This</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-fallback" data-lang="fallback">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">BEGIN:VEVENT
+DTSTART;TZID=Asia/Taipei:20200908T100000
+DTEND;TZID=Asia/Taipei:20200908T110000
+RRULE:FREQ=DAILY
+EXDATE;TZID=Asia/Taipei:20200908T100000
+EXDATE;TZID=Asia/Taipei:20200910T100000
+DTSTAMP:20200915T031824Z
+UID:4i6tufvgds7s2fg0n789ik5fhp@google.com
+CREATED:20200915T031803Z
+DESCRIPTION:
+LAST-MODIFIED:20200915T031803Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:1
+TRANSP:OPAQUE
+END:VEVENT
 </code></pre></td></tr></table>
 </div>
 </div><h3 id="this-and-future-10">This and future</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-fallback" data-lang="fallback">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">BEGIN:VEVENT
+DTSTART;TZID=Asia/Taipei:20200908T100000
+DTEND;TZID=Asia/Taipei:20200908T110000
+RRULE:FREQ=DAILY;UNTIL=20200909T155959Z
+EXDATE;TZID=Asia/Taipei:20200908T100000
+DTSTAMP:20200915T031916Z
+UID:7soluu8f8cd7lmnekergc1g9ne@google.com
+CREATED:20200915T031858Z
+DESCRIPTION:
+LAST-MODIFIED:20200915T031909Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:1
+TRANSP:OPAQUE
+END:VEVENT
 </code></pre></td></tr></table>
 </div>
-</div><h3 id="all-9">All</h3>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-fallback" data-lang="fallback">
-</code></pre></td></tr></table>
-</div>
-</div><h2 id="d1">D1</h2>
-<h3 id="this-12">This</h3>
+</div><p>No event exists and <code>All</code> operation.</p>
+<h2 id="e1">E1</h2>
+<h3 id="this-14">This</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
@@ -1562,63 +2688,7 @@ END:VEVENT
 <pre class="chroma"><code class="language-fallback" data-lang="fallback">
 </code></pre></td></tr></table>
 </div>
-</div><h3 id="all-10">All</h3>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-fallback" data-lang="fallback">
-</code></pre></td></tr></table>
-</div>
-</div><h2 id="d2">D2</h2>
-<h3 id="this-13">This</h3>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-fallback" data-lang="fallback">
-</code></pre></td></tr></table>
-</div>
-</div><h3 id="this-and-future-12">This and future</h3>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-fallback" data-lang="fallback">
-</code></pre></td></tr></table>
-</div>
-</div><h3 id="all-11">All</h3>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-fallback" data-lang="fallback">
-</code></pre></td></tr></table>
-</div>
-</div><h2 id="e1">E1</h2>
-<h3 id="this-14">This</h3>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-fallback" data-lang="fallback">
-</code></pre></td></tr></table>
-</div>
-</div><h3 id="this-and-future-13">This and future</h3>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-fallback" data-lang="fallback">
-</code></pre></td></tr></table>
-</div>
-</div><h3 id="all-12">All</h3>
+</div><h3 id="all-6">All</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
@@ -1637,7 +2707,7 @@ END:VEVENT
 <pre class="chroma"><code class="language-fallback" data-lang="fallback">
 </code></pre></td></tr></table>
 </div>
-</div><h3 id="this-and-future-14">This and future</h3>
+</div><h3 id="this-and-future-12">This and future</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
@@ -1646,7 +2716,7 @@ END:VEVENT
 <pre class="chroma"><code class="language-fallback" data-lang="fallback">
 </code></pre></td></tr></table>
 </div>
-</div><h3 id="all-13">All</h3>
+</div><h3 id="all-7">All</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
@@ -1665,7 +2735,7 @@ END:VEVENT
 <pre class="chroma"><code class="language-fallback" data-lang="fallback">
 </code></pre></td></tr></table>
 </div>
-</div><h3 id="this-and-future-15">This and future</h3>
+</div><h3 id="this-and-future-13">This and future</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
@@ -1674,7 +2744,7 @@ END:VEVENT
 <pre class="chroma"><code class="language-fallback" data-lang="fallback">
 </code></pre></td></tr></table>
 </div>
-</div><h3 id="all-14">All</h3>
+</div><h3 id="all-8">All</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
@@ -1693,7 +2763,7 @@ END:VEVENT
 <pre class="chroma"><code class="language-fallback" data-lang="fallback">
 </code></pre></td></tr></table>
 </div>
-</div><h3 id="this-and-future-16">This and future</h3>
+</div><h3 id="this-and-future-14">This and future</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
@@ -1702,7 +2772,7 @@ END:VEVENT
 <pre class="chroma"><code class="language-fallback" data-lang="fallback">
 </code></pre></td></tr></table>
 </div>
-</div><h3 id="all-15">All</h3>
+</div><h3 id="all-9">All</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
@@ -1721,7 +2791,7 @@ END:VEVENT
 <pre class="chroma"><code class="language-fallback" data-lang="fallback">
 </code></pre></td></tr></table>
 </div>
-</div><h3 id="this-and-future-17">This and future</h3>
+</div><h3 id="this-and-future-15">This and future</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
@@ -1730,7 +2800,7 @@ END:VEVENT
 <pre class="chroma"><code class="language-fallback" data-lang="fallback">
 </code></pre></td></tr></table>
 </div>
-</div><h3 id="all-16">All</h3>
+</div><h3 id="all-10">All</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
@@ -1749,7 +2819,7 @@ END:VEVENT
 <pre class="chroma"><code class="language-fallback" data-lang="fallback">
 </code></pre></td></tr></table>
 </div>
-</div><h3 id="this-and-future-18">This and future</h3>
+</div><h3 id="this-and-future-16">This and future</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
@@ -1758,7 +2828,7 @@ END:VEVENT
 <pre class="chroma"><code class="language-fallback" data-lang="fallback">
 </code></pre></td></tr></table>
 </div>
-</div><h3 id="all-17">All</h3>
+</div><h3 id="all-11">All</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
@@ -1777,7 +2847,7 @@ END:VEVENT
 <pre class="chroma"><code class="language-fallback" data-lang="fallback">
 </code></pre></td></tr></table>
 </div>
-</div><h3 id="this-and-future-19">This and future</h3>
+</div><h3 id="this-and-future-17">This and future</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
@@ -1786,7 +2856,7 @@ END:VEVENT
 <pre class="chroma"><code class="language-fallback" data-lang="fallback">
 </code></pre></td></tr></table>
 </div>
-</div><h3 id="all-18">All</h3>
+</div><h3 id="all-12">All</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
@@ -1805,7 +2875,7 @@ END:VEVENT
 <pre class="chroma"><code class="language-fallback" data-lang="fallback">
 </code></pre></td></tr></table>
 </div>
-</div><h3 id="this-and-future-20">This and future</h3>
+</div><h3 id="this-and-future-18">This and future</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
@@ -1814,7 +2884,7 @@ END:VEVENT
 <pre class="chroma"><code class="language-fallback" data-lang="fallback">
 </code></pre></td></tr></table>
 </div>
-</div><h3 id="all-19">All</h3>
+</div><h3 id="all-13">All</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
@@ -1833,7 +2903,7 @@ END:VEVENT
 <pre class="chroma"><code class="language-fallback" data-lang="fallback">
 </code></pre></td></tr></table>
 </div>
-</div><h3 id="this-and-future-21">This and future</h3>
+</div><h3 id="this-and-future-19">This and future</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
@@ -1842,7 +2912,7 @@ END:VEVENT
 <pre class="chroma"><code class="language-fallback" data-lang="fallback">
 </code></pre></td></tr></table>
 </div>
-</div><h3 id="all-20">All</h3>
+</div><h3 id="all-14">All</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
@@ -1861,7 +2931,7 @@ END:VEVENT
 <pre class="chroma"><code class="language-fallback" data-lang="fallback">
 </code></pre></td></tr></table>
 </div>
-</div><h3 id="this-and-future-22">This and future</h3>
+</div><h3 id="this-and-future-20">This and future</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
@@ -1870,7 +2940,7 @@ END:VEVENT
 <pre class="chroma"><code class="language-fallback" data-lang="fallback">
 </code></pre></td></tr></table>
 </div>
-</div><h3 id="all-21">All</h3>
+</div><h3 id="all-15">All</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
@@ -1889,7 +2959,7 @@ END:VEVENT
 <pre class="chroma"><code class="language-fallback" data-lang="fallback">
 </code></pre></td></tr></table>
 </div>
-</div><h3 id="this-and-future-23">This and future</h3>
+</div><h3 id="this-and-future-21">This and future</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
@@ -1898,7 +2968,7 @@ END:VEVENT
 <pre class="chroma"><code class="language-fallback" data-lang="fallback">
 </code></pre></td></tr></table>
 </div>
-</div><h3 id="all-22">All</h3>
+</div><h3 id="all-16">All</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
@@ -1917,7 +2987,7 @@ END:VEVENT
 <pre class="chroma"><code class="language-fallback" data-lang="fallback">
 </code></pre></td></tr></table>
 </div>
-</div><h3 id="this-and-future-24">This and future</h3>
+</div><h3 id="this-and-future-22">This and future</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
@@ -1926,7 +2996,7 @@ END:VEVENT
 <pre class="chroma"><code class="language-fallback" data-lang="fallback">
 </code></pre></td></tr></table>
 </div>
-</div><h3 id="all-23">All</h3>
+</div><h3 id="all-17">All</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
@@ -1935,7 +3005,118 @@ END:VEVENT
 <pre class="chroma"><code class="language-fallback" data-lang="fallback">
 </code></pre></td></tr></table>
 </div>
+</div><h2 id="g">G</h2>
+<h3 id="1">1</h3>
+<h3 id="2">2</h3>
+<p>The root event remains there!</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">BEGIN:VEVENT
+DTSTART;TZID=Asia/Taipei:20200908T100000
+DTEND;TZID=Asia/Taipei:20200908T110000
+RRULE:FREQ=DAILY;UNTIL=20200911T155959Z
+EXDATE;TZID=Asia/Taipei:20200908T100000
+DTSTAMP:20200915T030625Z
+UID:2fagn24j9tdtp69pmrj5p3tjk6@google.com
+CREATED:20200915T030525Z
+DESCRIPTION:
+LAST-MODIFIED:20200915T030537Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:1
+TRANSP:OPAQUE
+END:VEVENT
+
+BEGIN:VEVENT
+DTSTART;TZID=Asia/Taipei:20200910T100000
+DTEND;TZID=Asia/Taipei:20200910T110000
+DTSTAMP:20200915T030625Z
+UID:2fagn24j9tdtp69pmrj5p3tjk6@google.com
+RECURRENCE-ID;TZID=Asia/Taipei:20200910T100000
+CREATED:20200915T030525Z
+DESCRIPTION:
+LAST-MODIFIED:20200915T030537Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:11
+TRANSP:OPAQUE
+END:VEVENT
+</code></pre></td></tr></table>
 </div>
+</div><p>So the <code>change all</code> action will turn into</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">BEGIN:VEVENT
+DTSTART;TZID=Asia/Taipei:20200908T093000
+DTEND;TZID=Asia/Taipei:20200908T103000
+RRULE:FREQ=DAILY;UNTIL=20200911T155959Z
+DTSTAMP:20200915T031146Z
+UID:2fagn24j9tdtp69pmrj5p3tjk6@google.com
+CREATED:20200915T030525Z
+DESCRIPTION:
+LAST-MODIFIED:20200915T031132Z
+LOCATION:
+SEQUENCE:1
+STATUS:CONFIRMED
+SUMMARY:1
+TRANSP:OPAQUE
+END:VEVENT
+</code></pre></td></tr></table>
+</div>
+</div><p>Notice that the <code>until</code> is respected still, but <code>EXDATE</code> is deleted</p>
     </div>
 
     <div class="post-copyright">

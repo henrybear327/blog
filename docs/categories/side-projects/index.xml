@@ -6,11 +6,7 @@
     <description>Recent content in side projects on Coding Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 11 Jun 2020 17:56:48 +0800</lastBuildDate>
-    
-	<atom:link href="https://henrybear327.github.io/blog/categories/side-projects/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Thu, 11 Jun 2020 17:56:48 +0800</lastBuildDate><atom:link href="https://henrybear327.github.io/blog/categories/side-projects/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Set up a vpn server that uses home ip as exit ip</title>
       <link>https://henrybear327.github.io/blog/post/sideprojects/vpn-using-home-ip/</link>

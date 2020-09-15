@@ -6,11 +6,7 @@
     <description>Recent content in stack on Coding Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 23 Apr 2019 13:43:55 +0800</lastBuildDate>
-    
-	<atom:link href="https://henrybear327.github.io/blog/tags/stack/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Tue, 23 Apr 2019 13:43:55 +0800</lastBuildDate><atom:link href="https://henrybear327.github.io/blog/tags/stack/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Atcoder ABC120</title>
       <link>https://henrybear327.github.io/blog/post/atcoder/abc120/</link>

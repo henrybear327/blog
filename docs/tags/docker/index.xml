@@ -6,11 +6,7 @@
     <description>Recent content in docker on Coding Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 18 Jun 2019 11:06:09 +0200</lastBuildDate>
-    
-	<atom:link href="https://henrybear327.github.io/blog/tags/docker/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Tue, 18 Jun 2019 11:06:09 +0200</lastBuildDate><atom:link href="https://henrybear327.github.io/blog/tags/docker/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>2019 CCU 程式設計競賽</title>
       <link>https://henrybear327.github.io/blog/post/pineapple/judge/</link>

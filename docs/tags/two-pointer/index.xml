@@ -6,11 +6,7 @@
     <description>Recent content in two pointer on Coding Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 14 Apr 2019 23:08:46 +0800</lastBuildDate>
-    
-	<atom:link href="https://henrybear327.github.io/blog/tags/two-pointer/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Sun, 14 Apr 2019 23:08:46 +0800</lastBuildDate><atom:link href="https://henrybear327.github.io/blog/tags/two-pointer/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Atcoder ABC124</title>
       <link>https://henrybear327.github.io/blog/post/atcoder/abc124/</link>
