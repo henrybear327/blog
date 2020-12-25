@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>recursive on Coding Blog</title>
+    <link>https://henrybear327.github.io/blog/tags/recursive/</link>
+    <description>Recent content in recursive on Coding Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Fri, 25 Dec 2020 10:06:25 +0800</lastBuildDate><atom:link href="https://henrybear327.github.io/blog/tags/recursive/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>AP325 Q-1-2</title>
+      <link>https://henrybear327.github.io/blog/post/ap325/q-1-2/</link>
+      <pubDate>Fri, 25 Dec 2020 10:06:25 +0800</pubDate>
+      
+      <guid>https://henrybear327.github.io/blog/post/ap325/q-1-2/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>AP325 P-1-1</title>
+      <link>https://henrybear327.github.io/blog/post/ap325/p-1-1/</link>
+      <pubDate>Fri, 25 Dec 2020 09:44:11 +0800</pubDate>
+      
+      <guid>https://henrybear327.github.io/blog/post/ap325/p-1-1/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
