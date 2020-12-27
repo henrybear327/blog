@@ -16,6 +16,13 @@
   </url>
   
   <url>
+    <loc>https://henrybear327.github.io/blog/tags/apcs/</loc>
+    <lastmod>2020-12-27T00:08:39+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://henrybear327.github.io/blog/categories/</loc>
     <lastmod>2020-12-27T00:08:39+08:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -443,7 +450,7 @@
   </url>
   
   <url>
-    <loc>https://henrybear327.github.io/blog/tags/priotity_queue/</loc>
+    <loc>https://henrybear327.github.io/blog/tags/priotity-queue/</loc>
     <lastmod>2019-04-14T22:50:14+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>

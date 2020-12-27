@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>priotity_queue on Coding Blog</title>
-    <link>https://henrybear327.github.io/blog/tags/priotity_queue/</link>
-    <description>Recent content in priotity_queue on Coding Blog</description>
+    <title>priotity queue on Coding Blog</title>
+    <link>https://henrybear327.github.io/blog/tags/priotity-queue/</link>
+    <description>Recent content in priotity queue on Coding Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 14 Apr 2019 22:50:14 +0800</lastBuildDate><atom:link href="https://henrybear327.github.io/blog/tags/priotity_queue/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 14 Apr 2019 22:50:14 +0800</lastBuildDate><atom:link href="https://henrybear327.github.io/blog/tags/priotity-queue/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Atcoder ABC123</title>
       <link>https://henrybear327.github.io/blog/post/atcoder/abc123/</link>

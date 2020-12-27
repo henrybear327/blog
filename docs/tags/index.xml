@@ -8,6 +8,15 @@
     <language>en</language>
     <lastBuildDate>Sun, 27 Dec 2020 00:08:39 +0800</lastBuildDate><atom:link href="https://henrybear327.github.io/blog/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>APCS</title>
+      <link>https://henrybear327.github.io/blog/tags/apcs/</link>
+      <pubDate>Sun, 27 Dec 2020 00:08:39 +0800</pubDate>
+      
+      <guid>https://henrybear327.github.io/blog/tags/apcs/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>prefix sum</title>
       <link>https://henrybear327.github.io/blog/tags/prefix-sum/</link>
       <pubDate>Sun, 27 Dec 2020 00:08:39 +0800</pubDate>
@@ -287,11 +296,11 @@
     </item>
     
     <item>
-      <title>priotity_queue</title>
-      <link>https://henrybear327.github.io/blog/tags/priotity_queue/</link>
+      <title>priotity queue</title>
+      <link>https://henrybear327.github.io/blog/tags/priotity-queue/</link>
       <pubDate>Sun, 14 Apr 2019 22:50:14 +0800</pubDate>
       
-      <guid>https://henrybear327.github.io/blog/tags/priotity_queue/</guid>
+      <guid>https://henrybear327.github.io/blog/tags/priotity-queue/</guid>
       <description></description>
     </item>
     
