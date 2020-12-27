@@ -205,15 +205,6 @@
     </item>
     
     <item>
-      <title>Install</title>
-      <link>https://henrybear327.github.io/blog/post/fedora/install/</link>
-      <pubDate>Mon, 25 Mar 2019 19:13:23 +0800</pubDate>
-      
-      <guid>https://henrybear327.github.io/blog/post/fedora/install/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Hosting Hackmd and Nginx inside Docker containers</title>
       <link>https://henrybear327.github.io/blog/post/docker/hackmd_nginx/</link>
       <pubDate>Tue, 12 Mar 2019 23:45:32 +0800</pubDate>
