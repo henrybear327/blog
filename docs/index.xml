@@ -6,7 +6,17 @@
     <description>Recent content on Coding Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 27 Dec 2020 00:08:39 +0800</lastBuildDate><atom:link href="https://henrybear327.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 07 Mar 2021 21:11:08 +0800</lastBuildDate><atom:link href="https://henrybear327.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Strong Reference Cycle</title>
+      <link>https://henrybear327.github.io/blog/post/ios/strongreferencecycle/</link>
+      <pubDate>Sun, 07 Mar 2021 21:11:08 +0800</pubDate>
+      
+      <guid>https://henrybear327.github.io/blog/post/ios/strongreferencecycle/</guid>
+      <description>&lt;p&gt;Strong reference cycle experiments.&lt;/p&gt;
+&lt;p&gt;A good official article on &lt;a href=&#34;https://docs.swift.org/swift-book/LanguageGuide/AutomaticReferenceCounting.html&#34;&gt;Automatic Reference Counting (ARC)&lt;/a&gt; in Swift.&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>AP325 Q-1-4</title>
       <link>https://henrybear327.github.io/blog/post/ap325/q-1-4/</link>
