@@ -1,13 +1,13 @@
 ---
-title: "Strong Reference Cycle"
-date: 2021-03-07T21:11:08+08:00
+title: "Strong Reference Cycle in Swift"
+date: 2021-03-07T22:16:03+08:00
 draft: false
-lastmod: 2021-03-07T21:11:08+08:00
-tags: ["ARC", "Swift"]
+lastmod: 2021-03-07T22:16:03+08:00
+tags: ["Swift", "ARC", "iOS"]
 categories: ["iOS"]
 ---
 
-Strong reference cycle experiments.
+Strong reference cycle experiments, on iOS 14.4 (XCode 12.4).
 
 A good official article on [Automatic Reference Counting (ARC)](https://docs.swift.org/swift-book/LanguageGuide/AutomaticReferenceCounting.html) in Swift.
 
@@ -48,10 +48,12 @@ class B {
 
 From the memory graph, it's pretty clear that object A and B have strong reference cycle.
 
-![A to B (memory graph)](/blog/AToB.png)
-![B to A (memory graph](/blog/BToA.png)
+![A to B (memory graph)](/blog/img/iOS/strongReferenceCycle/AToB.png)
+![B to A (memory graph](/blog/img/iOS/strongReferenceCycle/BToA.png)
 
 # The lazy var closure
+
+## Will have strong reference cycle
 
 ```swift
 import UIKit
@@ -93,7 +95,9 @@ class HTMLElement {
 }
 ```
 
-![HTMLElement (memory graph](/blog/HTMLElement.png)
+![HTMLElement (memory graph](/blog/img/iOS/strongReferenceCycle/HTMLElement.png)
+
+## Will NOT have strong reference cycle
 
 But if you change `lazy var asHTML: () -> String` to `lazy var asHTML: String` and the code accordingly, the strong reference cycle won't happen!
 

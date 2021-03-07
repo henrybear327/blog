@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title>Strong Reference Cycle - Coding Blog</title>
+  <title>Strong Reference Cycle in Swift - Coding Blog</title>
   <meta name="renderer" content="webkit" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
 
@@ -16,7 +16,7 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
 
 
-<meta name="author" content="Chun-Hung Tseng" /><meta name="description" content="Strong reference cycle experiments.
+<meta name="author" content="Chun-Hung Tseng" /><meta name="description" content="Strong reference cycle experiments, on iOS 14.4 (XCode 12.4).
 A good official article on Automatic Reference Counting (ARC) in Swift.
 " /><meta name="keywords" content="Competitive programming, Notes, Codeforces, UVa, Leetcode" />
 
@@ -41,22 +41,22 @@ A good official article on Automatic Reference Counting (ARC) in Swift.
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
 
 
-<meta property="og:title" content="Strong Reference Cycle" />
-<meta property="og:description" content="Strong reference cycle experiments.
+<meta property="og:title" content="Strong Reference Cycle in Swift" />
+<meta property="og:description" content="Strong reference cycle experiments, on iOS 14.4 (XCode 12.4).
 A good official article on Automatic Reference Counting (ARC) in Swift." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://henrybear327.github.io/blog/post/ios/strongreferencecycle/" /><meta property="article:section" content="post" />
-<meta property="article:published_time" content="2021-03-07T21:11:08&#43;08:00" />
-<meta property="article:modified_time" content="2021-03-07T21:11:08&#43;08:00" />
+<meta property="article:published_time" content="2021-03-07T22:16:03&#43;08:00" />
+<meta property="article:modified_time" content="2021-03-07T22:16:03&#43;08:00" />
 
-<meta itemprop="name" content="Strong Reference Cycle">
-<meta itemprop="description" content="Strong reference cycle experiments.
-A good official article on Automatic Reference Counting (ARC) in Swift."><meta itemprop="datePublished" content="2021-03-07T21:11:08&#43;08:00" />
-<meta itemprop="dateModified" content="2021-03-07T21:11:08&#43;08:00" />
-<meta itemprop="wordCount" content="376">
-<meta itemprop="keywords" content="ARC,Swift," /><meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Strong Reference Cycle"/>
-<meta name="twitter:description" content="Strong reference cycle experiments.
+<meta itemprop="name" content="Strong Reference Cycle in Swift">
+<meta itemprop="description" content="Strong reference cycle experiments, on iOS 14.4 (XCode 12.4).
+A good official article on Automatic Reference Counting (ARC) in Swift."><meta itemprop="datePublished" content="2021-03-07T22:16:03&#43;08:00" />
+<meta itemprop="dateModified" content="2021-03-07T22:16:03&#43;08:00" />
+<meta itemprop="wordCount" content="392">
+<meta itemprop="keywords" content="Swift,ARC,iOS," /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Strong Reference Cycle in Swift"/>
+<meta name="twitter:description" content="Strong reference cycle experiments, on iOS 14.4 (XCode 12.4).
 A good official article on Automatic Reference Counting (ARC) in Swift."/>
 
 <!--[if lte IE 9]>
@@ -120,14 +120,14 @@ A good official article on Automatic Reference Counting (ARC) in Swift."/>
           <article class="post">
     
     <header class="post-header">
-      <h1 class="post-title">Strong Reference Cycle</h1>
+      <h1 class="post-title">Strong Reference Cycle in Swift</h1>
 
       <div class="post-meta">
         <span class="post-time"> 2021-03-07 </span>
         <div class="post-category">
             <a href="/blog/categories/ios/"> iOS </a>
             </div>
-          <span class="more-meta"> 376 words </span>
+          <span class="more-meta"> 392 words </span>
           <span class="more-meta"> 2 mins read </span>
         
       </div>
@@ -135,7 +135,7 @@ A good official article on Automatic Reference Counting (ARC) in Swift."/>
 
     
     <div class="post-content">
-      <p>Strong reference cycle experiments.</p>
+      <p>Strong reference cycle experiments, on iOS 14.4 (XCode 12.4).</p>
 <p>A good official article on <a href="https://docs.swift.org/swift-book/LanguageGuide/AutomaticReferenceCounting.html">Automatic Reference Counting (ARC)</a> in Swift.</p>
 <h1 id="a-holding-a-reference-to-b-and-b-holding-a-reference-to-a">A holding a reference to B, and B holding a reference to A</h1>
 <div class="highlight"><div class="chroma">
@@ -201,9 +201,10 @@ A good official article on Automatic Reference Counting (ARC) in Swift."/>
 </code></pre></td></tr></table>
 </div>
 </div><p>From the memory graph, it&rsquo;s pretty clear that object A and B have strong reference cycle.</p>
-<p><img src="/blog/AToB.png" alt="A to B (memory graph)">
-<img src="/blog/BToA.png" alt="B to A (memory graph"></p>
+<p><img src="/blog/img/iOS/strongReferenceCycle/AToB.png" alt="A to B (memory graph)">
+<img src="/blog/img/iOS/strongReferenceCycle/BToA.png" alt="B to A (memory graph"></p>
 <h1 id="the-lazy-var-closure">The lazy var closure</h1>
+<h2 id="will-have-strong-reference-cycle">Will have strong reference cycle</h2>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt"> 1
@@ -284,7 +285,8 @@ A good official article on Automatic Reference Counting (ARC) in Swift."/>
 <span class="p">}</span>
 </code></pre></td></tr></table>
 </div>
-</div><p><img src="/blog/HTMLElement.png" alt="HTMLElement (memory graph"></p>
+</div><p><img src="/blog/img/iOS/strongReferenceCycle/HTMLElement.png" alt="HTMLElement (memory graph"></p>
+<h2 id="will-not-have-strong-reference-cycle">Will NOT have strong reference cycle</h2>
 <p>But if you change <code>lazy var asHTML: () -&gt; String</code> to <code>lazy var asHTML: String</code> and the code accordingly, the strong reference cycle won&rsquo;t happen!</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -391,8 +393,9 @@ A good official article on Automatic Reference Counting (ARC) in Swift."/>
 </div>
 <footer class="post-footer">
       <div class="post-tags">
-          <a href="/blog/tags/arc/">ARC</a>
           <a href="/blog/tags/swift/">Swift</a>
+          <a href="/blog/tags/arc/">ARC</a>
+          <a href="/blog/tags/ios/">iOS</a>
           </div>
       <nav class="post-nav">
         
