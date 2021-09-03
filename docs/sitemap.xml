@@ -2,21 +2,70 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://henrybear327.github.io/blog/tags/arc/</loc>
-    <lastmod>2021-03-07T22:16:03+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
     <loc>https://henrybear327.github.io/blog/categories/</loc>
-    <lastmod>2021-03-07T22:16:03+08:00</lastmod>
+    <lastmod>2021-09-03T09:38:04+02:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://henrybear327.github.io/blog/</loc>
+    <lastmod>2021-09-03T09:38:04+02:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://henrybear327.github.io/blog/tags/cross-compile/</loc>
+    <lastmod>2021-09-03T09:38:04+02:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://henrybear327.github.io/blog/tags/kernel/</loc>
+    <lastmod>2021-09-03T09:38:04+02:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://henrybear327.github.io/blog/post/</loc>
+    <lastmod>2021-09-03T09:38:04+02:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://henrybear327.github.io/blog/tags/raspberry-pi/</loc>
+    <lastmod>2021-09-03T09:38:04+02:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://henrybear327.github.io/blog/tags/</loc>
+    <lastmod>2021-09-03T09:38:04+02:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://henrybear327.github.io/blog/categories/tech/</loc>
+    <lastmod>2021-09-03T09:38:04+02:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://henrybear327.github.io/blog/post/rpi/compile-kernel-for-raspberry-pi-4-from-source-tw/</loc>
+    <lastmod>2021-09-03T09:38:04+02:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://henrybear327.github.io/blog/tags/arc/</loc>
     <lastmod>2021-03-07T22:16:03+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -37,13 +86,6 @@
   </url>
   
   <url>
-    <loc>https://henrybear327.github.io/blog/post/</loc>
-    <lastmod>2021-03-07T22:16:03+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
     <loc>https://henrybear327.github.io/blog/post/ios/strongreferencecycle/</loc>
     <lastmod>2021-03-07T22:16:03+08:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -52,13 +94,6 @@
   
   <url>
     <loc>https://henrybear327.github.io/blog/tags/swift/</loc>
-    <lastmod>2021-03-07T22:16:03+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://henrybear327.github.io/blog/tags/</loc>
     <lastmod>2021-03-07T22:16:03+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -507,13 +542,6 @@
   
   <url>
     <loc>https://henrybear327.github.io/blog/tags/nginx/</loc>
-    <lastmod>2019-03-12T23:45:32+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://henrybear327.github.io/blog/categories/tech/</loc>
     <lastmod>2019-03-12T23:45:32+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>

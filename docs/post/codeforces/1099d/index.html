@@ -25,7 +25,7 @@
 
 
 
-<meta name="generator" content="Hugo 0.81.0 with theme even" />
+<meta name="generator" content="Hugo 0.87.0 with theme even" />
 
 
 <link rel="canonical" href="https://henrybear327.github.io/blog/post/codeforces/1099d/" />
@@ -37,7 +37,7 @@
 
 
 
-<link href="/blog/sass/main.min.24f64ae1eb89951aa146cbb31238f141b5994462fa2362bbd7bae8c71e0359cc.css" rel="stylesheet">
+<link href="/blog/sass/main.min.154ed883776547b0e136be39b3037f61350da06f888d0868d1756a9463cd9520.css" rel="stylesheet">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
 
 
@@ -46,13 +46,13 @@
 給你一棵樹，每個節點上都有一個數值$a_i$，但是input卻只給你奇數層節點到根節點的prefix sum，要你求出最小的$\sum\limits_{i=1}^n a_i$" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://henrybear327.github.io/blog/post/codeforces/1099d/" /><meta property="article:section" content="post" />
-<meta property="article:published_time" content="2019-01-27T11:51:18&#43;08:00" />
-<meta property="article:modified_time" content="2019-01-27T11:51:18&#43;08:00" />
+<meta property="article:published_time" content="2019-01-27T11:51:18+08:00" />
+<meta property="article:modified_time" content="2019-01-27T11:51:18+08:00" />
 
 <meta itemprop="name" content="CF 1099D">
 <meta itemprop="description" content="Sum in the tree
-給你一棵樹，每個節點上都有一個數值$a_i$，但是input卻只給你奇數層節點到根節點的prefix sum，要你求出最小的$\sum\limits_{i=1}^n a_i$"><meta itemprop="datePublished" content="2019-01-27T11:51:18&#43;08:00" />
-<meta itemprop="dateModified" content="2019-01-27T11:51:18&#43;08:00" />
+給你一棵樹，每個節點上都有一個數值$a_i$，但是input卻只給你奇數層節點到根節點的prefix sum，要你求出最小的$\sum\limits_{i=1}^n a_i$"><meta itemprop="datePublished" content="2019-01-27T11:51:18+08:00" />
+<meta itemprop="dateModified" content="2019-01-27T11:51:18+08:00" />
 <meta itemprop="wordCount" content="811">
 <meta itemprop="keywords" content="Tree DP," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="CF 1099D"/>
@@ -142,14 +142,14 @@
 <p>可以拿這tree想想看，給定節點的$a_i$如下</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
 </span><span class="lnt">5
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-fallback" data-lang="fallback">     1
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">     1
      |
      3
    / | \
@@ -160,14 +160,14 @@
 <p>prefix sum算出來會是</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
 </span><span class="lnt">5
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-fallback" data-lang="fallback">     1
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">     1
      |
      4(令他為a)
    / | \
@@ -177,14 +177,14 @@
 </div><p>假設我們塗掉$a$的數值，動手試試看把各種$s_v - s_p$填入試試看吧！</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
 </span><span class="lnt">5
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-fallback" data-lang="fallback">     1
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">     1
      |
      ?
    / | \
@@ -194,14 +194,14 @@
 </div><p>如果填入最小的$s_v - s_p$，我們可以把樹的每個$a_i$還原成</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt">1
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
 </span><span class="lnt">4
 </span><span class="lnt">5
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-fallback" data-lang="fallback">     1
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">     1
      |
      4
    / | \
@@ -212,7 +212,7 @@
 <h2 id="ac-code">AC Code</h2>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -292,7 +292,7 @@
 </span><span class="lnt">78
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-c++" data-lang="c++"><span class="cp">#include</span> <span class="cpf">&lt;bits/stdc++.h&gt;</span><span class="cp">
+<pre tabindex="0" class="chroma"><code class="language-c++" data-lang="c++"><span class="cp">#include</span> <span class="cpf">&lt;bits/stdc++.h&gt;</span><span class="cp">
 </span><span class="cp"></span>
 <span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
 

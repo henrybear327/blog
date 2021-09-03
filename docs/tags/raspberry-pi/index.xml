@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Raspberry Pi on Coding Blog</title>
+    <link>https://henrybear327.github.io/blog/tags/raspberry-pi/</link>
+    <description>Recent content in Raspberry Pi on Coding Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Fri, 03 Sep 2021 09:38:04 +0200</lastBuildDate><atom:link href="https://henrybear327.github.io/blog/tags/raspberry-pi/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>編譯 Raspberry Pi 4 的 Kernel Image</title>
+      <link>https://henrybear327.github.io/blog/post/rpi/compile-kernel-for-raspberry-pi-4-from-source-tw/</link>
+      <pubDate>Fri, 03 Sep 2021 09:38:04 +0200</pubDate>
+      
+      <guid>https://henrybear327.github.io/blog/post/rpi/compile-kernel-for-raspberry-pi-4-from-source-tw/</guid>
+      <description>&lt;p&gt;比較常見可以跑在 Raspberry Pi 4 的 Linux kernel 大致上分成 &lt;a href=&#34;https://www.kernel.org/&#34;&gt;Mainline Kernel&lt;/a&gt;（本文撰寫時 &lt;a href=&#34;https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.14.tar.xz&#34;&gt;5.14&lt;/a&gt; 剛剛推出）, &lt;a href=&#34;https://github.com/raspberrypi/linux&#34;&gt;Raspbian&lt;/a&gt; (5.10, 32-bit), 跟 &lt;a href=&#34;https://git.launchpad.net/~ubuntu-kernel/ubuntu/+source/linux-raspi/+git/focal&#34;&gt;Ubuntu&lt;/a&gt; (5.4, 32/64-bit) 這幾種。其中，Raspbian 目前還是以 32-bit 的 kernel 為主（所有 user space 的應用程式都是 32-bit，雖然你可以把 kernel 換成 64-bit 的）。&lt;/p&gt;
+&lt;p&gt;由於我自己的實驗所需(對 kernel 進行 patching），下面在 Raspberry Pi 上面進行編譯的段落，是基於 &lt;a href=&#34;https://ubuntu.com/download/raspberry-pi&#34;&gt;Ubuntu Server for Raspberry Pi 64-bit 版本的 kernel&lt;/a&gt; 所撰寫，畢竟我需要的是 64-bit 的環境。&lt;/p&gt;
+&lt;p&gt;Raspbian 的編譯方式&lt;a href=&#34;https://www.raspberrypi.org/documentation/computers/linux_kernel.html&#34;&gt;官方文件&lt;/a&gt;就已經寫得很清楚了，所以本文著墨的主要是在 Ubuntu Server for Raspberry Pi (64-bit) 版本的 kernel 跟 Mainline Kernel 的部分。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;這篇文是從我研究過程中&lt;a href=&#34;https://hackmd.io/ryWMkvbhRDOoqYEooWZ6BQ&#34;&gt;雜亂的筆記&lt;/a&gt;所整理出來，過程中需要安裝的套件或是步驟可能會有錯誤或是缺漏（畢竟前前後後找問題裝了不少東西）。&lt;/p&gt;
+&lt;p&gt;如有疏漏，請大家不吝指教，謝謝大家！&lt;/p&gt;
+&lt;/blockquote&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -25,7 +25,7 @@ A good official article on Automatic Reference Counting (ARC) in Swift.
 
 
 
-<meta name="generator" content="Hugo 0.81.0 with theme even" />
+<meta name="generator" content="Hugo 0.87.0 with theme even" />
 
 
 <link rel="canonical" href="https://henrybear327.github.io/blog/post/ios/strongreferencecycle/" />
@@ -37,7 +37,7 @@ A good official article on Automatic Reference Counting (ARC) in Swift.
 
 
 
-<link href="/blog/sass/main.min.24f64ae1eb89951aa146cbb31238f141b5994462fa2362bbd7bae8c71e0359cc.css" rel="stylesheet">
+<link href="/blog/sass/main.min.154ed883776547b0e136be39b3037f61350da06f888d0868d1756a9463cd9520.css" rel="stylesheet">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
 
 
@@ -46,13 +46,13 @@ A good official article on Automatic Reference Counting (ARC) in Swift.
 A good official article on Automatic Reference Counting (ARC) in Swift." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://henrybear327.github.io/blog/post/ios/strongreferencecycle/" /><meta property="article:section" content="post" />
-<meta property="article:published_time" content="2021-03-07T22:16:03&#43;08:00" />
-<meta property="article:modified_time" content="2021-03-07T22:16:03&#43;08:00" />
+<meta property="article:published_time" content="2021-03-07T22:16:03+08:00" />
+<meta property="article:modified_time" content="2021-03-07T22:16:03+08:00" />
 
 <meta itemprop="name" content="Strong Reference Cycle in Swift">
 <meta itemprop="description" content="Strong reference cycle experiments, on iOS 14.4 (XCode 12.4).
-A good official article on Automatic Reference Counting (ARC) in Swift."><meta itemprop="datePublished" content="2021-03-07T22:16:03&#43;08:00" />
-<meta itemprop="dateModified" content="2021-03-07T22:16:03&#43;08:00" />
+A good official article on Automatic Reference Counting (ARC) in Swift."><meta itemprop="datePublished" content="2021-03-07T22:16:03+08:00" />
+<meta itemprop="dateModified" content="2021-03-07T22:16:03+08:00" />
 <meta itemprop="wordCount" content="392">
 <meta itemprop="keywords" content="Swift,ARC,iOS," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Strong Reference Cycle in Swift"/>
@@ -140,7 +140,7 @@ A good official article on Automatic Reference Counting (ARC) in Swift."/>
 <h1 id="a-holding-a-reference-to-b-and-b-holding-a-reference-to-a">A holding a reference to B, and B holding a reference to A</h1>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -170,7 +170,7 @@ A good official article on Automatic Reference Counting (ARC) in Swift."/>
 </span><span class="lnt">28
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-swift" data-lang="swift"><span class="kd">import</span> <span class="nc">UIKit</span>
+<pre tabindex="0" class="chroma"><code class="language-swift" data-lang="swift"><span class="kd">import</span> <span class="nc">UIKit</span>
 
 <span class="kd">class</span> <span class="nc">ViewController</span><span class="p">:</span> <span class="n">UIViewController</span> <span class="p">{</span>
     <span class="kd">var</span> <span class="nv">b</span> <span class="p">=</span> <span class="n">B</span><span class="p">()</span>
@@ -207,7 +207,7 @@ A good official article on Automatic Reference Counting (ARC) in Swift."/>
 <h2 id="will-have-strong-reference-cycle">Will have strong reference cycle</h2>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -246,7 +246,7 @@ A good official article on Automatic Reference Counting (ARC) in Swift."/>
 </span><span class="lnt">37
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-swift" data-lang="swift"><span class="kd">import</span> <span class="nc">UIKit</span>
+<pre tabindex="0" class="chroma"><code class="language-swift" data-lang="swift"><span class="kd">import</span> <span class="nc">UIKit</span>
 
 <span class="kd">class</span> <span class="nc">ViewController</span><span class="p">:</span> <span class="n">UIViewController</span> <span class="p">{</span>
         
@@ -290,7 +290,7 @@ A good official article on Automatic Reference Counting (ARC) in Swift."/>
 <p>But if you change <code>lazy var asHTML: () -&gt; String</code> to <code>lazy var asHTML: String</code> and the code accordingly, the strong reference cycle won&rsquo;t happen!</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code><span class="lnt"> 1
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
 </span><span class="lnt"> 2
 </span><span class="lnt"> 3
 </span><span class="lnt"> 4
@@ -330,7 +330,7 @@ A good official article on Automatic Reference Counting (ARC) in Swift."/>
 </span><span class="lnt">38
 </span></code></pre></td>
 <td class="lntd">
-<pre class="chroma"><code class="language-swift" data-lang="swift"><span class="kd">import</span> <span class="nc">UIKit</span>
+<pre tabindex="0" class="chroma"><code class="language-swift" data-lang="swift"><span class="kd">import</span> <span class="nc">UIKit</span>
 
 <span class="kd">class</span> <span class="nc">ViewController</span><span class="p">:</span> <span class="n">UIViewController</span> <span class="p">{</span>
         
@@ -398,7 +398,11 @@ A good official article on Automatic Reference Counting (ARC) in Swift."/>
           <a href="/blog/tags/ios/">iOS</a>
           </div>
       <nav class="post-nav">
-        
+        <a class="prev" href="/blog/post/rpi/compile-kernel-for-raspberry-pi-4-from-source-tw/">
+            <i class="iconfont icon-left"></i>
+            <span class="prev-text nav-default">編譯 Raspberry Pi 4 的 Kernel Image</span>
+            <span class="prev-text nav-mobile">Prev</span>
+          </a>
         <a class="next" href="/blog/post/ap325/q-1-4/">
             <span class="next-text nav-default">AP325 Q-1-4</span>
             <span class="next-text nav-mobile">Next</span>
