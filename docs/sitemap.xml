@@ -2,6 +2,55 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://henrybear327.github.io/blog/categories/</loc>
+    <lastmod>2021-11-08T22:16:10+01:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://henrybear327.github.io/blog/</loc>
+    <lastmod>2021-11-08T22:16:10+01:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://henrybear327.github.io/blog/tags/dp/</loc>
+    <lastmod>2021-11-08T22:16:10+01:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://henrybear327.github.io/blog/categories/leetcode/</loc>
+    <lastmod>2021-11-08T22:16:10+01:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://henrybear327.github.io/blog/post/leetcode/1218/</loc>
+    <lastmod>2021-11-08T22:16:10+01:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://henrybear327.github.io/blog/post/</loc>
+    <lastmod>2021-11-08T22:16:10+01:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://henrybear327.github.io/blog/tags/</loc>
+    <lastmod>2021-11-08T22:16:10+01:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://henrybear327.github.io/blog/tags/binary-search/</loc>
     <lastmod>2021-11-08T20:12:50+01:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -9,42 +58,7 @@
   </url>
   
   <url>
-    <loc>https://henrybear327.github.io/blog/categories/</loc>
-    <lastmod>2021-11-08T20:12:50+01:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://henrybear327.github.io/blog/</loc>
-    <lastmod>2021-11-08T20:12:50+01:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://henrybear327.github.io/blog/categories/leetcode/</loc>
-    <lastmod>2021-11-08T20:12:50+01:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
     <loc>https://henrybear327.github.io/blog/post/leetcode/611/</loc>
-    <lastmod>2021-11-08T20:12:50+01:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://henrybear327.github.io/blog/post/</loc>
-    <lastmod>2021-11-08T20:12:50+01:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://henrybear327.github.io/blog/tags/</loc>
     <lastmod>2021-11-08T20:12:50+01:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -430,13 +444,6 @@
   
   <url>
     <loc>https://henrybear327.github.io/blog/categories/codeforces/</loc>
-    <lastmod>2019-08-25T23:12:26-07:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://henrybear327.github.io/blog/tags/dp/</loc>
     <lastmod>2019-08-25T23:12:26-07:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>

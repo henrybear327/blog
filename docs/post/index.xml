@@ -6,9 +6,20 @@
     <description>Recent content in Posts on Coding Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 08 Nov 2021 20:12:50 +0100</lastBuildDate><atom:link href="https://henrybear327.github.io/blog/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 08 Nov 2021 22:16:10 +0100</lastBuildDate><atom:link href="https://henrybear327.github.io/blog/post/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Leetcode 611</title>
+      <title>Leetcode 1218 Longest Arithmetic Subsequence of Given Difference</title>
+      <link>https://henrybear327.github.io/blog/post/leetcode/1218/</link>
+      <pubDate>Mon, 08 Nov 2021 22:16:10 +0100</pubDate>
+      
+      <guid>https://henrybear327.github.io/blog/post/leetcode/1218/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://leetcode.com/problems/longest-arithmetic-subsequence-of-given-difference/&#34;&gt;1218. Longest Arithmetic Subsequence of Given Difference&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;The special case is $difference == 0$.&lt;/p&gt;
+&lt;p&gt;Depends on your implementation, the time for the &lt;code&gt;init&lt;/code&gt; to happen might need to be carefully thought of.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Leetcode 611 Valid Triangle Number</title>
       <link>https://henrybear327.github.io/blog/post/leetcode/611/</link>
       <pubDate>Mon, 08 Nov 2021 20:12:50 +0100</pubDate>
       
@@ -154,7 +165,7 @@
     </item>
     
     <item>
-      <title>Leetcode 1228</title>
+      <title>Leetcode 1228 Missing Number In Arithmetic Progression</title>
       <link>https://henrybear327.github.io/blog/post/leetcode/1228/</link>
       <pubDate>Mon, 21 Oct 2019 18:04:47 +0200</pubDate>
       
@@ -163,17 +174,16 @@
     </item>
     
     <item>
-      <title>Leetcode 1232</title>
+      <title>Leetcode 1232 Check If It Is a Straight Line</title>
       <link>https://henrybear327.github.io/blog/post/leetcode/1232/</link>
       <pubDate>Mon, 21 Oct 2019 18:02:19 +0200</pubDate>
       
       <guid>https://henrybear327.github.io/blog/post/leetcode/1232/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;https://leetcode.com/problems/check-if-it-is-a-straight-line/&#34;&gt;1232. Check If It Is a Straight Line
-&lt;/a&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;a href=&#34;https://leetcode.com/problems/check-if-it-is-a-straight-line/&#34;&gt;1232. Check If It Is a Straight Line&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
-      <title>Leetcode 698</title>
+      <title>Leetcode 698 Partition to K Equal Sum Subsets</title>
       <link>https://henrybear327.github.io/blog/post/leetcode/698/</link>
       <pubDate>Fri, 18 Oct 2019 12:00:04 +0200</pubDate>
       

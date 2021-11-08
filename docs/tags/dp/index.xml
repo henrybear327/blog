@@ -6,7 +6,18 @@
     <description>Recent content in DP on Coding Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 25 Aug 2019 23:12:26 -0700</lastBuildDate><atom:link href="https://henrybear327.github.io/blog/tags/dp/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 08 Nov 2021 22:16:10 +0100</lastBuildDate><atom:link href="https://henrybear327.github.io/blog/tags/dp/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Leetcode 1218 Longest Arithmetic Subsequence of Given Difference</title>
+      <link>https://henrybear327.github.io/blog/post/leetcode/1218/</link>
+      <pubDate>Mon, 08 Nov 2021 22:16:10 +0100</pubDate>
+      
+      <guid>https://henrybear327.github.io/blog/post/leetcode/1218/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://leetcode.com/problems/longest-arithmetic-subsequence-of-given-difference/&#34;&gt;1218. Longest Arithmetic Subsequence of Given Difference&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;The special case is $difference == 0$.&lt;/p&gt;
+&lt;p&gt;Depends on your implementation, the time for the &lt;code&gt;init&lt;/code&gt; to happen might need to be carefully thought of.&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>CF 1151B</title>
       <link>https://henrybear327.github.io/blog/post/codeforces/1151b/</link>
