@@ -6,7 +6,16 @@
     <description>Recent content in Posts on Coding Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 03 Sep 2021 09:38:04 +0200</lastBuildDate><atom:link href="https://henrybear327.github.io/blog/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 08 Nov 2021 20:12:50 +0100</lastBuildDate><atom:link href="https://henrybear327.github.io/blog/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Leetcode 611</title>
+      <link>https://henrybear327.github.io/blog/post/leetcode/611/</link>
+      <pubDate>Mon, 08 Nov 2021 20:12:50 +0100</pubDate>
+      
+      <guid>https://henrybear327.github.io/blog/post/leetcode/611/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://leetcode.com/problems/valid-triangle-number/&#34;&gt;611. Valid Triangle Number&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>編譯 Raspberry Pi 4 的 Kernel Image</title>
       <link>https://henrybear327.github.io/blog/post/rpi/compile-kernel-for-raspberry-pi-4-from-source-tw/</link>

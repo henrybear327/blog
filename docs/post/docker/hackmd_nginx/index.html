@@ -25,7 +25,7 @@ The goal is to run both Nginx to Hackmd in Docker containers.
 
 
 
-<meta name="generator" content="Hugo 0.87.0 with theme even" />
+<meta name="generator" content="Hugo 0.89.1 with theme even" />
 
 
 <link rel="canonical" href="https://henrybear327.github.io/blog/post/docker/hackmd_nginx/" />
@@ -53,7 +53,7 @@ The goal is to run both Nginx to Hackmd in Docker containers." />
 <meta itemprop="description" content="It&rsquo;s my side project for learning networking and docker. :)
 The goal is to run both Nginx to Hackmd in Docker containers."><meta itemprop="datePublished" content="2019-03-12T23:45:32+08:00" />
 <meta itemprop="dateModified" content="2019-03-12T23:45:32+08:00" />
-<meta itemprop="wordCount" content="1266">
+<meta itemprop="wordCount" content="1219">
 <meta itemprop="keywords" content="docker,hackmd,nginx," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Hosting Hackmd and Nginx inside Docker containers"/>
 <meta name="twitter:description" content="It&rsquo;s my side project for learning networking and docker. :)
@@ -127,7 +127,7 @@ The goal is to run both Nginx to Hackmd in Docker containers."/>
         <div class="post-category">
             <a href="/blog/categories/tech/"> Tech </a>
             </div>
-          <span class="more-meta"> 1266 words </span>
+          <span class="more-meta"> 1219 words </span>
           <span class="more-meta"> 6 mins read </span>
         
       </div>
@@ -389,16 +389,16 @@ sudo docker stop nginx
 <pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">server {
     listen   443;
 
-    ssl    on;
+
     ssl_certificate    /etc/ssl/certs/henrybear327.com.pem;
     ssl_certificate_key    /etc/ssl/private/henrybear327.com.key;
 
-    server_name test.henrybear327.com;
 
-    auth_basic           &#34;Test&#34;;
+
+
     auth_basic_user_file /etc/nginx/conf.d/.htpasswd; 
 
-    location / {
+
         proxy_pass http://docker-hackmd_app_1:3000/;
         proxy_http_version 1.1;
         proxy_set_header Upgrade $http_upgrade;
@@ -453,10 +453,10 @@ sudo docker stop nginx
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">FROM ubuntu:bionic
 
-# silent debconf warnings
+
 ARG DEBIAN_FRONTEND=noninteractive
 
-# Update and install software packages
+
 RUN apt-get update
 RUN apt-get upgrade -y
 RUN apt-get install -y apt-utils man 
@@ -465,28 +465,28 @@ RUN apt-get install -y vim
 RUN apt-get install -y nginx 
 RUN mkdir /var/run/sshd
 
-RUN locale-gen en_US.UTF-8
+
 RUN locale-gen zh_TW.UTF-8
 ENV LANG en_US.UTF-8
 ENV LANGUAGE en_US:en
 ENV LC_ALL en_US.UTF-8
 
-# Nginx config file for test.henrybear327.com
+
 # Notice that the symbolic link for linking must be absolute path!
 COPY test.henrybear327.com /etc/nginx/sites-available/test.henrybear327.com
 RUN sudo ln -s /etc/nginx/sites-available/test.henrybear327.com /etc/nginx/sites-enabled/test.henrybear327.com
 
-# basic auth file
+
 COPY .htpasswd /etc/nginx/conf.d
 
-# SSL stuff
+
 COPY henrybear327.com.key /etc/ssl/private
 COPY henrybear327.com.pem /etc/ssl/certs
 
-# expose port 80 for HTTP (443 for HTTPS)
+
 EXPOSE 443
 
-# start nginx
+
 CMD [&#34;nginx&#34;, &#34;-g&#34;, &#34;daemon off;&#34;]
 </code></pre></td></tr></table>
 </div>
