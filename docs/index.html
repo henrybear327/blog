@@ -112,13 +112,59 @@
           <section id="posts" class="posts">
     <article class="post">
   <header class="post-header">
+    <h1 class="post-title"><a class="post-link" href="/blog/post/leetcode/704/">Leetcode 704 Binary Search</a></h1>
+    <div class="post-meta">
+      <span class="post-time"> 2021-11-09 </span>
+      <div class="post-category">
+          <a href="/blog/categories/leetcode/"> Leetcode </a>
+          </div>
+        <span class="more-meta"> 83 words </span>
+        <span class="more-meta"> 1 min read </span>
+    </div>
+  </header>
+  
+  <div class="post-content">
+    <div class="post-summary">
+      <p><a href="https://leetcode.com/problems/binary-search/">704. Binary Search</a></p>
+    </div>
+    <div class="read-more">
+      <a href="/blog/post/leetcode/704/" class="read-more-link">Read more...</a>
+    </div>
+  </div>
+</article>
+
+    <article class="post">
+  <header class="post-header">
+    <h1 class="post-title"><a class="post-link" href="/blog/post/leetcode/367/">Leetcode 367 Valid perfect square</a></h1>
+    <div class="post-meta">
+      <span class="post-time"> 2021-11-09 </span>
+      <div class="post-category">
+          <a href="/blog/categories/leetcode/"> Leetcode </a>
+          </div>
+        <span class="more-meta"> 106 words </span>
+        <span class="more-meta"> 1 min read </span>
+    </div>
+  </header>
+  
+  <div class="post-content">
+    <div class="post-summary">
+      <p>[367. Valid perfect square]](<a href="https://leetcode.com/problems/valid-perfect-square/">https://leetcode.com/problems/valid-perfect-square/</a>)</p>
+    </div>
+    <div class="read-more">
+      <a href="/blog/post/leetcode/367/" class="read-more-link">Read more...</a>
+    </div>
+  </div>
+</article>
+
+    <article class="post">
+  <header class="post-header">
     <h1 class="post-title"><a class="post-link" href="/blog/post/leetcode/912/">Leetcode 912 Sort an Array</a></h1>
     <div class="post-meta">
       <span class="post-time"> 2021-11-09 </span>
       <div class="post-category">
           <a href="/blog/categories/leetcode/"> Leetcode </a>
           </div>
-        <span class="more-meta"> 361 words </span>
+        <span class="more-meta"> 375 words </span>
         <span class="more-meta"> 1 min read </span>
     </div>
   </header>
@@ -127,6 +173,7 @@
     <div class="post-summary">
       <p><a href="https://leetcode.com/problems/sort-an-array/">912. Sort an Array</a></p>
 <p>數值範圍不大的話，可以直接 counting sort!</p>
+<p>Heap sort 跟 merge sort 之後補上。</p>
     </div>
     <div class="read-more">
       <a href="/blog/post/leetcode/912/" class="read-more-link">Read more...</a>
@@ -178,59 +225,6 @@
     </div>
     <div class="read-more">
       <a href="/blog/post/leetcode/611/" class="read-more-link">Read more...</a>
-    </div>
-  </div>
-</article>
-
-    <article class="post">
-  <header class="post-header">
-    <h1 class="post-title"><a class="post-link" href="/blog/post/rpi/compile-kernel-for-raspberry-pi-4-from-source-tw/">編譯 Raspberry Pi 4 的 Kernel Image</a></h1>
-    <div class="post-meta">
-      <span class="post-time"> 2021-09-03 </span>
-      <div class="post-category">
-          <a href="/blog/categories/tech/"> Tech </a>
-          </div>
-        <span class="more-meta"> 1579 words </span>
-        <span class="more-meta"> 4 mins read </span>
-    </div>
-  </header>
-  
-  <div class="post-content">
-    <div class="post-summary">
-      <p>比較常見可以跑在 Raspberry Pi 4 的 Linux kernel 大致上分成 <a href="https://www.kernel.org/">Mainline Kernel</a>（本文撰寫時 <a href="https://cdn.kernel.org/pub/linux/kernel/v5.x/linux-5.14.tar.xz">5.14</a> 剛剛推出）, <a href="https://github.com/raspberrypi/linux">Raspbian</a> (5.10, 32-bit), 跟 <a href="https://git.launchpad.net/~ubuntu-kernel/ubuntu/+source/linux-raspi/+git/focal">Ubuntu</a> (5.4, 32/64-bit) 這幾種。其中，Raspbian 目前還是以 32-bit 的 kernel 為主（所有 user space 的應用程式都是 32-bit，雖然你可以把 kernel 換成 64-bit 的）。</p>
-<p>由於我自己的實驗所需(對 kernel 進行 patching），下面在 Raspberry Pi 上面進行編譯的段落，是基於 <a href="https://ubuntu.com/download/raspberry-pi">Ubuntu Server for Raspberry Pi 64-bit 版本的 kernel</a> 所撰寫，畢竟我需要的是 64-bit 的環境。</p>
-<p>Raspbian 的編譯方式<a href="https://www.raspberrypi.org/documentation/computers/linux_kernel.html">官方文件</a>就已經寫得很清楚了，所以本文著墨的主要是在 Ubuntu Server for Raspberry Pi (64-bit) 版本的 kernel 跟 Mainline Kernel 的部分。</p>
-<blockquote>
-<p>這篇文是從我研究過程中<a href="https://hackmd.io/ryWMkvbhRDOoqYEooWZ6BQ">雜亂的筆記</a>所整理出來，過程中需要安裝的套件或是步驟可能會有錯誤或是缺漏（畢竟前前後後找問題裝了不少東西）。</p>
-<p>如有疏漏，請大家不吝指教，謝謝大家！</p>
-</blockquote>
-    </div>
-    <div class="read-more">
-      <a href="/blog/post/rpi/compile-kernel-for-raspberry-pi-4-from-source-tw/" class="read-more-link">Read more...</a>
-    </div>
-  </div>
-</article>
-
-    <article class="post">
-  <header class="post-header">
-    <h1 class="post-title"><a class="post-link" href="/blog/post/ios/strongreferencecycle/">Strong Reference Cycle in Swift</a></h1>
-    <div class="post-meta">
-      <span class="post-time"> 2021-03-07 </span>
-      <div class="post-category">
-          <a href="/blog/categories/ios/"> iOS </a>
-          </div>
-        <span class="more-meta"> 392 words </span>
-        <span class="more-meta"> 2 mins read </span>
-    </div>
-  </header>
-  
-  <div class="post-content">
-    <div class="post-summary">
-      <p>Strong reference cycle experiments, on iOS 14.4 (XCode 12.4).</p>
-<p>A good official article on <a href="https://docs.swift.org/swift-book/LanguageGuide/AutomaticReferenceCounting.html">Automatic Reference Counting (ARC)</a> in Swift.</p>
-    </div>
-    <div class="read-more">
-      <a href="/blog/post/ios/strongreferencecycle/" class="read-more-link">Read more...</a>
     </div>
   </div>
 </article>

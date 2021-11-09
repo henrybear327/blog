@@ -14,7 +14,8 @@
       
       <guid>https://henrybear327.github.io/blog/post/leetcode/912/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://leetcode.com/problems/sort-an-array/&#34;&gt;912. Sort an Array&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;數值範圍不大的話，可以直接 counting sort!&lt;/p&gt;</description>
+&lt;p&gt;數值範圍不大的話，可以直接 counting sort!&lt;/p&gt;
+&lt;p&gt;Heap sort 跟 merge sort 之後補上。&lt;/p&gt;</description>
     </item>
     
   </channel>

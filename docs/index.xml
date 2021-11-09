@@ -6,7 +6,25 @@
     <description>Recent content on Coding Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 09 Nov 2021 14:18:09 +0100</lastBuildDate><atom:link href="https://henrybear327.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 09 Nov 2021 14:34:54 +0100</lastBuildDate><atom:link href="https://henrybear327.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Leetcode 704 Binary Search</title>
+      <link>https://henrybear327.github.io/blog/post/leetcode/704/</link>
+      <pubDate>Tue, 09 Nov 2021 14:34:54 +0100</pubDate>
+      
+      <guid>https://henrybear327.github.io/blog/post/leetcode/704/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://leetcode.com/problems/binary-search/&#34;&gt;704. Binary Search&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Leetcode 367 Valid perfect square</title>
+      <link>https://henrybear327.github.io/blog/post/leetcode/367/</link>
+      <pubDate>Tue, 09 Nov 2021 14:30:13 +0100</pubDate>
+      
+      <guid>https://henrybear327.github.io/blog/post/leetcode/367/</guid>
+      <description>&lt;p&gt;[367. Valid perfect square]](&lt;a href=&#34;https://leetcode.com/problems/valid-perfect-square/&#34;&gt;https://leetcode.com/problems/valid-perfect-square/&lt;/a&gt;)&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>Leetcode 912 Sort an Array</title>
       <link>https://henrybear327.github.io/blog/post/leetcode/912/</link>
@@ -14,7 +32,8 @@
       
       <guid>https://henrybear327.github.io/blog/post/leetcode/912/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://leetcode.com/problems/sort-an-array/&#34;&gt;912. Sort an Array&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;數值範圍不大的話，可以直接 counting sort!&lt;/p&gt;</description>
+&lt;p&gt;數值範圍不大的話，可以直接 counting sort!&lt;/p&gt;
+&lt;p&gt;Heap sort 跟 merge sort 之後補上。&lt;/p&gt;</description>
     </item>
     
     <item>

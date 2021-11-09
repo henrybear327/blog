@@ -6,7 +6,16 @@
     <description>Recent content in Tags on Coding Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 09 Nov 2021 14:18:09 +0100</lastBuildDate><atom:link href="https://henrybear327.github.io/blog/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 09 Nov 2021 14:34:54 +0100</lastBuildDate><atom:link href="https://henrybear327.github.io/blog/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>binary search</title>
+      <link>https://henrybear327.github.io/blog/tags/binary-search/</link>
+      <pubDate>Tue, 09 Nov 2021 14:34:54 +0100</pubDate>
+      
+      <guid>https://henrybear327.github.io/blog/tags/binary-search/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>recursive</title>
       <link>https://henrybear327.github.io/blog/tags/recursive/</link>
@@ -31,15 +40,6 @@
       <pubDate>Mon, 08 Nov 2021 22:16:10 +0100</pubDate>
       
       <guid>https://henrybear327.github.io/blog/tags/dp/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>binary search</title>
-      <link>https://henrybear327.github.io/blog/tags/binary-search/</link>
-      <pubDate>Mon, 08 Nov 2021 20:12:50 +0100</pubDate>
-      
-      <guid>https://henrybear327.github.io/blog/tags/binary-search/</guid>
       <description></description>
     </item>
     
