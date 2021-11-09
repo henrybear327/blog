@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>sorting on Coding Blog</title>
+    <link>https://henrybear327.github.io/blog/tags/sorting/</link>
+    <description>Recent content in sorting on Coding Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 09 Nov 2021 14:18:09 +0100</lastBuildDate><atom:link href="https://henrybear327.github.io/blog/tags/sorting/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Leetcode 912 Sort an Array</title>
+      <link>https://henrybear327.github.io/blog/post/leetcode/912/</link>
+      <pubDate>Tue, 09 Nov 2021 14:18:09 +0100</pubDate>
+      
+      <guid>https://henrybear327.github.io/blog/post/leetcode/912/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://leetcode.com/problems/sort-an-array/&#34;&gt;912. Sort an Array&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;數值範圍不大的話，可以直接 counting sort!&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
